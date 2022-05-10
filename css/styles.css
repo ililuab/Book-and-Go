@@ -8,7 +8,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
 .header-img {
   height: 95vh;
   width: 100vw;
@@ -290,5 +289,52 @@ svg {
 .contextboximg {
   padding: 10%;
 }
+
+/* Slideshow */
+
+.slideshow-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  object-fit: scale-down;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+/* -- Slideshow */
 
 
