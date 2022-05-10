@@ -14,7 +14,7 @@ $opt = [
 ];
 
 try {
- 	$connect = new PDO ($dsn, $user, $pass,);
+ 	$conn = new PDO ($dsn, $user, $pass,);
 } 
 catch (PDOExeption $e) {
 	echo $e ->getMessage();
