@@ -12,7 +12,7 @@
   
     $sql ="SELECT * FROM vluchten WHERE MATCH(place_departure,place_destination) AGAINST ('%" . $search . "%')";
     $run = mysqli_query($con,$sql);
-    $foundnum = mysqli_num_rows($run);  
+    $foundnum = mysqli_num_rows($run);
 
 
     if ($foundnum==0)
