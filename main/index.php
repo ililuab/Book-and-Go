@@ -45,9 +45,9 @@ include_once('../includes/connect.php')
             <div class="header">
                 
                 <div class="dropdown">
-                    <a href="../main/inloggen.php" class="dropbtn">Inloggen</a>
+                    <a href="../main/account.php" class="dropbtn">Inloggen</a>
                     <div class="dropdown-content">
-                        <a href="../main/mijnaccount.php">Mijn Account</a>
+                        <a href="../main/dashboard.php">Account</a>
                     </div>
                 </div>
                 <a class="Header-links" href="../main/locaties.php">Locaties</a>
