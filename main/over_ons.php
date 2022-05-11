@@ -18,9 +18,9 @@
         <div class="top-center">
             <div class="header_over-ons">
                 <div class="dropdown">
-                    <a href="../main/inloggen.php" class="dropbtn">Inloggen</a>
+                    <a href="../main/account.php" class="dropbtn">Inloggen</a>
                     <div class="dropdown-content">
-                        <a href="../main/mijnaccount.php">Mijn Account</a>
+                        <a href="../main/dashboard.php">Mijn Account</a>
                     </div>
                 </div>
                 <a class="Header-links" href="../main/locaties.php">Locaties</a>
