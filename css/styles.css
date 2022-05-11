@@ -494,4 +494,58 @@ svg {
   height: 100px;
 }
 
+.VluchtBoekenButtonOuter {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+}
+
+.VluchtboekenButton {
+  background-color: #ff3268;
+  color: white;
+  border-radius: 25px;
+  height: 4vh;
+  border: none;
+  text-shadow: #0e0e0e 0px 0 30px;
+  border: none;
+  width: 6vw;
+  cursor: pointer;
+  box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+}
+
+.tablevluchten {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.tablevluchten thead tr {
+  background-color: #2800a0;
+  color: #ffffff;
+  text-align: left;
+}
+
+.tablevluchten th,
+.tablevluchten td {
+    padding: 12px 15px;
+}
+
+.tablevluchten tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.tablevluchten tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.tablevluchten tbody tr:last-of-type {
+  border-bottom: 2px solid #2800a0;
+}
+
+.tablevluchten tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
 

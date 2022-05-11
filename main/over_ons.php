@@ -20,7 +20,7 @@
                 <div class="dropdown">
                     <a href="../main/account.php" class="dropbtn">Inloggen</a>
                     <div class="dropdown-content">
-                        <a href="../main/dashboard.php">Mijn Account</a>
+                        <a href="../main/dashboard.php">Dashboard</a>
                     </div>
                 </div>
                 <a class="Header-links" href="../main/locaties.php">Locaties</a>
@@ -38,18 +38,19 @@
                 </div>
             </div>
             <div class="container_triangle">
-            <div class="triangle"></div>
+                <div class="triangle"></div>
             </div>
             <div class="over-ons_first_div">
                 <div class="container_text_content">
-                <div class="text-content_below_header2">Welkom bij Book and Go</div>
+                    <div class="text-content_below_header2">Welkom bij Book and Go</div>
                 </div>
                 <div class="container_text_content2">
-                <div class="content_firstdiv_over-ons">Book and Go is een low cost carrier opgericht in 1965. Al meer dan 50 jaar  brengen wij  passagiers  naar de mooiste zaken- en vakantiebestemmingen van Europa. Transavia is onderdeel van de Air France-KLM Groep. Dit maakt ons een van de grootste luchtvaartgroepen in Europa.  </div>
+                    <div class="content_firstdiv_over-ons">Book and Go is een low cost carrier opgericht in 1965. Al meer dan 50 jaar brengen wij passagiers naar de mooiste zaken- en vakantiebestemmingen van Europa. Transavia is onderdeel van de Air France-KLM Groep. Dit maakt ons een van de grootste luchtvaartgroepen in Europa. </div>
                 </div>
             </div>
 
 
-</main>
-<script src="../js/main.js"></script>
+    </main>
+    <script src="../js/main.js"></script>
+
 </html>

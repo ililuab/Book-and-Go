@@ -39,11 +39,11 @@
 
 
             <div class="header">
-                
+
                 <div class="dropdown">
                     <a href="../main/account.php" class="dropbtn">Inloggen</a>
                     <div class="dropdown-content">
-                        <a href="../main/dashboard.php">Mijn Account</a>
+                        <a href="../main/dashboard.php">Dashboard</a>
                     </div>
                 </div>
                 <a class="Header-links" href="../main/locaties.php">Locaties</a>
@@ -51,6 +51,7 @@
                 <a class="Header-links" href="../main/over_ons.php">Over ons</a>
                 <a class="Header-links" href="../main/contact.php">Contact</a>
             </div>
-</main>
-<script src="../js/main.js"></script>
+    </main>
+    <script src="../js/main.js"></script>
+
 </html>

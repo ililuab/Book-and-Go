@@ -19,3 +19,10 @@ function showSlides() {
   setTimeout(showSlides, 5000); 
 }
 // Eind - Slideshow
+
+// Begin Calender Past Fix
+
+var vandaag = new Date().toISOString().split('T')[0];
+document.getElementsByName("indexcalender")[0].setAttribute('min', vandaag);
+
+// Eind Calender Past Fix
