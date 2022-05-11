@@ -53,36 +53,38 @@ include_once('../includes/connect.php')
                 <a class="Header-links" href="">Locaties</a>
                 <a class="Header-links" href="">Inloggen</a>
             </div>
-            <div class="OuterPHPEngine">
-                <div class="InnerPHPEngine">
-                    <div class="InnerHigh"><img class="Airplane" src="../media/airplane.png" alt="Vliegtuig">
-                        <h1 class="AirplaneText">Vluchten</h1>
-                    </div>
-                    <div class="VluchtenzoekenOuter">
-                        <form class="vluchtenzoeken" name="form1" method="get" action="vlucht_resultaten.php">
-                            <div class="ZoekenInvoerVeldenOuter">
-                                <h1 class="VluchtenZoekenHeader">Vanaf</h1>
-                                <input class="Vertrekluchthaven" type="text" placeholder="Vertrekluchthaven"
-                                    name="search" aria-label="Search" required>
-                            </div>
-                            <div class="ZoekenInvoerVeldenOuter">
-                                <h1 class="VluchtenZoekenHeader">Bestemming</h1>
-                                <input class="Bestemming" type="text" placeholder="Bestemming" name="search"
-                                    aria-label="Search" required>
-                            </div>
-                            <div class="ZoekenInvoerVeldenOuter">
-                                <h1 class="VluchtenZoekenHeader">Wie gaan er mee?</h1>
-                                <input class="Bestemming" type="number" placeholder="1 Volwassene" aria-label="Search"
-                                    min="1" max="25" required>
-                            </div>
-                            <div class="ZoekenOuter">
-                                <input class="Zoeken" type="submit" value="Zoeken" name="submit"></input>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
+            
+        <div class="OuterPHPEngine">
+            <div class="InnerPHPEngine">
+              <div class="InnerHigh"><img class="Airplane" src="../media/airplane.png" alt="Vliegtuig">
+                <h1 class="AirplaneText">Vluchten</h1>
+              </div>
+              <div class="VluchtenzoekenOuter">
+                <form class="vluchtenzoeken" name="form1" method="post" action="vlucht_resultaten.php">
+                  <div class="ZoekenInvoerVeldenOuter">
+                    <h1 class="VluchtenZoekenHeader">Vanaf</h1>
+                    <input class="Vertrekluchthaven" type="text" placeholder="Vertrekluchthaven" name="search" aria-label="Search" required>
+                  </div>
+                  <div class="ZoekenInvoerVeldenOuter">
+                    <h1 class="VluchtenZoekenHeader">Bestemming</h1>
+                    <input class="Bestemming" type="text" placeholder="Bestemming" name="search" aria-label="Search" required>
+                  </div>
+                  <div class="ZoekenInvoerVeldenOuter">
+                    <h1 class="VluchtenZoekenHeader">Wie gaan er mee?</h1>
+                    <input class="Bestemming" type="number" placeholder="1 Volwassene" aria-label="Search" min="1" max="25" required>
+                  </div>
+                  <div class="ZoekenInvoerVeldenOuter">
+                    <h1 class="VluchtenZoekenHeader">Vertrekdatum</h1>
+                    <input class="Bestemming" type="date" placeholder="Bestemming" aria-label="Search" required>
+                  </div>
+                  <div class="ZoekenOuter">
+                    <input class="Zoeken" type="submit" value="Zoeken" name="submit"></input>
+                  </div>
+                </form>
+              </div>
+  
             </div>
+          </div>
         </div>
         </div>
         <div class="ContainerContext ">
