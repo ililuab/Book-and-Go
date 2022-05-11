@@ -45,7 +45,7 @@ include_once('../includes/connect.php')
                 <div class="dropdown">
                     <a href="../main/account.php" class="dropbtn">Inloggen</a>
                     <div class="dropdown-content">
-                        <a href="../main/dashboard.php">Account</a>
+                        <a href="../main/dashboard.php">Dashboard</a>
                     </div>
                 </div>
                 <a class="Header-links" href="../main/locaties.php">Locaties</a>
@@ -60,7 +60,7 @@ include_once('../includes/connect.php')
                 <h1 class="AirplaneText">Vluchten</h1>
               </div>
               <div class="VluchtenzoekenOuter">
-                <form class="vluchtenzoeken" name="form1" method="post" action="vlucht_resultaten.php">
+                <form class="vluchtenzoeken" name="form1" method="post" action="vluchten.php">
                   <div class="ZoekenInvoerVeldenOuter">
                     <h1 class="VluchtenZoekenHeader">Vanaf</h1>
                     <input class="Vertrekluchthaven" type="text" placeholder="Vertrekluchthaven" name="search" aria-label="Search" required>
@@ -75,7 +75,7 @@ include_once('../includes/connect.php')
                   </div>
                   <div class="ZoekenInvoerVeldenOuter">
                     <h1 class="VluchtenZoekenHeader">Vertrekdatum</h1>
-                    <input class="Bestemming" type="date" placeholder="Bestemming" aria-label="Search" required>
+                    <input class="Bestemming" type="date" placeholder="Bestemming" name="indexcalender" aria-label="Search" required>
                   </div>
                   <div class="ZoekenOuter">
                     <input class="Zoeken" type="submit" value="Zoeken" name="submit"></input>
