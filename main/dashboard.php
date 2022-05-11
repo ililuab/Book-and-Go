@@ -23,7 +23,7 @@ include_once('../includes/connect.php')
         if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
             echo '<h1>Ingelogd als: ' . $_SESSION['sess_name'] . '</h1>';
             echo '<h4><a href="uitloggen.php">Uitloggen</a></h4>';
-            echo '<h4><a href="uitloggen.php">Terug naar home</a></h4>';
+            echo '<h4><a href="index.php">Terug naar home</a></h4>';
         } else {
             header('location:account.php');
             session_destroy();
