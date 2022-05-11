@@ -12,34 +12,11 @@
     <title>Book And Go</title>
 </head>
 
-<body>
+<body class="body_over-ons">
     <main>
-        <div class="header-img" src="../media/oldbackground.jpg" alt="Snow" style="width:100%;">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture1.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture2.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture3.jpg" style="width:100%">
-                </div>
-            </div>
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
         <br>
         <div class="top-center">
-
-
-            <div class="header">
-                
+            <div class="header_over-ons">
                 <div class="dropdown">
                     <a href="../main/inloggen.php" class="dropbtn">Inloggen</a>
                     <div class="dropdown-content">
@@ -51,6 +28,28 @@
                 <a class="Header-links" href="../main/over_ons.php">Over ons</a>
                 <a class="Header-links" href="../main/contact.php">Contact</a>
             </div>
+
+
+            <div class="spacer"></div>
+            <div class="below_header_over-ons">
+                <div class="content_below_header">
+                    <img src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo">
+                    <h1 class="text-content_below_header">Over BookAndGo</h1><br>
+                </div>
+            </div>
+            <div class="container_triangle">
+            <div class="triangle"></div>
+            </div>
+            <div class="over-ons_first_div">
+                <div class="container_text_content">
+                <div class="text-content_below_header2">Welkom bij Book and Go</div>
+                </div>
+                <div class="container_text_content2">
+                <div class="content_firstdiv_over-ons">Book and Go is een low cost carrier opgericht in 1965. Al meer dan 50 jaar  brengen wij  passagiers  naar de mooiste zaken- en vakantiebestemmingen van Europa. Transavia is onderdeel van de Air France-KLM Groep. Dit maakt ons een van de grootste luchtvaartgroepen in Europa.  </div>
+                </div>
+            </div>
+
+
 </main>
 <script src="../js/main.js"></script>
 </html>
