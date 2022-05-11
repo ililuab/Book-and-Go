@@ -40,18 +40,20 @@ include_once('../includes/connect.php')
         </div>
         <br>
         <div class="top-center">
+
+
             <div class="header">
+                
                 <div class="dropdown">
-                    <button class="dropbtn">Contact</button>
+                    <a href="../main/inloggen.php" class="dropbtn">Inloggen</a>
                     <div class="dropdown-content">
-                        <a href="contact.php">Inloggen</a>
-                        <a href="contact/klantenservice.php">Klantenservice</a>
+                        <a href="../main/mijnaccount.php">Mijn Account</a>
                     </div>
                 </div>
-                <a class="Header-links" href="">Over ons</a>
+                <a class="Header-links" href="../main/locaties.php">Locaties</a>
                 <a href="index.php"><img class="Header-Logo" src="../media/BookAndGoLogo.jpg" alt="Logo bookandgo"></a>
-                <a class="Header-links" href="">Locaties</a>
-                <a class="Header-links" href="">Inloggen</a>
+                <a class="Header-links" href="../main/over_ons.php">Over ons</a>
+                <a class="Header-links" href="../main/contact.php">Contact</a>
             </div>
             
         <div class="OuterPHPEngine">
