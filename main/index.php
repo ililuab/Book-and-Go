@@ -40,8 +40,6 @@ include_once('../includes/connect.php')
         </div>
         <br>
         <div class="top-center">
-
-<!-- HALLO -->
             <div class="header">
                 
                 <div class="dropdown">
