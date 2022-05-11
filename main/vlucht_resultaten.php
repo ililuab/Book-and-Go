@@ -1,40 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>Search</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/styles.css">
+  <title>Document</title>
 </head>
+
 <body>
+  <main>
+    <div class="header_vlucht_resultaten">
+      <div class="headertext_vlucht_resultaten">Vlucht boeken</div>
+      <div class="mainbeige_vlucht_resultaten">
+        <div class="VluchtResultatenBoxOuter">
+          <div class="VluchtResultatenBoxInner">
+            <h1 class='H1Vluchten'>Vluchten</h1>
+            <div class="VluchtResultatenBoxInnerBeige">
+              <div class="resultaten">
+                <?php
+                include_once("../includes/connect.php");
+                if ($_POST['submit']) {
+                  $key = $_POST['search'];
+                  $query = $conn->prepare('SELECT * FROM vluchten WHERE place_departure LIKE :keyword OR place_destination LIKE :keyword ORDER BY place_departure');
+                  $query->bindValue(":keyword", "%" . $key . "%", PDO::PARAM_STR);
+                  $query->execute();
+                  $results = $query->fetchAll();
+                  $rows = $query->rowCount();
 
-  <?php
-  $button = $_GET ['submit'];
-  $search = $_GET ['search'];
-  $con=mysqli_connect("localhost","root","","bookandgo");
-  
-    $sql ="SELECT * FROM vluchten WHERE MATCH(place_departure,place_destination) AGAINST ('%" . $search . "%')";
-    $run = mysqli_query($con,$sql);
-    $foundnum = mysqli_num_rows($run);
+
+                  if ($rows != 0) {
+                    foreach ($results as $r) {
+                      echo '<h4>' . $r['place_departure'] . ' naar ' . $r['place_destination'] . " " . $r['time_leaving'] . " " . $r['time_arrived'] . '</h4>';
+                    }
+                  } else {
+                    echo '<h4>"Helaas, er zijn geen vluchten gevonden."</h4>';
+                  }
+                }
+
+                ?>
+
+              </div>
+            </div>
 
 
-    if ($foundnum==0)
-    {
-      echo "Geen vluchten mogelijk voor '<b>$search</b>'.";
-    }
-    else{     
-      $sql ="SELECT * FROM vluchten WHERE MATCH(place_departure,place_destination) AGAINST ('%" . $search . "%')";
-      $getquery = mysqli_query($con,$sql);
-      while($runrows = mysqli_fetch_array($getquery))
-      {
-        echo"<h5 class='test'>" . $runrows["id"] ."</h5>";
-        echo"<h5 class='test'>". $runrows["place_departure"] ."</h5>";
-        echo"<h5 class='test'>". $runrows["place_destination"] ."</h5>";
-        echo"<h5 class='test'>". $runrows["time_arrived"] ."</h5>";
-        echo"<h5 class='test'>". $runrows["time_leaving"] ."</h5>";
-        echo"<h5 class='test'>". $runrows["seats"] ."</h5>";
-
-        }}
-
-    mysqli_close($con);
-?>
-
-</body>
-</html>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>

@@ -173,7 +173,6 @@
 .ZoekenOuter {
   display: flex;
   justify-content: center;
-  padding-top: 55%;
 }
 
 .Zoeken {
@@ -337,4 +336,56 @@ svg {
 
 /* -- Slideshow */
 
+.header_vlucht_resultaten {
+  width: 100%;
+  height: 6vh;
+  background-color: #FFFDFA;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
+.headertext_vlucht_resultaten {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  color: #00d66c;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.mainbeige_vlucht_resultaten {
+  width: 100%;
+  height: 94vh;
+  background-color: #f3e5d8;
+}
+
+.VluchtResultatenBoxOuter {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.VluchtResultatenBoxInner {
+  width: 45vw;
+  height: 60vh;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.VluchtResultatenBoxInnerBeige {
+  width: 45vw;
+  height: 40vh;
+  background-color: #ebded2;
+}
+
+.H1Vluchten {
+  padding: 3%;
+  font-size: 35px;
+  color: #00d66c;
+
+}
+
+.ImgVluchten {
+  text-align: center;
+}
