@@ -22,6 +22,9 @@
                         $_SESSION['sess_user_name'] = $row['username'];
                         $_SESSION['sess_name'] = $row['name'];
                         header('location:dashboard.php');
+                        if($username == "admin") {
+                            header('location:admin.php');
+                        }
                     } else {
                         header('location:account.php');
                     }
