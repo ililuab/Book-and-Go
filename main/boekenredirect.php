@@ -46,7 +46,7 @@ if ($_POST['Boeken']) {
 
 
 
-            echo "<script>alert('Boek gevlucht')</script>; <script>window.location = 'index.php'</script>";
+            echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
         }
     } else {
         echo "<script>alert('Alles invullen!')</script>; <script>window.location = 'boeken.php'</script>";
