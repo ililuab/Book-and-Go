@@ -359,8 +359,32 @@ svg {
 
 .mainbeige_vlucht_resultaten {
   width: 100%;
-  height: 94vh;
+  height: 80vh;
   background-color: #f3e5d8;
+}
+
+.underheader-vluchten {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 14vh;
+}
+
+.underheaderInner-vluchten {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.headerlinks-vluchten {
+  color: #00d66c;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  border-radius: 4px;
 }
 
 .VluchtResultatenBoxOuter {
@@ -379,7 +403,7 @@ svg {
 
 .VluchtResultatenBoxInnerBeige {
   width: 45vw;
-  height: 40vh;
+  height: 41vh;
   background-color: #ebded2;
 }
 
@@ -483,6 +507,12 @@ svg {
 
 }
 
+.spacer2 {
+  width: 100%;
+  height: 25px
+
+}
+
 .header_over-ons {
   display: flex;
   background-color: gray;
@@ -499,8 +529,6 @@ svg {
 .VluchtBoekenButtonOuter {
   display: flex;
   justify-content: center;
-  height: 10vh;
-  align-items: center;
 }
 
 .VluchtboekenButton {
