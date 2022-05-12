@@ -18,6 +18,21 @@
       <div class="headertext_vlucht_resultatenOuter">
         <div class="headertext_vlucht_resultaten"><a href="index.php"><img class="image-vluchten" src="../media/BookAndGoLogo.jpg" alt="Book and go Logo"></a></div>
       </div>
+      <div class="headertext_vlucht_resultaten">Vlucht boeken</div>
+      <div class="spacer2"></div>
+      <div class="mainbeige_vlucht_resultaten">
+        <div class="VluchtResultatenBoxOuter">
+          <div class="VluchtResultatenBoxInner">
+            <h1 class='H1Vluchten'>Vluchten</h1>
+            <div class="VluchtResultatenBoxInnerBeige">
+              <div class="resultaten">
+                <?php
+                include_once("../includes/connect.php");
+                $submit = $_POST['submit'];
+                if (!isset($submit)) {
+                  header('location: index.php');
+                } else {
+                }
 
       <div class="spacer2"></div>
       <div class="mainbeige_vlucht_resultaten">
@@ -63,6 +78,14 @@
           ?>
 
 
+              </div>
+            </div>
+            <div class="VluchtBoekenButtonOuter">
+              <form action="boeken.php">
+                <div class="VluchtBoekenButtonOuter">
+                  <input class="VluchtboekenButton" type="submit" value="Boeken" name="Boekengaan"></input>
+                </div>
+              </form>
 
         </div>
 
@@ -81,6 +104,14 @@
           <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
           <a class="headerlinks-vluchten" href="klantenervice.php">Klantenservice</a>
           <a class="headerlinks-vluchten" href="contact.php">Contact</a>
+          <a class="headerlinks-vluchten" href="over_ons.php">Privacy policy</a>
+        </div>
+      </div>
+      <div class="underheader-vluchten">
+        <div class="underheaderInner-vluchten">
+          <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+          <a class="headerlinks-vluchten" href="klantenervice.php">Klantenservice</a>
+          <a class="headerlinks-vluchten"href="contact.php">Contact</a>
           <a class="headerlinks-vluchten" href="over_ons.php">Privacy policy</a>
         </div>
       </div>
