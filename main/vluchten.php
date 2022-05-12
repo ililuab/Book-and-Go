@@ -16,6 +16,7 @@
   <main>
     <div class="header_vlucht_resultaten">
       <div class="headertext_vlucht_resultaten">Vlucht boeken</div>
+      <div class="spacer2"></div>
       <div class="mainbeige_vlucht_resultaten">
         <div class="VluchtResultatenBoxOuter">
           <div class="VluchtResultatenBoxInner">
@@ -64,15 +65,23 @@
             </div>
             <div class="VluchtBoekenButtonOuter">
               <form action="boeken.php">
-              <div class="VluchtBoekenButtonOuter">
-                    <input class="VluchtboekenButton" type="submit" value="Boeken" name="Boekengaan"></input>
-                  </div>
+                <div class="VluchtBoekenButtonOuter">
+                  <input class="VluchtboekenButton" type="submit" value="Boeken" name="Boekengaan"></input>
+                </div>
               </form>
 
 
             </div>
 
           </div>
+        </div>
+      </div>
+      <div class="underheader-vluchten">
+        <div class="underheaderInner-vluchten">
+          <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+          <a class="headerlinks-vluchten" href="klantenervice.php">Klantenservice</a>
+          <a class="headerlinks-vluchten"href="contact.php">Contact</a>
+          <a class="headerlinks-vluchten" href="over_ons.php">Privacy policy</a>
         </div>
       </div>
     </div>
