@@ -77,7 +77,7 @@
                         <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
                         <a class="headerlinks-vluchten" href="index.php">Boeken</a>
                         <a class="headerlinks-vluchten" href="klantenervice.php">Klantenservice</a>
-                        <a class="headerlinks-vluchten" href="over_ons.php">Privacy policy</a>
+                        <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
                     </div>
                 </div>
 
