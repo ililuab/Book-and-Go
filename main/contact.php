@@ -26,6 +26,8 @@
         </div>
 
         <div class="spacer2"></div>
+        <div class="spacer2"></div>
+        <div class="spacer2"></div> 
 
         <div class="contactmainbackground">
             <div class="contactmainbackgroundinner1"><img class="image-contact" src="../media/BookAndGoLogo.jpg" alt=""></div>
@@ -33,18 +35,41 @@
                 <div class='contact-page-text'>Meer weten over boekingen, of ben je journalist en heb je in de media vragen over BookAndGo? Neem dan contact met ons op via de links hier.</div>
             </div>
             <div class="contactmainbackgroundinner3"></div>
-
         </div>
         <div class="spacer"></div>
         <div class="contactimagebg"></div>
         <div class="contactunderlinks">
             <div class="contactunderlinksInner">
-                <div class="contacttextunder">Klantenservice</div>
+                <button class="accordion"><div class="contacttextouter"> <div class="contacttextunder">Klantenservice <i class="arrow down"></i></div></div></button>
+                <div class="panel">
+                    <p class='p-contact'>Uw antwoord niet online gevonden? Vind onze klanteneservice gegevens via de link hieronder.</p><a class='p-contact' href="klantenservice.php"><i class="arrow right"></i> Klantenservice</a>
+                </div>
+
+                <button class="accordion"><div class="contacttextouter"> <div class="contacttextunder">Algemene voorwaarden <i class="arrow down"></i></div></div></button>
+                <div class="panel">
+                    <p class='p-contact'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion"><div class="contacttextouter"> <div class="contacttextunder">Privacy Policy <i class="arrow down"></i></div></div></button>
+                <div class="panel">
+                    <p class='p-contact'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="underheader-vluchten">
+      <div class="underheaderInner-vluchten">
+        <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+        <a class="headerlinks-vluchten" href="index.php">Boeken</a>
+        <a class="headerlinks-vluchten" href="klantenervice.php">Klantenservice</a>
+        <a class="headerlinks-vluchten" href="over_ons.php">Privacy policy</a>
+      </div>
+    </div>
+            
+                
+                
             </div>
         </div>
     </main>
 
 </body>
-<script src="../js/main.js"></script>
+<script src="../js/accordion.js"></script>
 
 </html>

@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/nexa-bold?styles=29919,29913');
+@import url("http://fonts.cdnfonts.com/css/nexa-bold?styles=29919,29913");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
   padding: 0;
   scroll-behavior: smooth;
   text-decoration: none;
-  font-family: 'Nexa', sans-serif;
+  font-family: "Nexa", sans-serif;
   font-weight: bold;
 }
 
@@ -117,6 +117,7 @@
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 
 .OuterPHPEngine {
   display: flex;
@@ -613,7 +614,6 @@ svg {
   }
 }
 
-
 .contactmainbackground {
   height: 54vh;
   background-color: #fffdfa;
@@ -644,10 +644,6 @@ svg {
   justify-content: right;
 }
 
-.image-contact {
-  width: 20%;
-  height: 22%;
-}
 
 .contact-page-text {
   color: black;
@@ -657,19 +653,73 @@ svg {
 }
 
 .contactimagebg {
-  background-image: url('../media/pexels-tim-gouw-250701.jpg');
-  width: 100vw;
-  object-fit: cover;
+  background-image: url("../media/pexels-tirachard-kumtanom-733853.jpg");
+  width: 100%;
+  background-size: cover;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   z-index: -1;
-  
 }
 
 .contacttextunder {
   color: white;
 }
 
+
+.contactunderlinksInner {
+}
+
+.contacttextouter {
+  padding: 3%;
+}
+
+.contacttextunder {
+  color: #fffdfa;
+  font-size: 25px;
+}
+
+.arrow {
+  border: solid #fffdfa;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.accordion {
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.9s;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 2%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.p-contact {
+  color: white;
+  padding: 5%;
+  padding-top: 0;
+  padding-bottom: 1%;
+}
