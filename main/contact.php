@@ -15,44 +15,36 @@
 
 <body>
     <main>
-        <div class="header-img" src="../media/oldbackground.jpg" alt="Snow" style="width:100%;">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture1.jpg" style="width:100%">
+        <div class="header_vlucht_resultaten">
+            <div class="headertext_vlucht_resultatenOuter">
+                <div class="headertext_vlucht_resultaten">
+                    <a class="image-vluchtenOuter" href="index.php">
+                        <img class="image-vluchten" src="../media/BookAndGoLogo.jpg" alt="Book and go Logo">
+                    </a>
                 </div>
-
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture2.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture3.jpg" style="width:100%">
-                </div>
-            </div>
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
             </div>
         </div>
-        <br>
-        <div class="top-center">
 
+        <div class="spacer2"></div>
 
-            <div class="header">
-
-                <div class="dropdown">
-                    <a href="../main/account.php" class="dropbtn">Inloggen</a>
-                    <div class="dropdown-content">
-                        <a href="../main/dashboard.php">Dashboard</a>
-                    </div>
-                </div>
-                <a class="Header-links" href="../main/locaties.php">Locaties</a>
-                <a href="index.php"><img class="Header-Logo" src="../media/BookAndGoLogo.jpg" alt="Logo bookandgo"></a>
-                <a class="Header-links" href="../main/over_ons.php">Over ons</a>
-                <a class="Header-links" href="../main/contact.php">Contact</a>
+        <div class="contactmainbackground">
+            <div class="contactmainbackgroundinner1"><img class="image-contact" src="../media/BookAndGoLogo.jpg" alt=""></div>
+            <div class="contactmainbackgroundinner2">
+                <div class='contact-page-text'>Meer weten over boekingen, of ben je journalist en heb je in de media vragen over BookAndGo? Neem dan contact met ons op via de links hier.</div>
             </div>
+            <div class="contactmainbackgroundinner3"></div>
+
+        </div>
+        <div class="spacer"></div>
+        <div class="contactimagebg"></div>
+        <div class="contactunderlinks">
+            <div class="contactunderlinksInner">
+                <div class="contacttextunder">Klantenservice</div>
+            </div>
+        </div>
     </main>
-    <script src="../js/main.js"></script>
+
+</body>
+<script src="../js/main.js"></script>
 
 </html>

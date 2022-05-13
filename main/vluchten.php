@@ -73,10 +73,8 @@
       </div>
 
       <div class="VluchtBoekenButtonOuter">
-        <form action="boeken.php">
-          <div class="VluchtBoekenButtonOuter">
+        <form class='VluchtBoekenButtonOuter' action="boeken.php">
             <input class="VluchtboekenButton" type="submit" value="Boeken" name="Boekengaan"></input>
-          </div>
         </form>
 
       </div>
