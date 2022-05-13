@@ -616,7 +616,7 @@ svg {
 
 .contactmainbackground {
   height: 54vh;
-  background-color: #fffdfa;
+  background-color: antiquewhite;
   display: flex;
 }
 
@@ -670,6 +670,7 @@ svg {
 
 
 .contactunderlinksInner {
+
 }
 
 .contacttextouter {

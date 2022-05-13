@@ -27,7 +27,7 @@
 
         <div class="spacer2"></div>
         <div class="spacer2"></div>
-        <div class="spacer2"></div> 
+        <div class="spacer2"></div>
 
         <div class="contactmainbackground">
             <div class="contactmainbackgroundinner1"><img class="image-contact" src="../media/BookAndGoLogo.jpg" alt=""></div>
@@ -40,31 +40,49 @@
         <div class="contactimagebg"></div>
         <div class="contactunderlinks">
             <div class="contactunderlinksInner">
-                <button class="accordion"><div class="contacttextouter"> <div class="contacttextunder">Klantenservice <i class="arrow down"></i></div></div></button>
+                <button class="accordion">
+                    <div class="contacttextouter">
+                        <div class="contacttextunder">Klantenservice <i class="arrow down"></i></div>
+                    </div>
+                </button>
                 <div class="panel">
-                    <p class='p-contact'>Uw antwoord niet online gevonden? Vind onze klanteneservice gegevens via de link hieronder.</p><a class='p-contact' href="klantenservice.php"><i class="arrow right"></i> Klantenservice</a>
+                    <p class='p-contact'>Uw antwoord niet online gevonden? Vind onze klantenservice gegevens via de link hieronder.</p><a class='p-contact' href="klantenservice.php"><i class="arrow right"></i> Klantenservice</a>
                 </div>
 
-                <button class="accordion"><div class="contacttextouter"> <div class="contacttextunder">Algemene voorwaarden <i class="arrow down"></i></div></div></button>
+                <button class="accordion">
+                    <div class="contacttextouter">
+                        <div class="contacttextunder">Algemene voorwaarden <i class="arrow down"></i></div>
+                    </div>
+                </button>
                 <div class="panel">
-                    <p class='p-contact'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class='p-contact'>Deze Algemene Vervoersvoorwaarden zijn van toepassing op alle vluchten, of vluchtsegmenten,
+                        waarbij de BookandGo Code is aangegeven in het vak Carrier (Vervoerder) van uw ticket of van
+                        de overeenkomstige coupon, alsmede de andere situaties zoals gespecificeerd in de Algemene
+                        Vervoersvoorwaarden.
+                    </p>
+                    <a class='p-contact' href="../media/BookAndGo_Algemene_voorwaarden.pdf" download><i class="arrow right"></i> Algemene voorwaarden</a>
                 </div>
 
-                <button class="accordion"><div class="contacttextouter"> <div class="contacttextunder">Privacy Policy <i class="arrow down"></i></div></div></button>
+                <button class="accordion">
+                    <div class="contacttextouter">
+                        <div class="contacttextunder">Privacy Policy <i class="arrow down"></i></div>
+                    </div>
+                </button>
                 <div class="panel">
-                    <p class='p-contact'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class='p-contact'>In dit privacybeleid geven we meer informatie over de persoonsgegevens die we verzamelen en gebruiken en wat uw rechten zijn. Klik op de betreffende paragraaf hieronder voor meer informatie.</p>
+                    <a class='p-contact' href="../media/BookAndGo_Privacy_Policy.pdf" download><i class="arrow right"></i> Privacy Policy</a>
                 </div>
                 <div class="underheader-vluchten">
-      <div class="underheaderInner-vluchten">
-        <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
-        <a class="headerlinks-vluchten" href="index.php">Boeken</a>
-        <a class="headerlinks-vluchten" href="klantenervice.php">Klantenservice</a>
-        <a class="headerlinks-vluchten" href="over_ons.php">Privacy policy</a>
-      </div>
-    </div>
-            
-                
-                
+                    <div class="underheaderInner-vluchten">
+                        <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+                        <a class="headerlinks-vluchten" href="index.php">Boeken</a>
+                        <a class="headerlinks-vluchten" href="klantenervice.php">Klantenservice</a>
+                        <a class="headerlinks-vluchten" href="over_ons.php">Privacy policy</a>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </main>
