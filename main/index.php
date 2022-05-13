@@ -14,6 +14,7 @@ include_once('../includes/connect.php')
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Book And Go</title>
 </head>
