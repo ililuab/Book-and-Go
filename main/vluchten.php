@@ -74,7 +74,7 @@
 
       <div class="VluchtBoekenButtonOuter">
         <form class='VluchtBoekenButtonOuter' action="boeken.php">
-            <input class="VluchtboekenButton" type="submit" value="Boeken" name="Boekengaan"></input>
+          <input class="VluchtboekenButton" type="submit" value="Boeken" name="Boekengaan"></input>
         </form>
 
       </div>
@@ -83,7 +83,7 @@
     <div class="underheader-vluchten">
       <div class="underheaderInner-vluchten">
         <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
-        <a class="headerlinks-vluchten" href="klantenervice.php">Klantenservice</a>
+        <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
         <a class="headerlinks-vluchten" href="contact.php">Contact</a>
         <a class="headerlinks-vluchten" href="over_ons.php">Privacy Policy</a>
       </div>
