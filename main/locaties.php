@@ -15,43 +15,64 @@
 
 <body>
     <main>
-        <div class="header-img" src="../media/oldbackground.jpg" alt="Snow" style="width:100%;">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture1.jpg" style="width:100%">
-                </div>
 
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture2.jpg" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../media/vacationpicture3.jpg" style="width:100%">
-                </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="../media/vacationpicture1.jpg" style="width:100%; height:85vh;">
             </div>
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+
+            <div class="mySlides fade">
+                <img src="../media/vacationpicture2.jpg" style="width:100%; height:85vh">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../media/vacationpicture3.jpg" style="width:100%; height:85vh">
             </div>
         </div>
-        <br>
-        <div class="top-center">
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="slideshow-overlay">
+            <div class="header_vlucht_resultaten">
+                <div class="headertext_vlucht_resultatenOuter">
+                    <div class="headertext_vlucht_resultaten">
+                        <div class="dropdown">
+                            <div class="Header-links">Beheren</div>
+                            <div class="dropdown-content">
+                                <div><a href="index.php">Vlucht boeken</a></div>
+                                <div><a href="dashboard.php">Vlucht wijzigen</a></div>
+                                <div><a href="dashboard.php">Vlucht annuleren</a></div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="Header-links">Service</div>
+                            <div class="dropdown-content">
+                                <div><a href="klantenservice.php">Klantenservice</a></div>
+                                <div><a href="contact.php">Contact</a></div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="Header-links">Account</div>
+                            <div class="dropdown-content">
+                                <div><a href="dashboard.php">Dashboard</a></div>
+                                <div><a href="account.php">Inloggen</a></div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="Header-links">Over</div>
+                            <div class="dropdown-content">
+                                <div><a href="locaties.php">Locaties</a></div>
+                                <div><a href="over_ons.php">Over ons</a></div>
 
-
-            <div class="header">
-
-                <div class="dropdown">
-                    <a href="../main/account.php" class="dropbtn">Inloggen</a>
-                    <div class="dropdown-content">
-                        <a href="../main/dashboard.php">Dashboard</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <a class="Header-links" href="../main/locaties.php">Locaties</a>
-                <a href="index.php"><img class="Header-Logo" src="../media/BookAndGoLogo.jpg" alt="Logo bookandgo"></a>
-                <a class="Header-links" href="../main/over_ons.php">Over ons</a>
-                <a class="Header-links" href="../main/contact.php">Contact</a>
             </div>
+            <div class="spacer"></div>
+
     </main>
     <script src="../js/main.js"></script>
 
