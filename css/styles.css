@@ -804,16 +804,28 @@ svg {
 }
 
 .klantenservice-socialmedia-text {
-  padding-left: 2vh;
+  padding-left: 1vw;
   color: #00d66c;
+  font-size: 1.5vw;
 }
 
 .klantenservice-socialmedia-text2 {
-  padding-left: 2vh;
+  padding-left: 1vw;
   color: #ff3268;
+  font-size: 1.5vw;
 }
 
 .klantenservice-socialmedia-text3 {
-  padding-left: 2vh;
+  padding-left: 1vw;
   color: #1DA1F2;
+  padding-right: 1vw;
+  font-size: 1.5vw;
 }
+
+@media only screen and (max-width: 600px) {
+  .Header-links {
+    text-shadow: none;
+  }
+}
+
+
