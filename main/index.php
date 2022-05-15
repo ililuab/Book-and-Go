@@ -116,25 +116,25 @@ include_once('../includes/connect.php')
                     <img class="contextboximg" src="../media/corona.png" alt="">
                 </div>
                 <h1 class="contextboxtext1">Alles over het coronavirus</h1>
-                <a href='' class="contextboxundertext">Alle informatie omtrend SARS-19</a>
-                <a href='' class="contextboxundertext">De Reisvoorwaarden</a>
+                <a href='contact.php' class="contextboxundertext">Alle informatie omtrend SARS-19</a>
+                <a href='contact.php' class="contextboxundertext">De Reisvoorwaarden</a>
             </div>
             <div class="contextbox">
                 <div class="greenbox">
                     <img class="contextboximg" src="../media/ticket.png" alt="">
                 </div>
                 <h1 class="contextboxtext2">Boeken met vertrouwen</h1>
-                <a href='' class="contextboxundertext">Vluchten zoeken</a>
-                <a href='' class="contextboxundertext">Locaties bekijken</a>
-                <a href='' class="contextboxundertext">Inloggen</a>
+                <a href='index.php' class="contextboxundertext">Vluchten zoeken</a>
+                <a href='locaties.php' class="contextboxundertext">Locaties bekijken</a>
+                <a href='account.php' class="contextboxundertext">Inloggen</a>
             </div>
             <div class="contextbox">
                 <div class="redbox">
                     <img class="contextboximg" src="../media/contacthuman.png" alt="">
                 </div>
                 <h1 class="contextboxtext3">Vind online het antwoord op je vraag</h1>
-                <a href='' class="contextboxundertext">Vlucht wijzigen</a>
-                <a href='' class="contextboxundertext">Vlucht annuleren</a>
+                <a href='dashboard.php' class="contextboxundertext">Vlucht wijzigen</a>
+                <a href='dashboard.php' class="contextboxundertext">Vlucht annuleren</a>
             </div>
         </div>
         <div class="underheader-vluchten">

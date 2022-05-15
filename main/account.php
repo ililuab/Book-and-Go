@@ -14,47 +14,71 @@ include_once('../includes/connect.php')
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Book And Go | Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Account</title>
 </head>
 
 <body>
     <main>
+        <div class="header_vlucht_resultaten">
+            <div class="headertext_vlucht_resultatenOuter">
+                <div class="headertext_vlucht_resultaten">
+                    <div class="dropdown">
+                        <div class="Header-links">Beheren</div>
+                        <div class="dropdown-content">
+                            <div><a href="index.php">Vlucht boeken</a></div>
+                            <div><a href="dashboard.php">Vlucht wijzigen</a></div>
+                            <div><a href="dashboard.php">Vlucht annuleren</a></div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="Header-links">Service</div>
+                        <div class="dropdown-content">
+                            <div><a href="klantenservice.php">Klantenservice</a></div>
+                            <div><a href="contact.php">Contact</a></div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="Header-links">Account</div>
+                        <div class="dropdown-content">
+                            <div><a href="dashboard.php">Dashboard</a></div>
+                            <div><a href="account.php">Inloggen</a></div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="Header-links">Over</div>
+                        <div class="dropdown-content">
+                            <div><a href="locaties.php">Locaties</a></div>
+                            <div><a href="over_ons.php">Over ons</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spacer2"></div>
+        <div class="account-bg">
+            <div class="account-bg-inner">
+                <div class="account-img"><img class='account-img-inner' src="../media/loginimage.png" alt="Slot"></div>
+                <div class="account-login">
+                    <div class="account-login-inner">Inloggen</div>
+                </div>
+                <div class="account-inloggen-form">
+                    <form action="inloggen.php" method="post">
+                        <div>
+                            <input class="account-inloggen-form-input" type="text" name="username" id="username" value="" placeholder="Gebruikersnaam" />
+                        </div>
+                        <div>
+                            <input  class='account-inloggen-form-input' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
+                        </div>
+                        <div>
+                            <input class='account-inloggen-form-submit' type="submit" name="submitBtnLogin" id="submitBtnLogin" value="Inloggen" />
+                        </div>
+                    </form>
+                </div>
 
-        <!-- INLOGFORM -->
-        <div>
-            <form action="inloggen.php" method="post">
-                <h1>Inloggen</h1>
-                <div>
-                    <input type="text" name="username" id="username" value="" placeholder="Gebruikersnaam" />
-                </div>
-                <div>
-                    <input type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
-                </div>
-                <div>
-                    <input type="submit" name="submitBtnLogin" id="submitBtnLogin" value="Inloggen" />
-                </div>
-            </form>
+            </div>
         </div>
 
-        <!-- REGISTERFORM -->
-        <div>
-            <form action="registreren.php" method="post">
-                <h1>Registeren</h1>
-                <div>
-                    <input type="text" class="" name="name" placeholder="Naam" />
-                </div>
-                <div>
-                    <input type="text" class="" name="username" placeholder="Gebruikersnaam" />
-                </div>
-                <div>
-                    <input type="password" class="" name="password" placeholder="Wachtwoord" />
-                </div>
-                <div>
-                    <button name="registeren">Registeren</button>
-                </div>
-            </form>
-        </div>
-        <button><a href="index.php">HOME</a></button>
 
 
 
