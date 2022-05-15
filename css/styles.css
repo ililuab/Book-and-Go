@@ -121,19 +121,6 @@
   border-bottom: 2px solid #2800a0;
 }
 
-@media only screen and (max-width: 1200px) {
-  .InnerHigh {
-    padding-right: 5%;
-    padding-left: 5%;
-  }
-}
-
-@media only screen and (max-width: 765px) {
-  .InnerPHPEngine {
-    width: 30vw;
-    height: 40vh;
-  }
-}
 
 .Airplane {
   padding: 5%;
@@ -164,6 +151,10 @@
   border-radius: 15px;
   padding: 3%;
   border: gray 1px solid;
+}
+
+.Bestemming::placeholder, .Vertrekluchthaven::placeholder {
+  color: black;
 }
 
 .VluchtenZoekenHeader {
@@ -249,7 +240,7 @@ svg {
 }
 
 .contextboxtext1 {
-  font-size: 20px;
+  font-size: 1.3vw;
   padding: 5%;
   display: flex;
   text-align: center;
@@ -259,7 +250,7 @@ svg {
 }
 
 .contextboxtext2 {
-  font-size: 20px;
+  font-size: 1.3vw;
   padding: 5%;
   display: flex;
   text-align: center;
@@ -268,7 +259,7 @@ svg {
   text-shadow: #0e0e0e 0px 0 30px;
 }
 .contextboxtext3 {
-  font-size: 20px;
+  font-size: 1.3vw;
   display: flex;
   justify-content: center;
   padding: 5%;
@@ -278,7 +269,7 @@ svg {
 }
 
 .contextboxundertext {
-  font-size: 15px;
+  font-size: 1vw;
   display: flex;
   justify-content: left;
   padding-left: 1vw;
@@ -648,7 +639,7 @@ svg {
 
 .contact-page-text {
   color: black;
-  font-size: 23px;
+  font-size: 1.5vw;
   line-height: 1.489;
   font-weight: bold;
 }
@@ -669,8 +660,6 @@ svg {
   color: white;
 }
 
-.contactunderlinksInner {
-}
 
 .contacttextouter {
   padding: 3%;
@@ -804,16 +793,101 @@ svg {
 }
 
 .klantenservice-socialmedia-text {
-  padding-left: 2vh;
+  padding-left: 1vw;
   color: #00d66c;
+  font-size: 1.5vw;
 }
 
 .klantenservice-socialmedia-text2 {
-  padding-left: 2vh;
+  padding-left: 1vw;
   color: #ff3268;
+  font-size: 1.5vw;
 }
 
 .klantenservice-socialmedia-text3 {
-  padding-left: 2vh;
+  padding-left: 1vw;
   color: #1DA1F2;
+  padding-right: 1vw;
+  font-size: 1.3vw;
 }
+
+@media only screen and (max-width: 600px) {
+  .Header-links {
+    text-shadow: none;
+    font-size: 20px;
+  }
+}
+
+.account-bg {
+  width: 100%;
+  height: 86vh;
+  display: flex;
+  background-image: url("../media/pexels-guilherme-rossi-1755683.jpg");
+  width: 100%;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.account-img {
+  width: 100vw;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.account-img-inner {
+  width: 9vw;
+  height: 26vh;
+}
+
+.account-login {
+  width: 100vw;
+  padding-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+
+.account-login-inner {
+  color: #f7f7f7;
+  font-size: 1.5vw;
+}
+
+.account-inloggen-form {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+
+
+.account-inloggen-form-input {
+  background-color: #717171;
+  opacity: 0.4;
+  border: none;
+  color: white;
+  width: 20vw;
+}
+
+.account-inloggen-form-submit {
+  background-color: #ff3268;
+  border: none;
+  color: white;
+  width: 20vw;
+  height: 5vh;
+
+}
+
+::placeholder {
+  color: white;
+}
+
+
+
+
+
+
+
