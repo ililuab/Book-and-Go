@@ -20,36 +20,39 @@ include_once('../includes/connect.php')
 
 <body>
     <main>
-        <div class="header_vlucht_resultaten">
-            <div class="headertext_vlucht_resultatenOuter">
-                <div class="headertext_vlucht_resultaten">
+    <div class="header_vlucht_resultaten">
+                <div class="headertext_vlucht_resultatenOuter">
+                    <div class="headertext_vlucht_resultaten">
+                        <img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo">
+                        <div class="header_logo_text">Book and Go</div>
                     <div class="dropdown">
-                        <div class="Header-links">Beheren</div>
-                        <div class="dropdown-content">
-                            <div><a href="index.php">Vlucht boeken</a></div>
-                            <div><a href="dashboard.php">Vlucht wijzigen</a></div>
-                            <div><a href="dashboard.php">Vlucht annuleren</a></div>
+                            <div class="Header-links">Beheren</div>
+                            <div class="dropdown-content">
+                                <div><a href="index.php">Vlucht boeken</a></div>
+                                <div><a href="dashboard.php">Vlucht wijzigen</a></div>
+                                <div><a href="dashboard.php">Vlucht annuleren</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <div class="Header-links">Service</div>
-                        <div class="dropdown-content">
-                            <div><a href="klantenservice.php">Klantenservice</a></div>
-                            <div><a href="contact.php">Contact</a></div>
+                        <div class="dropdown">
+                            <div class="Header-links">Service</div>
+                            <div class="dropdown-content">
+                                <div><a href="klantenservice.php">Klantenservice</a></div>
+                                <div><a href="contact.php">Contact</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <div class="Header-links">Account</div>
-                        <div class="dropdown-content">
-                            <div><a href="dashboard.php">Dashboard</a></div>
-                            <div><a href="account.php">Inloggen</a></div>
+                        <div class="dropdown">
+                            <div class="Header-links">Account</div>
+                            <div class="dropdown-content">
+                                <div><a href="dashboard.php">Dashboard</a></div>
+                                <div><a href="account.php">Inloggen</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <div class="Header-links">Over</div>
-                        <div class="dropdown-content">
-                            <div><a href="locaties.php">Locaties</a></div>
-                            <div><a href="over_ons.php">Over ons</a></div>
+                        <div class="dropdown">
+                            <div class="Header-links">Over</div>
+                            <div class="dropdown-content">
+                                <div><a href="locaties.php">Locaties</a></div>
+                                <div><a href="over_ons.php">Over ons</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
