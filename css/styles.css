@@ -29,8 +29,9 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.Header-Logo {
-  padding-top: 30px;
+.header_logo {
+  position: relative;
+  top: 5px;
 }
 
 .Header-links {

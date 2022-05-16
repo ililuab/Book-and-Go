@@ -19,7 +19,7 @@
         <div class="header_vlucht_resultaten">
                 <div class="headertext_vlucht_resultatenOuter">
                     <div class="headertext_vlucht_resultaten">
-                        <img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo">
+                    <a href="index.php" ><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
                         <div class="header_logo_text">Book and Go</div>
                     <div class="dropdown">
                             <div class="Header-links">Beheren</div>
