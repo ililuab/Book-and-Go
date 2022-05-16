@@ -80,12 +80,6 @@ include_once('../includes/connect.php')
                 <div class='account-geenaccount'>Heb je geen account? <a class='account-geenaccounthref' href="account_registreren.php">Meld je nu aan!</a></div>
 
             </div>
-
-                            <input  class='account-inloggen-form-input' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
-                        </div>
-                        <div>
-                            <input class='account-inloggen-form-submit' type="submit" name="submitBtnLogin" id="submitBtnLogin" value="Inloggen" />
-                        </div>
                     </form>
                 </div>
 
