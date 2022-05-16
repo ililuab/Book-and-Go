@@ -82,7 +82,7 @@ include_once('../includes/connect.php')
                         </div>  
                     </form>
                 </div>
-                <div class='account-geenaccount'>Heb je al een account? <a class='account-geenaccounthref' href="account_registreren.php">Log nu in!</a></div>
+                <div class='account-geenaccount'>Heb je al een account? <a class='account-geenaccounthref' href="account.php">Log nu in!</a></div>
 
             </div>
         </div>

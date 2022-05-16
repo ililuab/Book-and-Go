@@ -10,7 +10,7 @@ if (isset($_POST['registeren'])) {
         $stmt->bindParam(':name', $_POST['name']);
         $stmt->execute();
 
-        echo ' gedan';
+        echo ' gedaan';
 
         // $_SESSION['message'] = array("text" => "User aangemaakt.", "alert" => "info");
         // header('location: account.php');
