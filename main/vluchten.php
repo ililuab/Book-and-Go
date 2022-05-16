@@ -52,6 +52,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 
     <div class="spacer2"></div>
     <div class="mainbeige_vlucht_resultaten">
