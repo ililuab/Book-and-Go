@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Book And Go</title>
+    <title>Locaties</title>
 </head>
 
 <body>
@@ -35,10 +35,12 @@
             <span class="dot"></span>
         </div>
         <div class="slideshow-overlay">
-            <div class="header_vlucht_resultaten">
+        <div class="header_vlucht_resultaten">
                 <div class="headertext_vlucht_resultatenOuter">
                     <div class="headertext_vlucht_resultaten">
-                        <div class="dropdown">
+                    <a href="index.php" ><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
+                        <div class="header_logo_text">Book and Go</div>
+                    <div class="dropdown">
                             <div class="Header-links">Beheren</div>
                             <div class="dropdown-content">
                                 <div><a href="index.php">Vlucht boeken</a></div>
@@ -65,11 +67,11 @@
                             <div class="dropdown-content">
                                 <div><a href="locaties.php">Locaties</a></div>
                                 <div><a href="over_ons.php">Over ons</a></div>
-
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             <div class="spacer"></div>
 

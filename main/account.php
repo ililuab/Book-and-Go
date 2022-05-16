@@ -20,41 +20,43 @@ include_once('../includes/connect.php')
 
 <body>
     <main>
-        <div class="header_vlucht_resultaten">
-            <div class="headertext_vlucht_resultatenOuter">
-                <div class="headertext_vlucht_resultaten">
+    <div class="header_vlucht_resultaten">
+                <div class="headertext_vlucht_resultatenOuter">
+                    <div class="headertext_vlucht_resultaten">
+                    <a href="index.php" ><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
+                        <div class="header_logo_text">Book and Go</div>
                     <div class="dropdown">
-                        <div class="Header-links">Beheren</div>
-                        <div class="dropdown-content">
-                            <div><a href="index.php">Vlucht boeken</a></div>
-                            <div><a href="dashboard.php">Vlucht wijzigen</a></div>
-                            <div><a href="dashboard.php">Vlucht annuleren</a></div>
+                            <div class="Header-links">Beheren</div>
+                            <div class="dropdown-content">
+                                <div><a href="index.php">Vlucht boeken</a></div>
+                                <div><a href="dashboard.php">Vlucht wijzigen</a></div>
+                                <div><a href="dashboard.php">Vlucht annuleren</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <div class="Header-links">Service</div>
-                        <div class="dropdown-content">
-                            <div><a href="klantenservice.php">Klantenservice</a></div>
-                            <div><a href="contact.php">Contact</a></div>
+                        <div class="dropdown">
+                            <div class="Header-links">Service</div>
+                            <div class="dropdown-content">
+                                <div><a href="klantenservice.php">Klantenservice</a></div>
+                                <div><a href="contact.php">Contact</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <div class="Header-links">Account</div>
-                        <div class="dropdown-content">
-                            <div><a href="dashboard.php">Dashboard</a></div>
-                            <div><a href="account.php">Inloggen</a></div>
+                        <div class="dropdown">
+                            <div class="Header-links">Account</div>
+                            <div class="dropdown-content">
+                                <div><a href="dashboard.php">Dashboard</a></div>
+                                <div><a href="account.php">Inloggen</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <div class="Header-links">Over</div>
-                        <div class="dropdown-content">
-                            <div><a href="locaties.php">Locaties</a></div>
-                            <div><a href="over_ons.php">Over ons</a></div>
+                        <div class="dropdown">
+                            <div class="Header-links">Over</div>
+                            <div class="dropdown-content">
+                                <div><a href="locaties.php">Locaties</a></div>
+                                <div><a href="over_ons.php">Over ons</a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         <div class="spacer2"></div>
         <div class="account-bg">
             <div class="account-bg-inner">
@@ -63,16 +65,21 @@ include_once('../includes/connect.php')
                     <div class="account-login-inner">Inloggen</div>
                 </div>
                 <div class="account-inloggen-form">
-                    <form action="inloggen.php" method="post">
+                    <form class='account_login' action="account_inloggen.php" method="post">
                         <div>
                             <input class="account-inloggen-form-input" type="text" name="username" id="username" value="" placeholder="Gebruikersnaam" />
                         </div>
                         <div>
-                            <input  class='account-inloggen-form-input' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
+                            <input class='account-inloggen-form-input' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
                         </div>
                         <div>
                             <input class='account-inloggen-form-submit' type="submit" name="submitBtnLogin" id="submitBtnLogin" value="Inloggen" />
-                        </div>
+                        </div>  
+                    </form>
+                </div>
+                <div class='account-geenaccount'>Heb je geen account? <a class='account-geenaccounthref' href="account_registreren.php">Meld je nu aan!</a></div>
+
+            </div>
                     </form>
                 </div>
 
