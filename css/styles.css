@@ -822,7 +822,7 @@ svg {
   width: 100%;
   height: 86vh;
   display: flex;
-  background-image: url("../media/pexels-guilherme-rossi-1755683.jpg");
+  background-image: url("../media/pexels-tobi-675764.jpg");
   width: 100%;
   background-size: cover;
   left: 0;
@@ -866,10 +866,12 @@ svg {
 
 .account-inloggen-form-input {
   background-color: #717171;
-  opacity: 0.4;
+  opacity: 0.5;
   border: none;
   color: white;
   width: 20vw;
+  padding: 2vh;
+  margin-bottom: 1vh;
 }
 
 .account-inloggen-form-submit {
@@ -878,12 +880,36 @@ svg {
   color: white;
   width: 20vw;
   height: 5vh;
+  cursor: pointer;
 
 }
 
 ::placeholder {
   color: white;
 }
+
+.account-inloggen-form-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.account-geenaccount {
+  text-align: center;
+  padding-top: 4vh;
+  color: white;
+}
+
+.account-geenaccounthref {
+  color: #2872dd;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 1285px) {
+  .account-img {
+    display: none;
+  }
+}
+
 
 
 

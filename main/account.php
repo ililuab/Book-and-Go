@@ -63,20 +63,22 @@ include_once('../includes/connect.php')
                     <div class="account-login-inner">Inloggen</div>
                 </div>
                 <div class="account-inloggen-form">
-                    <form action="inloggen.php" method="post">
+                    <form class='account_login' action="account_inloggen.php" method="post">
                         <div>
                             <input class="account-inloggen-form-input" type="text" name="username" id="username" value="" placeholder="Gebruikersnaam" />
                         </div>
                         <div>
-                            <input  class='account-inloggen-form-input' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
+                            <input class='account-inloggen-form-input' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
                         </div>
                         <div>
                             <input class='account-inloggen-form-submit' type="submit" name="submitBtnLogin" id="submitBtnLogin" value="Inloggen" />
-                        </div>
+                        </div>  
                     </form>
                 </div>
+                <div class='account-geenaccount'>Heb je geen account? <a class='account-geenaccounthref' href="account_registreren.php">Meld je nu aan!</a></div>
 
             </div>
+
         </div>
 
 
