@@ -68,6 +68,9 @@ include_once('../includes/connect.php')
                 <!-- REGISTERFORM -->
                 <div class='account-inloggen-form'>
                     <form action="registreren.php" method="post">
+                    <div>
+                            <input type="text" class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
+                        </div>
                         <div>
                             <input type="text" class="account-inloggen-form-input" name="name" placeholder="Naam" />
                         </div>

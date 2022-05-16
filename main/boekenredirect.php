@@ -39,17 +39,15 @@ if ($_POST['Boeken']) {
 
     if ($rows != 0) {
         foreach ($results as $r) {
-            $name = $_POST['name'];
+            $username = $_POST['username'];
             $boek_id = $_POST['boekid'];
-            $sql = "UPDATE users SET booked_flight = '$boek_id' WHERE name = '$name'";
+            $sql = "UPDATE users SET booked_flight = '$boek_id' WHERE name = '$username'";
             $conn->exec($sql);
             echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
 
         }
-    } elseif (!isset($name) || trim($boek_id) == '') {
-        echo "<script>alert('Alles invullen!')</script>; <script>window.location = 'boeken.php'</script>";
-    } elseif ($rows == 0) {
-        echo "<script>alert('Check of vlucht id goed is!')</script>; <script>window.location = 'boeken.php'</script>";
+    } elseif (!isset($username) || !isset($password) || trim($boek_id) == '') {
+        echo "<script>alert('Alles goed invullen!')</script>; <script>window.location = 'boeken.php'</script>";
     }
 }
 

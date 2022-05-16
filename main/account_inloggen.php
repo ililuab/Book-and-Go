@@ -4,7 +4,7 @@
         ?>
         <?php
         $msg = "";
-        if (isset($_POST['submitBtnLogin'])) {
+        if (isset($_POST['submitlogin'])) {
             $username = trim($_POST['username']);
             $password = trim($_POST['password']);
             if ($username != "" && $password != "") {
@@ -29,7 +29,7 @@
                         header('location:account.php');
                     }
                 } catch (PDOException $e) {
-                    echo "Error : " . $e->getMessage();
+                    echo "fout " . $e->getMessage();
                 }
             } else{
                 echo "

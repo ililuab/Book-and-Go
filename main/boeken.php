@@ -22,10 +22,13 @@
 
         <form action="boekenredirect.php" method="post">
             <div>
-                <input type="text" class="" name="name" placeholder="Naam" />
+                <input class='' type="text" name="username" id="username" value="" placeholder="Gebruikersnaam" />
             </div>
             <div>
-                <input type="number" name="boekid" value="" placeholder="Vlucht id" />
+                <input class='' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
+            </div>
+            <div>
+                <input class''' type="number" name="boekid" value="" placeholder="Vlucht id" />
             </div>
             <div>
                 <input type="submit" value="Boeken" name="Boeken"></input>

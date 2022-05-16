@@ -44,9 +44,9 @@ include_once('../includes/connect.php')
             <div class="header_vlucht_resultaten">
                 <div class="headertext_vlucht_resultatenOuter">
                     <div class="headertext_vlucht_resultaten">
-                        <a href="index.php" ><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
+                        <a href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
                         <div class="header_logo_text">Book and Go</div>
-                    <div class="dropdown">
+                        <div class="dropdown">
                             <div class="Header-links">Beheren</div>
                             <div class="dropdown-content">
                                 <div><a href="index.php">Vlucht boeken</a></div>

@@ -903,7 +903,6 @@ svg {
 }
 
 ::placeholder {
-  color: white;
 }
 
 .account-inloggen-form-input::placeholder {
