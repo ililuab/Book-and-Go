@@ -138,6 +138,39 @@ include_once('../includes/connect.php')
                 <a href='dashboard.php' class="contextboxundertext">Vlucht annuleren</a>
             </div>
         </div>
+
+
+        <div class="container_index_pictures">
+            <div class="container_index_pictures_inner">
+            <div class="index_picture_div">
+                <img class="index_picture1" src="../media/indexpicture1VALENCIA.jpg" alt="">
+            </div>
+            <div class="index_picture_div">
+                <img class="index_picture2" src="../media/indexpicture2ARUBA.jpg" alt="">
+            </div>
+            <div class="index_picture_div">
+                <img class="index_picture3" src="../media/indexpicture3JAPAN.jpg" alt="">
+            </div>
+            <div class="index_picture_div" >
+                <img class="index_picture4" src="../media/indexpicture4MADRID.jpg" alt="">
+            </div>
+            </div>
+        </div>
+
+
+        <div class="container_helpdesk">
+            <div class="container_helpdesk_inner">
+                <div class="content_helpdesk">
+                    <form action="" method="post">
+                        <input type="email" name="" id="" placeholder="1234@gmail.com">
+                        <input type="text" name="" id="" placeholder="Stel hier je vraag..">
+                        <input type="submit" name="" value="Stuur">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
         <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
