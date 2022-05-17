@@ -287,7 +287,6 @@ svg {
 /* Slideshow */
 
 .slideshow-container {
-  height: 105vh;
   width: 100%;
   position: relative;
   margin: auto;
