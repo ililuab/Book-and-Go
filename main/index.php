@@ -163,7 +163,7 @@ include_once('../includes/connect.php')
                 <div class="content_helpdesk">
                     <form action="helpdeskredirect.php" method="post">
                         <input type="email" name="email_helpdesk" id="" placeholder="E-Mail">
-                        <input type="text" name="message_helpdesk" id="" placeholder="Bericht">
+                        <input type="text" name="message_helpdesk" id="" placeholder="Suggestie">
                         <input type="submit" name="submit_helpdesk" value="Verzenden">
                     </form>
                 </div>
