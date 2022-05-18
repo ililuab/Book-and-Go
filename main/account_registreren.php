@@ -70,7 +70,7 @@ include_once('../includes/connect.php')
                 <div class='account-inloggen-form'>
                     <form action="registreren.php" method="post">
                         <div>
-                            <input type="text" required class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
+                            <input type="email" required class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
                         </div>
                         <div>
                             <input type="text" required class="account-inloggen-form-input" name="name" placeholder="Naam" />
