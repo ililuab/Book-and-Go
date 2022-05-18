@@ -34,7 +34,7 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                     <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg"
                             alt="BookAndGoLogo"></a>
                     <div class="header_logo_text">Book and Go</div>
-                    <div class="dropdown">
+     <div class="dropdown">
                         <div class="Header-links">Beheren</div>
                         <div class="dropdown-content">
                             <div><a href="index.php">Vlucht boeken</a></div>
@@ -87,6 +87,14 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                             <input class='account-inloggen-form-submit' type="submit" name="submitlogin"
                                 id="submitlogin" value="Inloggen" />
                         </div>
+                   <input class='account-inloggen-form-submit' type="submit" name="submitlogin" id="submitlogin" value="Inloggen" />
+                        </div>  
+                    </form>
+                </div>
+                <div class='account-geenaccount'>Heb je geen account? <a class='account-geenaccounthref' href="account_registreren.php">Meld je nu aan!</a></div>
+
+            </div>
+
                     </form>
                 </div>
                 <div class='account-geenaccount'>Heb je geen account? <a class='account-geenaccounthref'
