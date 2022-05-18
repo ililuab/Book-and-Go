@@ -26,6 +26,7 @@ include_once('../includes/connect.php')
                     <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg"
                             alt="BookAndGoLogo"></a>
                     <div class="header_logo_text">Book and Go</div>
+                  
                     <div class="dropdown">
                         <div class="Header-links">Beheren</div>
                         <div class="dropdown-content">
@@ -69,6 +70,9 @@ include_once('../includes/connect.php')
                 <!-- REGISTERFORM -->
                 <div class='account-inloggen-form'>
                     <form action="registreren.php" method="post">
+                    <div>
+                            <input type="text" class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
+                        </div>
                         <div>
                             <input type="text" required class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
                         </div>

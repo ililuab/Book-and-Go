@@ -27,6 +27,7 @@
             </div>
             <div>
                 <input class='' type="number" name="boekid" value="" placeholder="Vlucht id" />
+
             </div>
             <div>
                 <input type="submit" value="Boeken" name="Boeken"></input>
