@@ -476,26 +476,42 @@ svg {
 .text-content_below_header {
   position: relative;
   left: 30px;
+  font-weight: 400;
   color: white;
 }
 
 .text-content_below_header2 {
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 200;
   color: #00d66c;
 }
 
 .content_firstdiv_over-ons {
   color: black;
+  font-weight: 300;
+  font-size: 20px;
+  width: 40%;
+}
+
+.content_seconddiv_over-ons {
+  color: black;
+  font-weight: 900;
   font-size: 30px;
   width: 40%;
+}
+
+.content_seconddiv_over-ons2 {
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  gap: 10px 20px;
 }
 
 .container_text_content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 1%;
   margin-bottom: 1%;
 }
 
@@ -509,21 +525,80 @@ svg {
   position: relative;
   top: 30px;
   width: 100%;
-  height: 500px;
+  height: 250px;
   background-color: #fffdfa;
 }
 
+
 .over-ons_second_div {
-  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10vh;
   width: 100%;
   height: 400px;
-  background-color: white;
+  background: rgb(243,229,216);
+  background: linear-gradient(45deg, rgba(243,229,216,1) 9%, rgba(252,249,246,1) 59%);
 }
 
-.over-ons_third_div {
-  width: 100%;
-  height: 400px;
-  background-color: #f3e5d8;
+.over-ons_ilias:hover {
+  width: 200px;
+  height: 200px;
+  transition: .5s;
+}
+
+.over-ons_mirza:hover {
+  width: 200px;
+  height: 200px;
+  transition: .5s;
+}
+
+p {
+  line-height: 1.4em;
+}
+
+.quote {
+  position: relative;
+  letter-spacing: .03em;
+  margin-bottom: .5rem;
+}
+
+.quote--container {
+  margin: 4.5rem auto 0;
+  width: 17em;
+  border-bottom: 2px dotted #C6D1BF;
+  padding-bottom: .5rem;
+}
+
+.quote--highlight {
+  color: #D24335;
+}
+
+.quote--author {
+  font-family: 'Open Sans Condensed';
+  font-size: 30px;
+  text-align: right;
+  font-weight: 400;
+}
+
+.gap {
+  gap: 10px 20px;
+}
+
+.over-ons_ilias {
+  position: static;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  transition: .5s;
+  padding-left: 1%;
+}
+
+.over-ons_mirza {
+  border-radius: 50%;
+  width: 230px;
+  height: 250px;
+  transition: .5s;
 }
 
 .spacer {
@@ -902,8 +977,6 @@ svg {
 
 }
 
-::placeholder {
-}
 
 .account-inloggen-form-input::placeholder {
   color: white;

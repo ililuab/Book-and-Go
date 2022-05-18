@@ -65,11 +65,27 @@
                     <div class="text-content_below_header2">Welkom bij Book and Go</div>
                 </div>
                 <div class="container_text_content2">
-                    <div class="content_firstdiv_over-ons">Book and Go is een low cost carrier opgericht in 1965. Al meer dan 50 jaar brengen wij passagiers naar de mooiste zaken- en vakantiebestemmingen van Europa. Transavia is onderdeel van de Air France-KLM Groep. Dit maakt ons een van de grootste luchtvaartgroepen in Europa. </div>
+                    <div class="content_firstdiv_over-ons">Book and Go is een low cost carrier opgericht in 1965. Al meer dan 50 jaar brengen wij passagiers naar de mooiste zaken- en vakantiebestemmingen van Europa. Book and Go is onderdeel van de Air France-KLM Groep. Dit maakt ons een van de grootste luchtvaartgroepen in Europa. </div>
                 </div>
             </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="over-ons_second_div">
+                <div class="content_seconddiv_over-ons">
+                    <div class="quote--container">
+                        <p class="quote">
+                            "Goed geïnspireerd&hellip; <span class="quote--highlight">is</span> ook goed."
+                        </p>
+                        <p class="quote--author">&ndash; Mirza & Ilias</p>
+                    </div>
+                </div>
 
-            <div class="over-ons_third_div"></div>
+
+                <div class="content_seconddiv_over-ons2">
+                    <img class="over-ons_ilias" src="../media/ilias.jpg" alt="">
+                    <img class="over-ons_mirza" src="../media/mirza.jpg" alt="">
+                </div>
+            </div>
     </main>
     <footer>
         <div class="underheader-vluchten">
