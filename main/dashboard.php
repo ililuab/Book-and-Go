@@ -35,8 +35,9 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                 <ul>
                     <li>
                         <a href="index.php"><i class="fa-solid fa-house-user"></i>Home</a>
-                        <a href="#"><i class="fa-solid fa-sliders"></i>Vlucht Wijzigen</a>
-                        <a href="#"><i class="fa-solid fa-ban"></i>Vlucht Annuleren</a>
+                        <a href="dashboard.php"><i class="fa-solid fa-eye"></i>Vluchten Inzien</a>
+                        <a href="#"><i class="fa-solid fa-sliders"></i>Vluchten Wijzigen</a>
+                        <a href="#"><i class="fa-solid fa-ban"></i>Vluchten Annuleren</a>
                         <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
                     </li>
                 </ul>
