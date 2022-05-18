@@ -4,7 +4,6 @@ include_once('../includes/connect.php')
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,6 @@ include_once('../includes/connect.php')
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Book And Go | Dashboard</title>
 </head>
-
 <body>
     <main>
         <?php
@@ -35,5 +33,4 @@ include_once('../includes/connect.php')
         ?>
     </main>
 </body>
-
 </html>

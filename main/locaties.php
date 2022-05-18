@@ -12,10 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Book and Go | Locaties</title>
 </head>
-
 <body>
     <main>
-
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="../media/vacationpicture1.jpg" style="width:100%; height:85vh;">
@@ -77,5 +75,4 @@
 
     </main>
     <script src="../js/main.js"></script>
-
 </html>

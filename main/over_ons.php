@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Book and Go | Over ons</title>
 </head>
-
 <body class="body_over-ons">
     <main>
         <div class="top-center">
@@ -53,8 +52,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="spacer"></div>
             <div class="below_header_over-ons">
                 <div class="content_below_header">
@@ -73,10 +70,6 @@
             </div>
 
             <div class="over-ons_third_div"></div>
-
-
-
     </main>
     <script src="../js/main.js"></script>
-
 </html>

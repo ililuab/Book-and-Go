@@ -12,9 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Book and Go | Boeken</title>
 </head>
-
 <body>
-
     <main>
         <?php
         include_once('../includes/connect.php');
@@ -28,14 +26,12 @@
                 <input class='' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
             </div>
             <div>
-                <input class''' type="number" name="boekid" value="" placeholder="Vlucht id" />
+                <input class='' type="number" name="boekid" value="" placeholder="Vlucht id" />
             </div>
             <div>
                 <input type="submit" value="Boeken" name="Boeken"></input>
             </div>
         </form>
     </main>
-
 </body>
-
 </html>

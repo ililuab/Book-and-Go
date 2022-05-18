@@ -143,8 +143,6 @@ include_once('../includes/connect.php')
                 <a href='dashboard.php' class="contextboxundertext">Vlucht annuleren</a>
             </div>
         </div>
-
-
         <div class="container_index_pictures">
             <div class="container_index_pictures_inner">
                 <div class="index_picture_div">
@@ -161,24 +159,24 @@ include_once('../includes/connect.php')
                 </div>
             </div>
         </div>
-
-
         <div class="container_helpdesk">
             <div class="container_helpdesk_inner">
                 <div class="content_helpdesk">
                     <div class="container_helpdesk_text">
-                        <div class="helpdesk_text" ><p class="helpdesk_text" >Hoe kunnen wij je helpen?</p></div>
+                        <div class="helpdesk_text">
+                            <p class="helpdesk_text">Hoe kunnen wij je helpen?</p>
+                        </div>
                     </div>
                     <form class="index_form " action="helpdeskredirect.php" method="post">
-                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id="" placeholder="E-Mail">
-                        <input class="helpdesk_form_input"type="text" required name="message_helpdesk" id="" placeholder="Suggestie">
-                        <input class="helpdesk_form_input_submit"type="submit" name="submit_helpdesk" value="Stuur">
+                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id=""
+                            placeholder="E-Mail">
+                        <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id=""
+                            placeholder="Suggestie">
+                        <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" value="Stuur">
                     </form>
                 </div>
             </div>
         </div>
-
-
         <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
@@ -190,5 +188,4 @@ include_once('../includes/connect.php')
     </main>
 </body>
 <script src="../js/main.js"></script>
-
 </html>
