@@ -95,16 +95,6 @@ include_once('../includes/connect.php')
         </div>
 
     </main>
-    <footer>
-        <div class="underheader-vluchten">
-            <div class="underheaderInner-vluchten">
-                <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
-                <a class="headerlinks-vluchten" href="index.php">Boeken</a>
-                <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
-                <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
-            </div>
-        </div>
-        </footer>
 </body>
 
 </html>

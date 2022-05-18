@@ -31,12 +31,12 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
     <main>
         <div class="dashboard-bg">
             <div class="sidebar">
-                <header>Dashboard</header>
+                <header>BookAndGo</header>
                 <ul>
                     <li>
-                        <a href="#"><i class="fas fa-qrcode"></i>Home</a>
-                        <a href="#"><i class="fas fa-qrcode"></i>Vlucht Wijzigen</a>
-                        <a href="#"><i class="fas fa-qrcode"></i>Vlucht Annuleren</a>
+                        <a href="index.php"><i class="fa-solid fa-house-user"></i>Home</a>
+                        <a href="#"><i class="fa-solid fa-sliders"></i>Vlucht Wijzigen</a>
+                        <a href="#"><i class="fa-solid fa-ban"></i>Vlucht Annuleren</a>
                         <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
                     </li>
                 </ul>
@@ -45,6 +45,6 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
     </div>
 
 </body>
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
 
 </html>
