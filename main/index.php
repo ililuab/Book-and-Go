@@ -161,10 +161,10 @@ include_once('../includes/connect.php')
         <div class="container_helpdesk">
             <div class="container_helpdesk_inner">
                 <div class="content_helpdesk">
-                    <form action="" method="post">
-                        <input type="email" name="" id="" placeholder="1234@gmail.com">
-                        <input type="text" name="" id="" placeholder="Stel hier je vraag..">
-                        <input type="submit" name="" value="Stuur">
+                    <form action="helpdeskredirect.php" method="post">
+                        <input type="email" name="email_helpdesk" id="" placeholder="E-Mail">
+                        <input type="text" name="message_helpdesk" id="" placeholder="Suggestie">
+                        <input type="submit" name="submit_helpdesk" value="Verzenden">
                     </form>
                 </div>
             </div>
