@@ -12,10 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Book and Go | Locaties</title>
 </head>
-
 <body>
     <main>
-
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <img src="../media/vacationpicture1.jpg" style="width:100%; height:85vh;">
@@ -70,12 +68,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class='session-naam'><a href="dashboard.php"><?php session_start(); echo $_SESSION['sess_name'];?></a></div>
                 </div>
             </div>
             </div>
             <div class="spacer"></div>
 
     </main>
+    <footer>
+        <div class="underheader-vluchten">
+            <div class="underheaderInner-vluchten">
+                <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+                <a class="headerlinks-vluchten" href="index.php">Boeken</a>
+                <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
+                <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
+            </div>
+        </div>
+        </footer>
     <script src="../js/main.js"></script>
-
 </html>

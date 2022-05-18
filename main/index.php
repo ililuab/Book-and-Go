@@ -1,6 +1,6 @@
 <?php
-include_once('../includes/connect.php')
-
+include_once('../includes/connect.php');
+error_reporting(0);
 
 ?>
 
@@ -74,12 +74,15 @@ include_once('../includes/connect.php')
                             <div class="dropdown-content">
                                 <div><a href="locaties.php">Locaties</a></div>
                                 <div><a href="over_ons.php">Over ons</a></div>
+                                
+                                
                             </div>
                         </div>
                     </div>
+                    <div class='session-naam'><a href="dashboard.php"><?php session_start(); echo $_SESSION['sess_name'];
+                    ?></a></div>
                 </div>
             </div>
-
             <div class="OuterPHPEngine">
                 <div class="InnerPHPEngine">
                     <div class="InnerHigh"><img class="Airplane" src="../media/airplane.png" alt="Vliegtuig">
@@ -143,8 +146,6 @@ include_once('../includes/connect.php')
                 <a href='dashboard.php' class="contextboxundertext">Vlucht annuleren</a>
             </div>
         </div>
-
-
         <div class="container_index_pictures">
             <div class="container_index_pictures_inner">
                 <div class="index_picture_div">
@@ -162,11 +163,22 @@ include_once('../includes/connect.php')
             </div>
         </div>
 
-
         <div class="container_helpdesk">
             <div class="container_helpdesk_inner">
                 <div class="content_helpdesk">
                     <div class="container_helpdesk_text">
+
+                        <div class="helpdesk_text">
+                            <p class="helpdesk_text">Hoe kunnen wij je helpen?</p>
+                        </div>
+                    </div>
+                    <form class="index_form " action="helpdeskredirect.php" method="post">
+                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id=""
+                            placeholder="E-Mail">
+                        <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id=""
+                            placeholder="Suggestie">
+                        <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" value="Stuur">
+
                         <div class="helpdesk_text" ><p class="helpdesk_text" >Hoe kunnen wij je helpen?</p></div>
                     </div>
                     <form class="index_form " action="helpdeskredirect.php" method="post">
@@ -177,9 +189,11 @@ include_once('../includes/connect.php')
                 </div>
             </div>
         </div>
+      
+    </main>
+    <footer>
+    <div class="underheader-vluchten">
 
-
-        <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
                 <a class="headerlinks-vluchten" href="index.php">Boeken</a>
@@ -187,8 +201,7 @@ include_once('../includes/connect.php')
                 <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
             </div>
         </div>
-    </main>
+    </footer>
 </body>
 <script src="../js/main.js"></script>
-
 </html>

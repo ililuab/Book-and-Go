@@ -1,5 +1,15 @@
 <?php
-include_once('../includes/connect.php')
+include_once('../includes/connect.php');
+session_start();
+if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
+
+    if ($_SESSION['sess_name'] == "adminaccountje") {
+        header('location:admin.php');
+    }
+} else {
+    header('location:account.php');
+    session_destroy();
+}
 ?>
 
 <!DOCTYPE html>
@@ -19,21 +29,22 @@ include_once('../includes/connect.php')
 
 <body>
     <main>
-        <?php
-        session_start();
-        if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
-            echo '<h1>Ingelogd als: ' . $_SESSION['sess_name'] . '</h1>';
-            echo '<h4><a href="uitloggen.php">Uitloggen</a></h4>';
-            echo '<h4><a href="index.php">Terug naar home</a></h4>';
-            if($_SESSION['sess_name'] == "adminaccountje") {
-                header('location:admin.php');
-            }
-        } else {
-            header('location:account.php');
-            session_destroy();
-        }
-        ?>
+        <div class="dashboard-bg">
+            <div class="sidebar">
+                <header>BookAndGo</header>
+                <ul>
+                    <li>
+                        <a href="index.php"><i class="fa-solid fa-house-user"></i>Home</a>
+                        <a href="#"><i class="fa-solid fa-sliders"></i>Vlucht Wijzigen</a>
+                        <a href="#"><i class="fa-solid fa-ban"></i>Vlucht Annuleren</a>
+                        <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
+                    </li>
+                </ul>
+            </div>
     </main>
+    </div>
+
 </body>
+<script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
 
 </html>

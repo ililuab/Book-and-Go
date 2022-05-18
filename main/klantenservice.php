@@ -1,3 +1,7 @@
+<?php
+error_reporting(0);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Book and Go | Klantenservice</title>
 </head>
-
 <body>
     <main>
         <div class="header_vlucht_resultaten">
@@ -51,9 +54,9 @@
                         </div>
                     </div>
                 </div>
+                <div class='session-naam'><a href="dashboard.php"><?php session_start(); echo $_SESSION['sess_name'];?></a></div>
             </div>
         </div>
-
         <div class="spacer2"></div>
         <div class="klantenservicewhitebg">
             <div class="klantenservice-whitebginner">
@@ -78,8 +81,6 @@
                         <div class="klantenservice-socialmedia-text3">Geinteresseerd in serieuzere zaken? Bekijk ons twitter account!</div>
                     </div>
                 </div>
-
-
             </div>
         </div>
         <div class='klantenservice-form-outer'>
@@ -110,7 +111,8 @@
                 <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
             </div>
         </div>
+        </footer>
     </main>
+    
     <script src="../js/main.js"></script>
-
 </html>
