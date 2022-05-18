@@ -10,6 +10,7 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 } else {
     session_destroy();
 }
+
 ?>
 
 <!DOCTYPE html>

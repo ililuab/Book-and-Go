@@ -74,8 +74,6 @@ error_reporting(0);
                             <div class="dropdown-content">
                                 <div><a href="locaties.php">Locaties</a></div>
                                 <div><a href="over_ons.php">Over ons</a></div>
-                                
-                                
                             </div>
                         </div>
                     </div>
@@ -180,7 +178,6 @@ error_reporting(0);
                 </div>
             </div>
         </div>
-       
     </main>
     <footer>
     <div class="underheader-vluchten">

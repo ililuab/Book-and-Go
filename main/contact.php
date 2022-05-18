@@ -114,7 +114,6 @@ error_reporting(0);
                     <a class='p-contact' href="../media/BookAndGo_Privacy_Policy.pdf" download><i
                             class="arrow right"></i> Privacy Policy</a>
                 </div>
-
             </div>
         </div>
     </main>
