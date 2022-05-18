@@ -77,11 +77,11 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                     <form class='account_login' action="account_inloggen.php" method="post">
                         <div>
                             <input class="account-inloggen-form-input" type="text" name="username" id="username"
-                                value="" placeholder="Gebruikersnaam" />
+                                value="" required placeholder="Gebruikersnaam" />
                         </div>
                         <div>
                             <input class='account-inloggen-form-input' type="password" name="password" id="password"
-                                value="" placeholder="Wachtwoord" />
+                                value="" required placeholder="Wachtwoord" />
                         </div>
                         <div>
                             <input class='account-inloggen-form-submit' type="submit" name="submitlogin"
@@ -97,6 +97,16 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
         </div>
         </div>
     </main>
+    <footer>
+        <div class="underheader-vluchten">
+            <div class="underheaderInner-vluchten">
+                <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+                <a class="headerlinks-vluchten" href="index.php">Boeken</a>
+                <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
+                <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
+            </div>
+        </div>
+        </footer>
     
 </body>
 </html>

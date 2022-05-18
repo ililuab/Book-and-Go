@@ -82,6 +82,7 @@ error_reporting(0);
                             "Goed geïnspireerd&hellip; <span class="quote--highlight">is</span> ook goed."
                         </p>
                         <p class="quote--author">&ndash; Mirza & Ilias</p>
+                    
                     </div>
                 </div>
 
