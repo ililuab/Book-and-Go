@@ -98,6 +98,7 @@
             </div>
         </div>
         </div>
+        <footer>
         <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
@@ -106,6 +107,8 @@
                 <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
             </div>
         </div>
+        </footer>
     </main>
+    
     <script src="../js/main.js"></script>
 </html>

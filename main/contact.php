@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Book and Go | Contact</title>
 </head>
+
 <body>
     <main>
         <div class="header_vlucht_resultaten">
@@ -108,17 +109,21 @@
                     <a class='p-contact' href="../media/BookAndGo_Privacy_Policy.pdf" download><i
                             class="arrow right"></i> Privacy Policy</a>
                 </div>
-                <div class="underheader-vluchten">
-                    <div class="underheaderInner-vluchten">
-                        <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
-                        <a class="headerlinks-vluchten" href="index.php">Boeken</a>
-                        <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
-                        <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </main>
+    <footer>
+        <div class="underheader-vluchten">
+            <div class="underheaderInner-vluchten">
+                <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+                <a class="headerlinks-vluchten" href="index.php">Boeken</a>
+                <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
+                <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="../js/accordion.js"></script>
+
 </html>

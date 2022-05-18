@@ -93,6 +93,9 @@ include_once('../includes/connect.php')
                         href="account.php">Log nu in!</a></div>
             </div>
         </div>
+
+    </main>
+    <footer>
         <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
@@ -101,8 +104,7 @@ include_once('../includes/connect.php')
                 <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
             </div>
         </div>
-    </main>
-
+        </footer>
 </body>
 
 </html>

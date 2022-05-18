@@ -79,7 +79,6 @@ include_once('../includes/connect.php')
                     </div>
                 </div>
             </div>
-
             <div class="OuterPHPEngine">
                 <div class="InnerPHPEngine">
                     <div class="InnerHigh"><img class="Airplane" src="../media/airplane.png" alt="Vliegtuig">
@@ -177,7 +176,10 @@ include_once('../includes/connect.php')
                 </div>
             </div>
         </div>
-        <div class="underheader-vluchten">
+       
+    </main>
+    <footer>
+    <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
                 <a class="headerlinks-vluchten" href="index.php">Boeken</a>
@@ -185,7 +187,7 @@ include_once('../includes/connect.php')
                 <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
             </div>
         </div>
-    </main>
+    </footer>
 </body>
 <script src="../js/main.js"></script>
 </html>
