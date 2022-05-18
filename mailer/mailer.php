@@ -30,10 +30,11 @@ try {
     $mail->Body    = $_POST['text'] . " " . ($_POST['mail']);
 
     $mail->send();
-    header('Location: ../main/index.php');
+
+    echo "<script>alert('Mail verzonden!')</script>; <script>window.location = '../main/klantenservice.php'</script>";
+
     exit();
 } catch (Exception $e) {
-    echo 'Bericht kon niet verzenden worden';
-    echo 'Fout: ' . $mail->ErrorInfo;
+    echo "<script>alert('Probeer het opnieuw! (ERROR: $mail->ErrorInfo)')</script>; <script>window.location = '../main/klantenservice.php'</script>";
 }
 ?>
