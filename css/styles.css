@@ -1035,10 +1035,27 @@ svg {
 
 }
 
+.account-inloggen-form-input::placeholder {
+  color: white;
+  opacity: 1;
+}
 
-/* Index -- pictures */
+.account-geenaccount {
+  text-align: center;
+  padding-top: 4vh;
+  color: white;
+}
 
+.account-geenaccounthref {
+  color: #2872dd;
+  text-decoration: underline;
+}
 
+@media only screen and (max-width: 1285px) {
+  .account-img {
+    display: none;
+  }
+}
 
 
 
