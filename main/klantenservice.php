@@ -16,43 +16,43 @@
 
 <body>
     <main>
-    <div class="header_vlucht_resultaten">
-                <div class="headertext_vlucht_resultatenOuter">
-                    <div class="headertext_vlucht_resultaten">
-                        <a class="header_logo" href="index.php" ><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
-                        <div class="header_logo_text">Book and Go</div>
+        <div class="header_vlucht_resultaten">
+            <div class="headertext_vlucht_resultatenOuter">
+                <div class="headertext_vlucht_resultaten">
+                    <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
+                    <div class="header_logo_text">Book and Go</div>
                     <div class="dropdown">
-                            <div class="Header-links">Beheren</div>
-                            <div class="dropdown-content">
-                                <div><a href="index.php">Vlucht boeken</a></div>
-                                <div><a href="dashboard.php">Vlucht wijzigen</a></div>
-                                <div><a href="dashboard.php">Vlucht annuleren</a></div>
-                            </div>
+                        <div class="Header-links">Beheren</div>
+                        <div class="dropdown-content">
+                            <div><a href="index.php">Vlucht boeken</a></div>
+                            <div><a href="dashboard.php">Vlucht wijzigen</a></div>
+                            <div><a href="dashboard.php">Vlucht annuleren</a></div>
                         </div>
-                        <div class="dropdown">
-                            <div class="Header-links">Service</div>
-                            <div class="dropdown-content">
-                                <div><a href="klantenservice.php">Klantenservice</a></div>
-                                <div><a href="contact.php">Contact</a></div>
-                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="Header-links">Service</div>
+                        <div class="dropdown-content">
+                            <div><a href="klantenservice.php">Klantenservice</a></div>
+                            <div><a href="contact.php">Contact</a></div>
                         </div>
-                        <div class="dropdown">
-                            <div class="Header-links">Account</div>
-                            <div class="dropdown-content">
-                                <div><a href="dashboard.php">Dashboard</a></div>
-                                <div><a href="account.php">Inloggen</a></div>
-                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="Header-links">Account</div>
+                        <div class="dropdown-content">
+                            <div><a href="dashboard.php">Dashboard</a></div>
+                            <div><a href="account.php">Inloggen</a></div>
                         </div>
-                        <div class="dropdown">
-                            <div class="Header-links">Over</div>
-                            <div class="dropdown-content">
-                                <div><a href="locaties.php">Locaties</a></div>
-                                <div><a href="over_ons.php">Over ons</a></div>
-                            </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="Header-links">Over</div>
+                        <div class="dropdown-content">
+                            <div><a href="locaties.php">Locaties</a></div>
+                            <div><a href="over_ons.php">Over ons</a></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
         <div class="spacer2"></div>
         <div class="klantenservicewhitebg">
@@ -81,6 +81,26 @@
 
 
             </div>
+        </div>
+        <div class='klantenservice-form-outer'>
+            <div class='klantenservice-form-text'>Stuur ons een mailtje!</div>
+            <div class='klantenservice-form-inner'>
+                <form class='klantenservice-form' action="../mailer/mailer.php" method="POST">
+                    <div>
+                        <input class='account-inloggen-form-input' type="text" name="mail" placeholder="E-Mail">
+                    </div>
+                    <div>
+                        <input class='account-inloggen-form-input' type="text" name="subject" placeholder="Onderwerp">
+                    </div>
+                    <div>
+                        <textarea class='account-inloggen-form-input' name="text" rows="3" placeholder="Bericht" style="resize: none;"></textarea>
+                    </div>
+                    <div>
+                        <button class="account-inloggen-form-submit" type="submit">Verzenden</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         </div>
         <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
