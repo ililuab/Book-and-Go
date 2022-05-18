@@ -15,7 +15,7 @@ include_once('../includes/connect.php')
     <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Account</title>
+    <title>Book and Go | Inloggen</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@ include_once('../includes/connect.php')
     <div class="header_vlucht_resultaten">
                 <div class="headertext_vlucht_resultatenOuter">
                     <div class="headertext_vlucht_resultaten">
-                    <a href="index.php" ><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
+                    <a class="header_logo" href="index.php" ><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
                         <div class="header_logo_text">Book and Go</div>
                     <div class="dropdown">
                             <div class="Header-links">Beheren</div>
@@ -73,7 +73,7 @@ include_once('../includes/connect.php')
                             <input class='account-inloggen-form-input' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
                         </div>
                         <div>
-                            <input class='account-inloggen-form-submit' type="submit" name="submitBtnLogin" id="submitBtnLogin" value="Inloggen" />
+                            <input class='account-inloggen-form-submit' type="submit" name="submitlogin" id="submitlogin" value="Inloggen" />
                         </div>  
                     </form>
                 </div>

@@ -9,6 +9,6 @@ if($_SESSION['sess_name'] == "adminaccountje") {
 }
 
 ?>
-
+<div>ADMIN PANEL</div>
 <button><a href="index.php">HOME</a></button>
 <a href="uitloggen.php">Uitloggen</a>

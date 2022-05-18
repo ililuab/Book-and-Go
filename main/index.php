@@ -16,7 +16,7 @@ include_once('../includes/connect.php')
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Book And Go</title>
+    <title>Book And Go | Home</title>
 </head>
 
 <body>
@@ -44,9 +44,10 @@ include_once('../includes/connect.php')
             <div class="header_vlucht_resultaten">
                 <div class="headertext_vlucht_resultatenOuter">
                     <div class="headertext_vlucht_resultaten">
-                        <a href="index.php" ><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
+                        <a class="header_logo" href="index.php"><img class="header_logo"
+                                src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
                         <div class="header_logo_text">Book and Go</div>
-                    <div class="dropdown">
+                        <div class="dropdown">
                             <div class="Header-links">Beheren</div>
                             <div class="dropdown-content">
                                 <div><a href="index.php">Vlucht boeken</a></div>
@@ -88,19 +89,23 @@ include_once('../includes/connect.php')
                         <form class="vluchtenzoeken" name="form1" method="post" action="vluchten.php">
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Vanaf</h1>
-                                <input class="Vertrekluchthaven" type="text" placeholder="Vertrekluchthaven" name="search" aria-label="Search" required>
+                                <input class="Vertrekluchthaven" type="text" placeholder="Vertrekluchthaven"
+                                    name="search" aria-label="Search" required>
                             </div>
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Bestemming</h1>
-                                <input class="Bestemming" type="text" placeholder="Bestemming" name="search" aria-label="Search" required>
+                                <input class="Bestemming" type="text" placeholder="Bestemming" name="search"
+                                    aria-label="Search" required>
                             </div>
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Wie gaan er mee?</h1>
-                                <input class="Bestemming" type="number" placeholder="1 Volwassene" aria-label="Search" min="1" max="25" required>
+                                <input class="Bestemming" type="number" placeholder="1 Volwassene" aria-label="Search"
+                                    min="1" max="25" required>
                             </div>
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Vertrekdatum</h1>
-                                <input class="Bestemming" type="date" placeholder="Bestemming" name="indexcalender" aria-label="Search" required>
+                                <input class="Bestemming" type="date" placeholder="Bestemming" name="indexcalender"
+                                    aria-label="Search" required>
                             </div>
                             <div class="ZoekenOuter">
                                 <input class="Zoeken" type="submit" value="Zoeken" name="submit"></input>
@@ -138,6 +143,42 @@ include_once('../includes/connect.php')
                 <a href='dashboard.php' class="contextboxundertext">Vlucht annuleren</a>
             </div>
         </div>
+
+
+        <div class="container_index_pictures">
+            <div class="container_index_pictures_inner">
+                <div class="index_picture_div">
+                    <img class="index_picture1" src="../media/indexpicture1VALENCIA.jpg" alt="">
+                </div>
+                <div class="index_picture_div">
+                    <img class="index_picture2" src="../media/indexpicture2ARUBA.jpg" alt="">
+                </div>
+                <div class="index_picture_div">
+                    <img class="index_picture3" src="../media/indexpicture3JAPAN.jpg" alt="">
+                </div>
+                <div class="index_picture_div">
+                    <img class="index_picture4" src="../media/indexpicture4MADRID.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container_helpdesk">
+            <div class="container_helpdesk_inner">
+                <div class="content_helpdesk">
+                    <div class="container_helpdesk_text">
+                        <div class="helpdesk_text" ><p class="helpdesk_text" >Hoe kunnen wij je helpen?</p></div>
+                    </div>
+                    <form class="index_form " action="helpdeskredirect.php" method="post">
+                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id="" placeholder="E-Mail">
+                        <input class="helpdesk_form_input"type="text" required name="message_helpdesk" id="" placeholder="Suggestie">
+                        <input class="helpdesk_form_input_submit"type="submit" name="submit_helpdesk" value="Stuur">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
         <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>

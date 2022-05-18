@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Boeken</title>
+    <title>Book and Go | Boeken</title>
 </head>
 
 <body>
@@ -22,10 +22,13 @@
 
         <form action="boekenredirect.php" method="post">
             <div>
-                <input type="text" class="" name="name" placeholder="Naam" />
+                <input class='' type="text" name="username" id="username" value="" placeholder="Gebruikersnaam" />
             </div>
             <div>
-                <input type="number" name="boekid" value="" placeholder="Vlucht id" />
+                <input class='' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
+            </div>
+            <div>
+                <input class''' type="number" name="boekid" value="" placeholder="Vlucht id" />
             </div>
             <div>
                 <input type="submit" value="Boeken" name="Boeken"></input>
