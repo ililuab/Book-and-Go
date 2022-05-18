@@ -103,6 +103,7 @@ error_reporting(0);
             </div>
         </div>
         </div>
+        <footer>
         <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>

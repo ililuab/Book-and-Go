@@ -162,12 +162,10 @@ error_reporting(0);
                 </div>
             </div>
         </div>
-
         <div class="container_helpdesk">
             <div class="container_helpdesk_inner">
                 <div class="content_helpdesk">
                     <div class="container_helpdesk_text">
-
                         <div class="helpdesk_text">
                             <p class="helpdesk_text">Hoe kunnen wij je helpen?</p>
                         </div>
@@ -178,22 +176,14 @@ error_reporting(0);
                         <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id=""
                             placeholder="Suggestie">
                         <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" value="Stuur">
-
-                        <div class="helpdesk_text" ><p class="helpdesk_text" >Hoe kunnen wij je helpen?</p></div>
-                    </div>
-                    <form class="index_form " action="helpdeskredirect.php" method="post">
-                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id="" placeholder="E-Mail">
-                        <input class="helpdesk_form_input"type="text" required name="message_helpdesk" id="" placeholder="Suggestie">
-                        <input class="helpdesk_form_input_submit"type="submit" name="submit_helpdesk" value="Stuur">
                     </form>
                 </div>
             </div>
         </div>
-      
+       
     </main>
     <footer>
     <div class="underheader-vluchten">
-
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
                 <a class="headerlinks-vluchten" href="index.php">Boeken</a>
