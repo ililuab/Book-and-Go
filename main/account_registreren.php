@@ -70,17 +70,17 @@ include_once('../includes/connect.php')
                 <div class='account-inloggen-form'>
                     <form action="registreren.php" method="post">
                         <div>
-                            <input type="text" class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
+                            <input type="text" required class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
                         </div>
                         <div>
-                            <input type="text" class="account-inloggen-form-input" name="name" placeholder="Naam" />
+                            <input type="text" required class="account-inloggen-form-input" name="name" placeholder="Naam" />
                         </div>
                         <div>
-                            <input type="text" class="account-inloggen-form-input" name="username"
+                            <input type="text" required class="account-inloggen-form-input" name="username"
                                 placeholder="Gebruikersnaam" />
                         </div>
                         <div>
-                            <input type="password" class="account-inloggen-form-input" name="password"
+                            <input type="password" required class="account-inloggen-form-input" name="password"
                                 placeholder="Wachtwoord" />
                         </div>
                         <div>
