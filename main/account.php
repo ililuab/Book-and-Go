@@ -1,5 +1,15 @@
 <?php
-include_once('../includes/connect.php')
+include_once('../includes/connect.php');
+session_start();
+if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
+    header('location:dashboard.php');
+
+    if($_SESSION['sess_name'] == "adminaccountje") {
+        header('location:admin.php');
+    }
+} else {
+    session_destroy();
+}
 ?>
 
 <!DOCTYPE html>

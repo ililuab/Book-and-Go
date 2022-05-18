@@ -1,6 +1,6 @@
 <?php
-include_once('../includes/connect.php')
-
+include_once('../includes/connect.php');
+error_reporting(0);
 
 ?>
 
@@ -74,9 +74,13 @@ include_once('../includes/connect.php')
                             <div class="dropdown-content">
                                 <div><a href="locaties.php">Locaties</a></div>
                                 <div><a href="over_ons.php">Over ons</a></div>
+                                
+                                
                             </div>
                         </div>
                     </div>
+                    <div class='session-naam'><a href="dashboard.php"><?php session_start(); echo $_SESSION['sess_name'];
+                    ?></a></div>
                 </div>
             </div>
             <div class="OuterPHPEngine">

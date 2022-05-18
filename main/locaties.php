@@ -68,6 +68,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class='session-naam'><a href="dashboard.php"><?php session_start(); echo $_SESSION['sess_name'];?></a></div>
                 </div>
             </div>
             </div>

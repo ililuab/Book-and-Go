@@ -1,3 +1,7 @@
+<?php
+error_reporting(0);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,6 +54,7 @@
                         </div>
                     </div>
                 </div>
+                <div class='session-naam'><a href="dashboard.php"><?php session_start(); echo $_SESSION['sess_name'];?></a></div>
             </div>
         </div>
         <div class="spacer2"></div>
