@@ -173,7 +173,7 @@ error_reporting(0);
                             placeholder="E-Mail">
                         <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id=""
                             placeholder="Suggestie">
-                        <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" value="Stuur">
+                        <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" value="Verzenden">
                     </form>
                 </div>
             </div>

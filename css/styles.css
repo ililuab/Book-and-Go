@@ -596,8 +596,9 @@ p {
 
 .over-ons_mirza {
   border-radius: 50%;
-  width: 230px;
+  width: 250px;
   height: 250px;
+  object-fit: cover;
   transition: .5s;
 }
 
