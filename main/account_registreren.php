@@ -23,8 +23,7 @@ include_once('../includes/connect.php')
         <div class="header_vlucht_resultaten">
             <div class="headertext_vlucht_resultatenOuter">
                 <div class="headertext_vlucht_resultaten">
-                    <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg"
-                            alt="BookAndGoLogo"></a>
+                    <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
                     <div class="header_logo_text">Book and Go</div>
                     <div class="dropdown">
                         <div class="Header-links">Beheren</div>
@@ -76,24 +75,29 @@ include_once('../includes/connect.php')
                             <input type="text" required class="account-inloggen-form-input" name="name" placeholder="Naam" />
                         </div>
                         <div>
-                            <input type="text" required class="account-inloggen-form-input" name="username"
-                                placeholder="Gebruikersnaam" />
+                            <input type="text" required class="account-inloggen-form-input" name="username" placeholder="Gebruikersnaam" />
                         </div>
                         <div>
-                            <input type="password" required class="account-inloggen-form-input" name="password"
-                                placeholder="Wachtwoord" />
+                            <input type="password" required class="account-inloggen-form-input" name="password" placeholder="Wachtwoord" />
                         </div>
                         <div>
-                            <input class='account-inloggen-form-submit' type="submit" name="registreren"
-                                value="Registreren" />
+                            <input class='account-inloggen-form-submit' type="submit" name="registreren" value="Registreren" />
                         </div>
                     </form>
                 </div>
-                <div class='account-geenaccount'>Heb je al een account? <a class='account-geenaccounthref'
-                        href="account.php">Log nu in!</a></div>
+                <div class='account-geenaccount'>Heb je al een account? <a class='account-geenaccounthref' href="account.php">Log nu in!</a></div>
             </div>
         </div>
-
+        <footer>
+            <div class="underheader-vluchten">
+                <div class="underheaderInner-vluchten">
+                    <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+                    <a class="headerlinks-vluchten" href="index.php">Boeken</a>
+                    <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
+                    <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 

@@ -928,10 +928,13 @@ p {
 }
 
 .account-img {
-  width: 100vw;
   padding-top: 5vh;
   display: flex;
   justify-content: center;
+}
+
+.account-bg-inner {
+  width: 100%;
 }
 
 .account-img-inner {
@@ -940,7 +943,6 @@ p {
 }
 
 .account-login {
-  width: 100vw;
   padding-top: 3vh;
   display: flex;
   justify-content: center;
@@ -952,7 +954,7 @@ p {
 }
 
 .account-inloggen-form {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 5vh;
