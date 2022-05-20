@@ -151,6 +151,7 @@
   border-radius: 15px;
   padding: 3%;
   border: gray 1px solid;
+  border: 0.6;
 }
 
 .Bestemming::placeholder, .Vertrekluchthaven::placeholder {
@@ -1209,7 +1210,9 @@ p {
   background-position: center;
   background-size: cover;
   height: 100vh;
+
 }
+
 
 
 
