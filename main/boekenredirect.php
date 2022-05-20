@@ -40,8 +40,9 @@ if ($_POST['Boeken']) {
     if ($rows != 0) {
         foreach ($results as $r) {
             $username = $_POST['username'];
+            $password = $_POST['password'];
             $boek_id = $_POST['boekid'];
-            $sql = "UPDATE users SET booked_flight = '$boek_id' WHERE name = '$username'";
+            $sql = "UPDATE users SET geboekte_vlucht = '$boek_id' WHERE name = '$username' AND password = '$password'";
             $conn->exec($sql);
             echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
 
