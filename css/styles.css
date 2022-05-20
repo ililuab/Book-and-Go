@@ -596,9 +596,8 @@ p {
 
 .over-ons_mirza {
   border-radius: 50%;
-  width: 250px;
+  width: 230px;
   height: 250px;
-  object-fit: cover;
   transition: .5s;
 }
 
@@ -611,6 +610,13 @@ p {
 .spacer2 {
   width: 100%;
   height: 4vh;
+}
+
+.spacer3 {
+  width: 100%;
+  height: 4vh;
+  background-color: black;
+  opacity: .2;
 }
 
 .header_over-ons {
@@ -1210,6 +1216,30 @@ p {
   background-size: cover;
   height: 100vh;
 }
+
+.container_locatie {
+  width: 100%;
+  height: auto;
+}
+
+.container_locatie_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.content_locatie_bestemmingen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+
+.table_locatie {
+  height: 500px;
+  width: 40%;
+}
+
+
 
 
 
