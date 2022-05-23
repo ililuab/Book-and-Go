@@ -16,7 +16,7 @@
         <?php
         include_once('../includes/connect.php');
         ?>
-        <form action="boekenredirect.php" method="post">
+        <form action="boeken_inloggen.php" method="post">
             <div>
                 <input class='' type="text" name="username" id="username" value="" placeholder="Gebruikersnaam" />
             </div>
@@ -24,22 +24,9 @@
                 <input class='' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
             </div>
             <div>
-                <input class='' type="number" name="vluchtid" value="" placeholder="Vlucht id" />
-            </div>
-            <div>
-                <input type="submit" value="Boeken" name="Boeken"></input>
+                <input type="submit" value="Boeken" name="submitlogin"></input>
             </div>
         </form>
     </main>
-    <footer>
-        <div class="underheader-vluchten">
-            <div class="underheaderInner-vluchten">
-                <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
-                <a class="headerlinks-vluchten" href="index.php">Boeken</a>
-                <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
-                <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
-            </div>
-        </div>
-        </footer>
 </body>
 </html>

@@ -14,6 +14,16 @@
 </head>
 
 <body>
+    <main>
+        <form action="boekenredirect.php" method="post">
+            <div>
+                <input class='' type="number" name="vluchtid" value="" placeholder="Vlucht id" />
+            </div>
+            <div>
+                <input type="submit" value="Boeken" name="Boeken"></input>
+            </div>
+        </form>
+    </main>
 
 </body>
 
@@ -22,41 +32,20 @@
 <?php
 include_once('../includes/connect.php');
 session_start();
-
-$Boeken = $_POST['Boeken'];
-if (!isset($Boeken)) {
-    header('location: index.php');
-} else {
-}
-
-if ($_POST['Boeken']) {
     $key = $_POST['vluchtid'];
     $query = $conn->prepare('SELECT id FROM vluchten WHERE id LIKE :keyword');
     $query->bindValue(":keyword", $key, PDO::PARAM_STR);
     $query->execute();
     $results = $query->fetchAll();
     $rows = $query->rowCount();
-    
+
 
     if ($rows != 0) {
-        foreach ($results as $r) {
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-            $vluchtid = $_POST['vluchtid'];
-            if ($username == $_POST['username'] && $password == $_POST['password']) {
-                $_SESSION['sess_user_id']   = $row['id'];
-                $_SESSION['sess_user_name'] = $row['username'];
-                $_SESSION['sess_name'] = $row['name'];
-
-
-                $sql = "INSERT INTO boekingen (boekingId, gebruikersId, vluchtId) VALUES ('', '$username', '$vluchtid')";
-                $conn->exec($sql);
-                echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
-            }
-        }
-    } elseif (!isset($username) || !isset($password) || trim($vluchtid) == '') {
-        echo "<script>alert('Alles goed invullen!')</script>; <script>window.location = 'boeken.php'</script>";
+        $vluchtid = $_POST['vluchtid'];
+        $sessie_id = $_SESSION['sess_user_id'];
+        $sql = "INSERT INTO boekingen (boekingId, gebruikersId, vluchtId) VALUES ('', '$sessie_id', '$vluchtid')";
+        $conn->exec($sql);
+        echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
     }
-}
 
 ?>
