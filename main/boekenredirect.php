@@ -30,25 +30,31 @@ if (!isset($Boeken)) {
 }
 
 if ($_POST['Boeken']) {
-    $key = $_POST['boekid'];
+    $key = $_POST['vluchtid'];
     $query = $conn->prepare('SELECT id FROM vluchten WHERE id LIKE :keyword');
     $query->bindValue(":keyword", $key, PDO::PARAM_STR);
     $query->execute();
     $results = $query->fetchAll();
     $rows = $query->rowCount();
+    
 
     if ($rows != 0) {
         foreach ($results as $r) {
             $username = $_POST['username'];
             $password = $_POST['password'];
-            $boek_id = $_POST['boekid'];
+            $vluchtid = $_POST['vluchtid'];
             if ($username == $_POST['username'] && $password == $_POST['password']) {
-                $sql = "INSERT INTO boekingen (boekingId, gebruikersId, vluchtId) VALUES ('', '$username', '$boek_id')";
+                $_SESSION['sess_user_id']   = $row['id'];
+                $_SESSION['sess_user_name'] = $row['username'];
+                $_SESSION['sess_name'] = $row['name'];
+
+
+                $sql = "INSERT INTO boekingen (boekingId, gebruikersId, vluchtId) VALUES ('', '$username', '$vluchtid')";
                 $conn->exec($sql);
                 echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
             }
         }
-    } elseif (!isset($username) || !isset($password) || trim($boek_id) == '') {
+    } elseif (!isset($username) || !isset($password) || trim($vluchtid) == '') {
         echo "<script>alert('Alles goed invullen!')</script>; <script>window.location = 'boeken.php'</script>";
     }
 }

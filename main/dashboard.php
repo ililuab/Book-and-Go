@@ -43,8 +43,22 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
         </div>
         <div class="dashboardouter">
             <div class="dashboardinner">
-                <h1>a</h1>
-                
+                <?php
+                $sessie_naam = $_SESSION['sess_user_name'];
+                $query = $conn->prepare('SELECT vluchtId FROM boekingen WHERE gebruikersId = :sessie_naam ');
+                $query->bindParam(':sessie_naam', $sessie_naam);
+                $query->execute();
+                $results = $query->fetchAll();
+                $rows = $query->rowCount();
+
+                foreach ($results as $r) {
+                ?><div><?php echo $r['vluchtId'] ?></div><?php
+                }
+
+
+                ?>
+
+
             </div>
 
         </div>

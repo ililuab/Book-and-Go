@@ -24,7 +24,7 @@
                 <input class='' type="password" name="password" id="password" value="" placeholder="Wachtwoord" />
             </div>
             <div>
-                <input class='' type="number" name="boekid" value="" placeholder="Vlucht id" />
+                <input class='' type="number" name="vluchtid" value="" placeholder="Vlucht id" />
             </div>
             <div>
                 <input type="submit" value="Boeken" name="Boeken"></input>
