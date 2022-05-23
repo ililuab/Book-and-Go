@@ -25,7 +25,6 @@ error_reporting(0);
                     <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg"
                             alt="BookAndGoLogo"></a>
                     <div class="header_logo_text">Book and Go</div>
-
                     <div class="dropdown">
                         <div class="Header-links">Beheren</div>
                         <div class="dropdown-content">
@@ -115,7 +114,6 @@ error_reporting(0);
                     <a class='p-contact' href="../media/BookAndGo_Privacy_Policy.pdf" download><i
                             class="arrow right"></i> Privacy Policy</a>
                 </div>
-
             </div>
         </div>
     </main>

@@ -26,7 +26,6 @@ include_once('../includes/connect.php')
                     <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg"
                             alt="BookAndGoLogo"></a>
                     <div class="header_logo_text">Book and Go</div>
-                  
                     <div class="dropdown">
                         <div class="Header-links">Beheren</div>
                         <div class="dropdown-content">
@@ -70,14 +69,13 @@ include_once('../includes/connect.php')
                 <!-- REGISTERFORM -->
                 <div class='account-inloggen-form'>
                     <form action="registreren.php" method="post">
-                    <div>
-                            <input type="text" class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
+                        <div>
+                            <input type="email" required class="account-inloggen-form-input" name="email"
+                                placeholder="E-Mail" />
                         </div>
                         <div>
-                            <input type="text" required class="account-inloggen-form-input" name="email" placeholder="E-Mail" />
-                        </div>
-                        <div>
-                            <input type="text" required class="account-inloggen-form-input" name="name" placeholder="Naam" />
+                            <input type="text" required class="account-inloggen-form-input" name="name"
+                                placeholder="Naam" />
                         </div>
                         <div>
                             <input type="text" required class="account-inloggen-form-input" name="username"
@@ -97,7 +95,16 @@ include_once('../includes/connect.php')
                         href="account.php">Log nu in!</a></div>
             </div>
         </div>
-
+        <footer>
+            <div class="underheader-vluchten">
+                <div class="underheaderInner-vluchten">
+                    <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
+                    <a class="headerlinks-vluchten" href="index.php">Boeken</a>
+                    <a class="headerlinks-vluchten" href="klantenservice.php">Klantenservice</a>
+                    <a class="headerlinks-vluchten" href="over_ons.php">Over Ons</a>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 

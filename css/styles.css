@@ -151,6 +151,7 @@
   border-radius: 15px;
   padding: 3%;
   border: gray 1px solid;
+  border: 0.6;
 }
 
 .Bestemming::placeholder, .Vertrekluchthaven::placeholder {
@@ -612,6 +613,13 @@ p {
   height: 4vh;
 }
 
+.spacer3 {
+  width: 100%;
+  height: 4vh;
+  background-color: black;
+  opacity: .2;
+}
+
 .header_over-ons {
   display: flex;
   background-color: gray;
@@ -926,10 +934,13 @@ p {
 }
 
 .account-img {
-  width: 100vw;
   padding-top: 5vh;
   display: flex;
   justify-content: center;
+}
+
+.account-bg-inner {
+  width: 100%;
 }
 
 .account-img-inner {
@@ -938,7 +949,6 @@ p {
 }
 
 .account-login {
-  width: 100vw;
   padding-top: 3vh;
   display: flex;
   justify-content: center;
@@ -950,7 +960,7 @@ p {
 }
 
 .account-inloggen-form {
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding-top: 5vh;
@@ -1045,8 +1055,6 @@ p {
   align-items: center;
   width: 50%;
   height: auto;
-  background-color: #f7f7f7;
-
 }
 
 .helpdesk_form_input {
@@ -1158,7 +1166,7 @@ p {
 .sidebar {
   left: -250px;
   width: 250px;
-  height: 100%;
+  height: 100vh;
   background: #042331;
 }
 .sidebar header {
@@ -1176,7 +1184,7 @@ p {
   line-height: 65px;
   font-size: 20px;
   color: white;
-  padding-left: 40px;
+  padding-left: 12px;
   box-sizing: border-box;
   border-bottom: 1px solid black;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1225,11 +1233,47 @@ p {
   margin-left: 250px;
 }
 .dashboard-bg {
-  background: url(../media/loginbackgroundimage2.jpg) no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
 }
+
+.dashboard-bg-admin {
+  background: url(../media/adminpanelpicture.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container_locatie {
+  width: 100%;
+  height: auto;
+}
+
+.container_locatie_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.content_locatie_bestemmingen {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+}
+
+.table_locatie {
+  height: 500px;
+  width: 40%;
+}
+
+.main-dashboard {
+  display: flex;
+  background-image: url(../media/loginbackgroundimage2.jpg);
+}
+
+
+
 
 
 

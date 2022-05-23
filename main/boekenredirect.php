@@ -40,11 +40,13 @@ if ($_POST['Boeken']) {
     if ($rows != 0) {
         foreach ($results as $r) {
             $username = $_POST['username'];
+            $password = $_POST['password'];
             $boek_id = $_POST['boekid'];
-            $sql = "UPDATE users SET booked_flight = '$boek_id' WHERE name = '$username'";
-            $conn->exec($sql);
-            echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
-
+            if ($username == $_POST['username'] && $password == $_POST['password']) {
+                $sql = "INSERT INTO boekingen (boekingId, gebruikersId, vluchtId) VALUES ('', '$username', '$boek_id')";
+                $conn->exec($sql);
+                echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
+            }
         }
     } elseif (!isset($username) || !isset($password) || trim($boek_id) == '') {
         echo "<script>alert('Alles goed invullen!')</script>; <script>window.location = 'boeken.php'</script>";
