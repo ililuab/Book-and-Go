@@ -27,9 +27,9 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 <body>
     <main>
         <div class="dashboard-bg-admin">
+            <div class="test"><p>wefwe</p></div>
             <div class="sidebar">
-                <header>BookAndGo | Admin Panel
-                </header>
+                <header>BookAndGo | Admin Panel</header>
                 <ul>
                     <li>
                         <a href="index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
