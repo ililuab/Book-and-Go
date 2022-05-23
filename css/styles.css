@@ -1214,11 +1214,16 @@ p {
   margin-left: 250px;
 }
 .dashboard-bg {
-
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
 
+.dashboard-bg-admin {
+  background: url(../media/adminpanelpicture.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
 .container_locatie {

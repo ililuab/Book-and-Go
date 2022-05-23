@@ -27,19 +27,19 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 <body>
     <main>
         <div class="dashboard-bg-admin">
-            <div class="test"><p>wefwe</p></div>
             <div class="sidebar">
-                <header>BookAndGo | Admin Panel</header>
+                <header>BookAndGo | Admin Panel
+                </header>
                 <ul>
                     <li>
-                        <a href="index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
-                        <a href="admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
+                        <a href="../main/index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
+                        <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
                         <a href="../admin/account-crud.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
                         <a href="../admin/vluchten-crud.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
-                        <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
+                        <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
+                    </li>
                 </ul>
             </div>
-            
         </div>
     </main>
 
