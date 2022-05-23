@@ -1061,6 +1061,7 @@ p {
   background-color: #717171;
   opacity: 0.5;
   border: none;
+
   color: white;
   width: 20vw;
   padding: 2vh;
@@ -1077,6 +1078,24 @@ p {
   border: none;
   color: white;
   width: 20vw;
+
+  color: white;
+  width: 20vw;
+  padding: 2vh;
+  margin-bottom: 1vh;
+}
+
+.helpdesk_form_input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.helpdesk_form_input_submit {
+  background-color: #ff3268;
+  border: none;
+  color: white;
+  width: 20vw;
+
   height: 5vh;
   cursor: pointer;
 }

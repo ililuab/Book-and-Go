@@ -18,7 +18,6 @@ include("../includes/connect.php");
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Book and Go | Locaties</title>
 </head>
-
 <body>
     <main>
         <div class="header_vlucht_resultaten">
@@ -56,6 +55,7 @@ include("../includes/connect.php");
                             <div><a href="over_ons.php">Over ons</a></div>
                         </div>
                     </div>
+                    <div class='session-naam'><a href="dashboard.php"><?php session_start(); echo $_SESSION['sess_name'];?></a></div>
                 </div>
             </div>
         </div>
