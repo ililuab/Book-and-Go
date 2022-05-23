@@ -1147,7 +1147,7 @@ p {
 .sidebar {
   left: -250px;
   width: 250px;
-  height: 100%;
+  height: 100vh;
   background: #042331;
 }
 .sidebar header {
@@ -1214,7 +1214,7 @@ p {
   margin-left: 250px;
 }
 .dashboard-bg {
-  background: url(../media/loginbackgroundimage2.jpg) no-repeat;
+
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -1241,6 +1241,11 @@ p {
 .table_locatie {
   height: 500px;
   width: 40%;
+}
+
+.main-dashboard {
+  display: flex;
+  background-image: url(../media/loginbackgroundimage2.jpg);
 }
 
 
