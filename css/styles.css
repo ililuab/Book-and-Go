@@ -1146,7 +1146,7 @@ p {
 
 .sidebar {
   left: -250px;
-  width: 250px;
+  width: 20vw;
   height: 100%;
   background: #042331;
 }
@@ -1219,6 +1219,14 @@ p {
   background-size: cover;
   height: 100vh;
 
+}
+
+.dashboard-bg-admin {
+  background: url(../media/adminpanelpicture.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  
 }
 
 .container_locatie {
