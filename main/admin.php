@@ -1,5 +1,5 @@
 <?php
-
+include_once('../includes/connect.php');
 
 session_start();
 if ($_SESSION['sess_name'] == "adminaccountje") {
@@ -25,9 +25,7 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 </head>
 
 <body>
-    <main>
-        <div class="dashboard-bg-admin">
-            <div class="test"><p>wefwe</p></div>
+    <main class="main-dashboard-admin">
             <div class="sidebar">
                 <header>BookAndGo | Admin Panel</header>
                 <ul>
@@ -39,8 +37,25 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                         <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
                 </ul>
             </div>
-            
+
+
+
+            <div class="dashboardouter-admin">
+                <div class="dashboardinner-admin">
+                    <div class="flex">
+                    <div class="block-header-admin"><div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div></div>
+                    </div>
+                    <div class="container-squares-admin">
+                        <div class="square-admin"></div>
+                        <div class="square-admin"></div>
+                        <div class="square-admin"></div>
+                    </div><div class="flex">
+                        <div class="block-footer-admin"></div>
+                        </div>
+            </div>
         </div>
+
+        
     </main>
 
 </body>
