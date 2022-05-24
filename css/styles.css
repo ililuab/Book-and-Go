@@ -1420,6 +1420,11 @@ h1 {
   color: white;
 }
 
+.Annuleren {
+  display: flex;
+  height: 5vh;
+  align-items: center;
+}
 
 
 
