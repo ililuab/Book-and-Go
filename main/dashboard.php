@@ -42,12 +42,9 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                 </li>
             </ul>
         </div>
-    
         <div class="dashboardouter">
             <div class="dashboardinner">
-        
             </div>
-
         </div>
 
     </main>

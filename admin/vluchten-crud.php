@@ -9,8 +9,6 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 

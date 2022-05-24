@@ -37,9 +37,6 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                         <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
                 </ul>
             </div>
-
-
-
             <div class="dashboardouter-admin">
                 <div class="dashboardinner-admin">
                     <div class="flex">
@@ -52,8 +49,6 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
             </div>
         </div>
             </div>
-
-        
     </main>
 
 </body>
