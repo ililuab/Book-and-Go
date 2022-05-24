@@ -25,23 +25,34 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 </head>
 
 <body>
-    <main>
-        <div class="dashboard-bg-admin">
-            <div class="sidebar">
-                <header>BookAndGo | Admin Panel
-                </header>
-                <ul>
-                    <li>
-                        <a href="../main/index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
-                        <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
-                        <a href="../admin/account-crud.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
-                        <a href="../admin/vluchten-crud.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
-                        <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
-                    </li>
-                </ul>
-            </div>
+    <main class="main-dashboard-admin">
+        <div class="sidebar-admin">
+            <header>BookAndGo | Admin Panel</header>
+            <ul class="admin"> 
+                <li>
+                    <a href="../main/index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
+                    <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
+                    <a href="../admin/account-crud.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
+                    <a href="../admin/vluchten-crud.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
+                    <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
+            </ul>
         </div>
-    </main>
+
+
+
+        <div class="dashboardouter-admin">
+            <div class="dashboardinner-admin">
+                <div class="flex">
+                <div class="block-header-admin2">
+                    <p class="welkom_text_admin">Welkom terug: </p>
+                    <div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div>
+                </div>
+                </div>
+    </div>
+        </div>
+
+    
+</main>
 
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>

@@ -26,9 +26,9 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 
 <body>
     <main class="main-dashboard-admin">
-            <div class="sidebar">
+            <div class="sidebar-admin">
                 <header>BookAndGo | Admin Panel</header>
-                <ul>
+                <ul class="admin"> 
                     <li>
                         <a href="index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
                         <a href="admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
@@ -43,17 +43,15 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
             <div class="dashboardouter-admin">
                 <div class="dashboardinner-admin">
                     <div class="flex">
-                    <div class="block-header-admin"><div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div></div>
+                    <div class="block-header-admin"><p class="welkom_text_admin">Welkom terug: </p><div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div></div>
                     </div>
                     <div class="container-squares-admin">
                         <div class="square-admin"></div>
                         <div class="square-admin"></div>
                         <div class="square-admin"></div>
-                    </div><div class="flex">
-                        <div class="block-footer-admin"></div>
-                        </div>
             </div>
         </div>
+            </div>
 
         
     </main>

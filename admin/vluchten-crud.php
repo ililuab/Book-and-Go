@@ -9,6 +9,8 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,23 +27,57 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 </head>
 
 <body>
-    <main>
-        <div class="dashboard-bg-admin">
-            <div class="sidebar">
-                <header>BookAndGo | Admin Panel
-                </header>
-                <ul>
-                    <li>
-                        <a href="../main/index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
-                        <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
-                        <a href="../admin/account-crud.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
-                        <a href="../admin/vluchten-crud.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
-                        <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
-                    </li>
-                </ul>
+<main class="main-dashboard-admin">
+        <div class="sidebar-admin">
+            <header>BookAndGo | Admin Panel</header>
+            <ul class="admin"> 
+                <li>
+                    <a href="../main/index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
+                    <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
+                    <a href="../admin/account-crud.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
+                    <a href="../admin/vluchten-crud.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
+                    <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
+            </ul>
+        </div>
+
+
+
+        <div class="dashboardouter-admin">
+            <div class="dashboardinner-admin">
+                <div class="flex">
+                <div class="block-header-admin3">
+                    <p class="welkom_text_admin">Welkom terug: <?php echo $_SESSION['sess_name'] ?></p>
+         
+                            <form METHOD="POST" ACTION="../">
+                    <TABLE class="table-vluchten-admin" BORDER="1">
+                        <TR>
+                        <TD><INPUT value="vlucht ID" TYPE="TEXT" NAME="id" SIZE="20"></TD>
+                        </TR>
+                        <TR>
+                            <TD><INPUT value="Plaats van vertrek" TYPE="TEXT" NAME="email" SIZE="25"></TD>
+                        </TR>
+                        <TR>
+                            <TD><INPUT value="Plaats van aankomst" TYPE="TEXT" NAME="email" SIZE="25"></TD>
+                        </TR>
+                        <TR>
+                            <TD><INPUT value="Tijd van vertrek" TYPE="TEXT" NAME="email" SIZE="25"></TD>
+                        </TR>
+                        <TR>
+                            <TD><INPUT value="Tijd van aankomst" TYPE="TEXT" NAME="email" SIZE="25"></TD>
+                        </TR>
+                        <TR>
+                            <TD><INPUT value="Vlucht plekken" TYPE="TEXT" NAME="email" SIZE="25"></TD>
+                        </TR>
+                    </TABLE>
+                </FORM>
             </div>
         </div>
-    </main>
+    </div>
+</div>
+</div>
+
+    
+</main>
 
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
