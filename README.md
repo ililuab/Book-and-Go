@@ -1,6 +1,6 @@
 # BookAndGo
 BookAndGo ( School CRUD Project )
-Authors: Miep1194390, ililuab
+/n Authors: Miep1194390, ililuab
 
 Languages:
 - HTML/CSS
