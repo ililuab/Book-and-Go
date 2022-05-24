@@ -24,7 +24,7 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Book And Go | Dashboard</title>
+    <title>Book And Go | Vluchten inzien</title>
 </head>
 
 <body>
@@ -42,10 +42,44 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                 </li>
             </ul>
         </div>
-    
         <div class="dashboardouter">
             <div class="dashboardinner">
-        
+                <?php
+                $sessie_id = $_SESSION['sess_user_id'];
+                $query = $conn->prepare('SELECT vluchtId FROM boekingen WHERE gebruikersId = :sessie_id ');
+                $query->bindParam(':sessie_id', $sessie_id);
+                $query->bindColumn('vluchtId', $vluchtId);
+                $query->execute();
+                $results = $query->fetchAll();
+                $rows = $query->rowCount();
+                $stmt = $conn->prepare("SELECT * FROM vluchten WHERE id = '" . $vluchtId . "'");
+                $stmt->execute();
+                $resultaten = $stmt->fetchAll();
+                $rows = $stmt->rowCount();
+
+
+                foreach ($resultaten as $r) {
+                ?>
+                    <div class="dashboard-outer">
+                        <form>
+                            <div class='tableouter'>
+                                <table class='tablevluchten'>
+                                    <tr>
+                                        <td><?php echo $r['id'] ?></td>
+                                        <td><?php echo $r['place_departure'] ?></td>
+                                        <td><?php echo $r['place_destination'] ?></td>
+                                        <td><?php echo $r['time_leaving'] ?></td>
+                                        <td><?php echo $r['time_arrived'] ?></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </form>
+                    </div>
+                <?php
+                }
+                ?>
+
+
             </div>
 
         </div>
