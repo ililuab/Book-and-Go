@@ -13,7 +13,7 @@ if(isset($_POST['annuleren']))
 
         if($query_execute)
         {
-            echo 'hier1';
+            header('Location:vluchtenannuleren.php');
         }
         else
         {
