@@ -1,5 +1,5 @@
 <?php
-
+include_once('../includes/connect.php');
 
 session_start();
 if ($_SESSION['sess_name'] == "adminaccountje") {
@@ -25,12 +25,10 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
 </head>
 
 <body>
-    <main>
-        <div class="dashboard-bg-admin">
-            <div class="test"><p>wefwe</p></div>
-            <div class="sidebar">
+    <main class="main-dashboard-admin">
+            <div class="sidebar-admin">
                 <header>BookAndGo | Admin Panel</header>
-                <ul>
+                <ul class="admin"> 
                     <li>
                         <a href="index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
                         <a href="admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
@@ -39,8 +37,18 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                         <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
                 </ul>
             </div>
-            
+            <div class="dashboardouter-admin">
+                <div class="dashboardinner-admin">
+                    <div class="flex">
+                    <div class="block-header-admin"><p class="welkom_text_admin">Welkom terug: </p><div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div></div>
+                    </div>
+                    <div class="container-squares-admin">
+                        <div class="square-admin"></div>
+                        <div class="square-admin"></div>
+                        <div class="square-admin"></div>
+            </div>
         </div>
+            </div>
     </main>
 
 </body>
