@@ -1284,6 +1284,7 @@ p {
 .container_locatie {
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .container_locatie_inner {
@@ -1426,6 +1427,10 @@ h1 {
   align-items: center;
 }
 
+iframe {
+  margin-top: -5%;
+  overflow: hidden;
+}
 
 
 
