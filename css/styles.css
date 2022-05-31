@@ -1281,29 +1281,6 @@ p {
   height: 100vh;
 }
 
-.container_locatie {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.container_locatie_inner {
-  display: flex;
-  justify-content: center;
-}
-
-.content_locatie_bestemmingen {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 700px;
-}
-
-.table_locatie {
-  height: 500px;
-  width: 40%;
-}
-
 .main-dashboard {
   display: flex;
   background-image: url(../media/loginbackgroundimage2.jpg);
@@ -1431,13 +1408,3 @@ iframe {
   margin-top: -5%;
   overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-
