@@ -800,7 +800,6 @@ p {
   transition: 0.9s;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 2%;
   max-height: 0;
