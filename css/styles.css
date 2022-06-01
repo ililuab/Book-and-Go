@@ -1520,3 +1520,18 @@ iframe {
   margin-top: -5%;
   overflow: hidden;
 }
+
+.missingdiv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.missingtext {
+  font-size: 35px;
+  color: #696868;
+  text-shadow: 2px 2px #0e0e0e;
+}
