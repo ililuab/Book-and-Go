@@ -31,7 +31,7 @@ try {
 
     $mail->send();
 
-    echo "<script>alert('Mail verzonden!')</script>; <script>window.location = '../main/klantenservice.php'</script>";
+    echo "<script>window.location = '../main/klantenservice.php'</script>";
 
     exit();
 } catch (Exception $e) {

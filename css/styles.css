@@ -800,7 +800,6 @@ p {
   transition: 0.9s;
 }
 
-/* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 2%;
   max-height: 0;
@@ -1281,28 +1280,6 @@ p {
   height: 100vh;
 }
 
-.container_locatie {
-  width: 100%;
-  height: auto;
-}
-
-.container_locatie_inner {
-  display: flex;
-  justify-content: center;
-}
-
-.content_locatie_bestemmingen {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 700px;
-}
-
-.table_locatie {
-  height: 500px;
-  width: 40%;
-}
-
 .main-dashboard {
   display: flex;
   background-image: url(../media/loginbackgroundimage2.jpg);
@@ -1311,6 +1288,119 @@ p {
 .main-dashboard-admin {
   display: flex;
   background-image: url(../media/adminpanelpicture.jpg);
+}
+
+.dashboardouter-admin {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../media/adminpanelpicture.jpg);
+  display: flex;
+  justify-content: center;
+
+}
+
+.dashboardinner-admin {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.block-header-admin {
+  position: relative;
+  top: 30px;
+  bottom: 50px;
+  width: 60vw;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-align: center;
+  font-size: 20px;
+}
+
+.block-header-admin2 {
+  position: relative;
+  top: 30px;
+  bottom: 50px;
+  width: 70vw;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-align: center;
+  font-size: 20px;
+}
+
+.block-header-admin3 {
+  position: relative;
+  top: 30px;
+  bottom: 50px;
+  width: 70vw;
+  height: 90vh;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  text-align: center;
+  font-size: 20px;
+}
+
+.logo-admin {
+  position: relative;
+  top: 10px;
+  width: 130px;
+  height: 130px;
+}
+
+.block-footer-admin {
+  position: relative;
+  top: 110px;
+  bottom: 50px;
+  width: 60vw;
+  height: 100px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h1 {
+  color: white;
+}
+
+.container-squares-admin {
+  display: flex;
+  justify-content: space-around;
+}
+
+.square-admin {
+  position: relative;
+  top: 60px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+.username_echo {
+  color: white;
+  font-weight: 900;
+  font-size: 50px;
+}
+
+.welkom_text_admin {
+  color: white;
+}
+
+.table-vluchten-admin {
+  color: white;
+}
+
+.Annuleren {
+  display: flex;
+  height: 5vh;
+  align-items: center;
 }
 
 .dashboardouter-admin {
@@ -1426,13 +1516,7 @@ h1 {
   align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
+iframe {
+  margin-top: -5%;
+  overflow: hidden;
+}

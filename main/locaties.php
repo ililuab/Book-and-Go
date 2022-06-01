@@ -3,6 +3,7 @@
 
 <?php
 include("../includes/connect.php");
+error_reporting(0);
 ?>
 
 <head>
@@ -60,35 +61,13 @@ include("../includes/connect.php");
             </div>
         </div>
         </div>
-        <div class="spacer3"></div>
+        <div class="spacer2"></div>
 
         <div class="container_locatie">
             <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1XLCqLCDOpc_artqbBZ2UKyTweewkM8KM&ehbc=2E312F"
                 width="100%" height="600"></iframe>
-            <div class="container_locatie_inner">
-                <h1>Al onze bestemmingen!</h1>
-            </div>
-            <div class="content_locatie_bestemmingen">
-                <?php
-
-
-                $query = $conn->prepare('SELECT * FROM vluchten');
-                $query->execute();
-                $results = $query->fetchAll();
-                $rows = $query->rowCount();
-
-                if ($rows != 0) {
-                    foreach ($results as $r) {
-                ?><div class="place_departure_div"><?php echo $r['place_departure'] ?></div>
-                <div class="place_destination_div"><?php echo $r['place_destination'] ?></div>
-                <?php
-                    }
-                } else {
-                    echo '<h4>Helaas er zijn geen locaties gevonden.</h4>';
-                }
-
-                ?>
-            </div>
+            <div class="spacer2"></div>
+        
         </div>
 
 
