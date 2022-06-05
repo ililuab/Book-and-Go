@@ -1,5 +1,5 @@
 <?php
-
+include_once('../includes/connect.php');
 
 session_start();
 if ($_SESSION['sess_name'] == "adminaccountje") {
@@ -41,40 +41,26 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
         <div class="dashboardouter-admin">
             <div class="dashboardinner-admin">
                 <div class="flex">
-                    <div class="block-header-admin2">
-                        <p class="welkom_text_admin">Welkom terug: </p>
-                        <div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div>
-
-
-
-
+                    <div class="block-header-admin3">
+                        <p class="welkom_text_admin">Welkom terug: <?php echo $_SESSION['sess_name'] ?></p>
                         <?php
                         include_once("../includes/connect.php");
 
-                        $query = "SELECT * FROM users";
+                        $query = "SELECT * FROM reviews";
                         $stmt = $conn->prepare($query);
                         $stmt->execute();
                         $result = $stmt->fetchAll();
 
-                        foreach ($result as $user) { ?>
-                            <form class="form-admin-crud" action="../admin/usersAUTH.php" method="POST">
+                        foreach ($result as $review) { ?>
+                            <form class="form-admin-crud" action="../admin/reviewsAUTH.php" method="POST">
                                 <div class="id_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['id'] ?>" name="id" readonly />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['id'] ?>" name="id" readonly />
                                 </div>
                                 <div class="naam_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['email'] ?>" name="email" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['email'] ?>" name="email" />
                                 </div>
                                 <div class="aantal_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['username'] ?>" name="username" />
-                                </div>
-                                <div class="telnummer_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['password'] ?>" name="password" />
-                                </div>
-                                <div class="bericht_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['name'] ?>" name="name" />
-                                </div>
-                                <div class="datum_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['geboekte_vlucht'] ?>" name="geboekte_vlucht" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['review'] ?>" name="beschrijving" />
                                 </div>
                                 <div class="update">
                                     <button class="update" type="submit" name="update">Wijzigen</button>
@@ -85,22 +71,10 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                                     </button>
                                 </div>
                             </form>
-
                         <?php
                         }
                         ?>
-                        <form action="../admin/usersAUTH.php" method="post">
-                            <input placeholder="User id" type="text" name="id">
-                            <input placeholder="User Email" type="text" name="email">
-                            <input placeholder="User Username" type="text" name="username">
-                            <input placeholder="User Password" type="text" name="password">
-                            <input placeholder="User ShowName" type="text" name="name">
-                            <input placeholder="User Geboekte_vlucht" type="text" name="geboekte_vlucht">
-                            <button class="create " type="submit" name="create">Toevoegen</button>
                     </div>
-                </div>
-            </div>
-        </div>
     </main>
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>

@@ -6,6 +6,7 @@ Authors: Miep1194390, ililuab
 Languages:
 - HTML/CSS
 - PHP
+- SQL
 - JavaScript
 
 

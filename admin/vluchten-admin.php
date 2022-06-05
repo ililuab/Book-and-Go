@@ -33,27 +33,21 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
           <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
           <a href="../admin/account-admin.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
           <a href="../admin/vluchten-admin.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
+          <a href="../admin/admin-reviews.php"><i class="fa-solid fa-eye"></i>Reviews inzien</a>
           <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
       </ul>
     </div>
-
-
-
     <div class="dashboardouter-admin">
       <div class="dashboardinner-admin">
         <div class="flex">
           <div class="block-header-admin3">
             <p class="welkom_text_admin">Welkom terug: <?php echo $_SESSION['sess_name'] ?></p>
-
-
             <?php
             include_once("../includes/connect.php");
-
             $query = "SELECT * FROM vluchten";
             $stmt = $conn->prepare($query);
             $stmt->execute();
             $result = $stmt->fetchAll();
-
             foreach ($result as $vlucht) { ?>
               <form class="form-admin-crud" action="../admin/vluchtAUTH.php" method="POST">
                 <div class="id_reservering">
@@ -78,7 +72,9 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                   <button class="update" type="submit" name="update">Wijzigen</button>
                 </div>
                 <div class="delete">
-                  <button class="delete" type="submit" name="delete"><p>Wissen</p></button>
+                  <button class="delete" type="submit" name="delete">
+                    <p>Wissen</p>
+                  </button>
                 </div>
               </form>
             <?php
@@ -86,21 +82,18 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
             ?>
             <form action="../admin/vluchtAUTH.php" method="post">
               <input placeholder="Vlucht id" type="text" name="add_id">
-              <input placeholder="Vertrekluchthaven"type="text" name="place_departure">
-              <input placeholder="Bestemming"type="text" name="place_destination">
-              <input placeholder="Tijd van aankomst"type="text" name="time_arrived">
-              <input placeholder="Tijd van vertrek"type="text" name="time_leaving">
-              <input placeholder="Zitplaatsen"type="text" name="seats">
-              <button class="create "type="submit" name="create">Toevoegen</button>
+              <input placeholder="Vertrekluchthaven" type="text" name="place_departure">
+              <input placeholder="Bestemming" type="text" name="place_destination">
+              <input placeholder="Tijd van aankomst" type="text" name="time_arrived">
+              <input placeholder="Tijd van vertrek" type="text" name="time_leaving">
+              <input placeholder="Zitplaatsen" type="text" name="seats">
+              <button class="create " type="submit" name="create">Toevoegen</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-
-
   </main>
-
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
 

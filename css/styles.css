@@ -1439,11 +1439,11 @@ h1 {
 }
 
 .dashboardouter-admin {
-  height: 100vh;
-  width: 100vw;
-  background-image: url(../media/adminpanelpicture.jpg);
   display: flex;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../media/pexels-rafael-cerqueira-4737484.jpg);
 }
 
 .dashboardinner-admin {
