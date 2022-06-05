@@ -43,6 +43,59 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                     <div class="block-header-admin2">
                         <p class="welkom_text_admin">Welkom terug: </p>
                         <div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div>
+
+
+
+
+                        <?php
+                        include_once("../includes/connect.php");
+
+                        $query = "SELECT * FROM users";
+                        $stmt = $conn->prepare($query);
+                        $stmt->execute();
+                        $result = $stmt->fetchAll();
+
+                        foreach ($result as $user) { ?>
+                            <form class="form-admin-crud" action="../admin/usersAUTH.php" method="POST">
+                                <div class="id_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $user['id'] ?>" name="id" readonly />
+                                </div>
+                                <div class="naam_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $user['email'] ?>" name="email" />
+                                </div>
+                                <div class="aantal_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $user['username'] ?>" name="username" />
+                                </div>
+                                <div class="telnummer_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $user['password'] ?>" name="password" />
+                                </div>
+                                <div class="bericht_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $user['name'] ?>" name="name" />
+                                </div>
+                                <div class="datum_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $user['geboekte_vlucht'] ?>" name="geboekte_vlucht" />
+                                </div>
+                                <div class="update">
+                                    <button class="update" type="submit" name="update">Wijzigen</button>
+                                </div>
+                                <div class="delete">
+                                    <button class="delete" type="submit" name="delete">
+                                        <p>Wissen</p>
+                                    </button>
+                                </div>
+                            </form>
+
+                        <?php
+                        }
+                        ?>
+                        <form action="../admin/usersAUTH.php" method="post">
+                            <input placeholder="User id" type="text" name="id">
+                            <input placeholder="User Email" type="text" name="email">
+                            <input placeholder="User Username" type="text" name="username">
+                            <input placeholder="User Password" type="text" name="password">
+                            <input placeholder="User ShowName" type="text" name="name">
+                            <input placeholder="User Geboekte_vlucht" type="text" name="geboekte_vlucht">
+                            <button class="create " type="submit" name="create">Toevoegen</button>
                     </div>
                 </div>
             </div>
