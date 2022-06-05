@@ -162,6 +162,11 @@ error_reporting(0);
                 </div>
             </div>
         </div>
+
+
+
+
+
         <div class="container_helpdesk">
             <div class="container_helpdesk_inner">
                 <div class="content_helpdesk">
@@ -170,7 +175,7 @@ error_reporting(0);
                             <p class="helpdesk_text">Hoe kunnen wij je helpen?</p>
                         </div>
                     </div>
-                    <form class="index_form " action="helpdeskredirect.php" method="post">
+                    <form id="index-form" class="index_form " action="helpdeskredirect.php" method="post">
                         <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id=""
                             placeholder="E-Mail">
                         <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id=""
@@ -180,6 +185,16 @@ error_reporting(0);
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
     </main>
     <footer>
     <div class="underheader-vluchten">

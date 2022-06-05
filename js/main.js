@@ -28,22 +28,3 @@ document.getElementsByName("indexcalender")[0].setAttribute('min', vandaag);
 
 // Eind Calender Past Fix
 
-// Begin required border change
-
-// const Zoek = document.querySelector('#formindex .Zoeken');
-
-// Zoek.addEventListener('click', (e) => {
-//   e.preventDefault();
-
-//   const inputs = document.querySelectorAll('#formindex input');
-
-//   for (let i = 0; i < inputs.length; i++) {
-//     if (inputs[i].hasAttribute("required")) {
-//       if (inputs[i].value == "") {
-//         inputs[i].style.border = "1px solid red";
-//       }
-//     }
-//   }
-// })
-                
-// B required border change
