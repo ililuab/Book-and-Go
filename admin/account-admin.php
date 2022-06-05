@@ -92,9 +92,9 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                         <form action="../admin/usersAUTH.php" method="post">
                             <input placeholder="User id" type="text" name="id">
                             <input placeholder="User Email" type="text" name="email">
-                            <input placeholder="User Username" type="text" name="username">
-                            <input placeholder="User Password" type="text" name="password">
-                            <input placeholder="User ShowName" type="text" name="name">
+                            <input placeholder="User Gebruikersnaam" type="text" name="username">
+                            <input placeholder="User Wachtwoord" type="text" name="password">
+                            <input placeholder="User DisplayNaam" type="text" name="name">
                             <input placeholder="User Geboekte_vlucht" type="text" name="geboekte_vlucht">
                             <button class="create " type="submit" name="create">Toevoegen</button>
                     </div>
