@@ -33,11 +33,10 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
             <header class='headerdb'><?php echo 'Ingelogd als: ' . $_SESSION['sess_user_name'] ?></header>
             <ul>
                 <li>
-                    <a href="index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
-                    <a href="dashboard.php"><i class="fa-solid fa-house-user"></i>Dashboard</a>
-                    <a href="vluchteninzien.php"><i class="fa-solid fa-eye"></i>Vluchten Inzien</a>
-                    <a href="vluchtenannuleren.php"><i class="fa-solid fa-ban"></i>Vluchten Annuleren</a>
-                    <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
+                    <a href="index.php"></i>Book and Go</a>
+                    <a href="dashboard.php">Dashboard</a>
+                    <a href="vluchtenannuleren.php">Vluchten</a>
+                    <a href="uitloggen.php">Uitloggen</a>
                 </li>
             </ul>
         </div>
@@ -60,23 +59,32 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                 foreach ($resultaten as $r) {
                 ?>
                     <div class="dashboard-outer">
-                        <div class='tableouter'>
-                            <table class='tablevluchten'>
-                                <tr>
-                                    <td><?php echo $r['id'] ?></td>
-                                    <td><?php echo $r['place_departure'] ?></td>
-                                    <td><?php echo $r['place_destination'] ?></td>
-                                    <td><?php echo $r['time_leaving'] ?></td>
-                                    <td><?php echo $r['time_arrived'] ?></td>
-                                </tr>
-                            </table>
-                            <form action='annulerenredirect.php' method='post'>
-                                <div class="Annuleren">
-                                    <button class="Zoeken" type="submit" name="annuleren" value="<?= $vluchtId ?>">Annuleren</button>
+                        <div class="dashboard-vluchten-show">
+                            <div class="dashboard-parent">
+                                <div class="dashboard-header-underparent">
+                                    <?php echo "Geboekte vluchten" ?>
                                 </div>
-                            </form>
-
+                                <div class="dashboard-kaart">
+                                    <div>Id</div>
+                                    <td><?php echo $r['id'] ?></td>
+                                    <div>Vertrekluchthaven</div>
+                                    <td><?php echo $r['place_departure'] ?></td>
+                                    <div>Bestemming</div>
+                                    <td><?php echo $r['place_destination'] ?></td>
+                                    <div>Datum vertrek</div>
+                                    <td><?php echo $r['time_leaving'] ?></td>
+                                    <div>Datum aankomst</div>
+                                    <td><?php echo $r['time_arrived'] ?></td>
+                                    <form action='annulerenredirect.php' method='post'>
+                                        <div class="Annuleren">
+                                            <button class="Zoeken" type="submit" name="annuleren" value="<?= $vluchtId ?>">Annuleren</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
                 <?php
                 }

@@ -30,15 +30,13 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 <body>
     <main class='main-dashboard'>
         <div class="sidebar">
-            <header>BookAndGo</header>
             <header><?php echo 'Ingelogd als: ' . $_SESSION['sess_user_name'] ?></header>
             <ul>
                 <li>
-                    <a href="index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
-                    <a href="dashboard.php"><i class="fa-solid fa-house-user"></i>Dashboard</a>
-                    <a href="vluchteninzien.php"><i class="fa-solid fa-eye"></i>Vluchten Inzien</a>
-                    <a href="vluchtenannuleren.php"><i class="fa-solid fa-ban"></i>Vluchten Annuleren</a>
-                    <a href="uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
+                    <a href="index.php"></i>Book and Go</a>
+                    <a href="dashboard.php">Dashboard</a>
+                    <a href="vluchtenannuleren.php">Vluchten</a>
+                    <a href="uitloggen.php">Uitloggen</a>
                 </li>
             </ul>
         </div>
