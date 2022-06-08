@@ -44,8 +44,7 @@ error_reporting(0);
             <div class="header_vlucht_resultaten">
                 <div class="headertext_vlucht_resultatenOuter">
                     <div class="headertext_vlucht_resultaten">
-                        <a class="header_logo" href="index.php"><img class="header_logo"
-                                src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
+                        <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
                         <div class="header_logo_text">Book and Go</div>
                         <div class="dropdown">
                             <div class="Header-links">Beheren</div>
@@ -74,13 +73,14 @@ error_reporting(0);
                             <div class="dropdown-content">
                                 <div><a href="locaties.php">Locaties</a></div>
                                 <div><a href="over_ons.php">Over ons</a></div>
-                                
-                                
+
+
                             </div>
                         </div>
                     </div>
-                    <div class='session-naam'><a href="dashboard.php"><?php session_start(); echo $_SESSION['sess_name'];
-                    ?></a></div>
+                    <div class='session-naam'><a href="dashboard.php"><?php session_start();
+                                                                        echo $_SESSION['sess_name'];
+                                                                        ?></a></div>
                 </div>
             </div>
             <div class="OuterPHPEngine">
@@ -92,23 +92,19 @@ error_reporting(0);
                         <form class="vluchtenzoeken"  name="form1" method="post" action="vluchten.php">
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Vanaf</h1>
-                                <input class="Vertrekluchthaven" type="text" placeholder="Vertrekluchthaven"
-                                    name="search" aria-label="Search" required>
+                                <input class="Vertrekluchthaven" type="text" placeholder="Vertrekluchthaven" name="search" aria-label="Search" required>
                             </div>
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Bestemming</h1>
-                                <input class="Bestemming" type="text" placeholder="Bestemming" name="search"
-                                    aria-label="Search" required>
+                                <input class="Bestemming" type="text" placeholder="Bestemming" name="search" aria-label="Search" required>
                             </div>
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Wie gaan er mee?</h1>
-                                <input class="Bestemming" type="number" placeholder="1 Volwassene" aria-label="Search"
-                                    min="1" max="25" required>
+                                <input class="Bestemming" type="number" placeholder="1 Volwassene" aria-label="Search" min="1" max="25" required>
                             </div>
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Vertrekdatum</h1>
-                                <input class="Bestemming" type="date" placeholder="Bestemming" name="indexcalender"
-                                    aria-label="Search" required>
+                                <input class="Bestemming" type="date" placeholder="Bestemming" name="indexcalender" aria-label="Search" required>
                             </div>
                             <div class="ZoekenOuter">
                                 <input class="Zoeken" type="submit" value="Zoeken" name="submit"></input>
@@ -162,6 +158,11 @@ error_reporting(0);
                 </div>
             </div>
         </div>
+
+
+
+
+
         <div class="container_helpdesk">
             <div class="container_helpdesk_inner">
                 <div class="content_helpdesk">
@@ -170,11 +171,9 @@ error_reporting(0);
                             <p class="helpdesk_text">Hoe kunnen wij je helpen?</p>
                         </div>
                     </div>
-                    <form class="index_form " action="helpdeskredirect.php" method="post">
-                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id=""
-                            placeholder="E-Mail">
-                        <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id=""
-                            placeholder="Suggestie">
+                    <form id="index-form" class="index_form " action="helpdeskredirect.php" method="post">
+                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id="" placeholder="E-Mail">
+                        <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id="" placeholder="Suggestie">
                         <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" value="Verzenden">
                     </form>
                 </div>
@@ -182,7 +181,7 @@ error_reporting(0);
         </div>
     </main>
     <footer>
-    <div class="underheader-vluchten">
+        <div class="underheader-vluchten">
             <div class="underheaderInner-vluchten">
                 <a class="headerlinks-vluchten" href="locaties.php">Locaties</a>
                 <a class="headerlinks-vluchten" href="index.php">Boeken</a>
@@ -193,4 +192,5 @@ error_reporting(0);
     </footer>
 </body>
 <script src="../js/main.js"></script>
+
 </html>

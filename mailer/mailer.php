@@ -5,29 +5,29 @@ use PHPMailer\PHPMailer\Exception;
 require '../mailer/Exception.php';
 require '../mailer/PHPMailer.php';
 require '../mailer/SMTP.php';
-
+//Bookandgocrud!
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
-    //Server settings
-    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+    $mail->SMTPDebug = false;                             // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'smtp.googlemail.com';  // Specify main and backup SMTP servers
+    $mail->Host = 'smtp.office365.com';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'jyvandijk.1999@gmail.com';                 // SMTP username
-    $mail->Password = 'jaimyvandijk1999';                           // SMTP password
-    $mail->SMTPSecure = 'STARTTLS';                           
-    $mail->Port = 587;                                    // TCP port to connect to
+    $mail->Username = 'bookandgo.nl@outlook.com';                 // SMTP username
+    $mail->Password = 'Bookandgocrud!';                           // SMTP password
+    $mail->SMTPSecure = 'tls';                           
+    $mail->Port = 587;
+    $mail->isHTML(true);                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom($_POST['mail']);
-    $mail->addAddress('jyvandijk.1999@gmail.com');
+    $mail->setFrom('bookandgo.nl@outlook.com');
+    $mail->addAddress('bookandgo.nl@outlook.com');
 
 
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = $_POST['subject'];
-    $mail->Body    = $_POST['text'] . " " . ($_POST['mail']);
+    $mail->Body    = "Bericht: " . $_POST['text'] . " Verzender: " . ($_POST['mail']);
 
     $mail->send();
 

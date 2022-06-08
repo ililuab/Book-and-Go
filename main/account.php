@@ -91,6 +91,8 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                 </div>
                 <div class='account-geenaccount'>Heb je geen account? <a class='account-geenaccounthref'
                         href="account_registreren.php">Meld je nu aan!</a></div>
+                        <div class='account-geenaccount'>Wachtwoord vergeten? <a class='account-geenaccounthref'
+                        href="wachtwoordwijzigen.php">Wijzig je wachtwoord!</a></div>
             </div>
             </form>
         </div>

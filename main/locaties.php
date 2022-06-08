@@ -21,7 +21,7 @@ error_reporting(0);
 </head>
 <body>
     <main>
-        <div class="header_vlucht_resultaten">
+        <div class="header_vlucht_resultaten2">
             <div class="headertext_vlucht_resultatenOuter">
                 <div class="headertext_vlucht_resultaten">
                     <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg"
@@ -62,9 +62,8 @@ error_reporting(0);
         </div>
         </div>
         <div class="spacer2"></div>
-
         <div class="container_locatie">
-            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1XLCqLCDOpc_artqbBZ2UKyTweewkM8KM&ehbc=2E312F"
+            <iframe class="iframe_locatie" src="https://www.google.com/maps/d/u/1/embed?mid=1XLCqLCDOpc_artqbBZ2UKyTweewkM8KM&ehbc=2E312F"
                 width="100%" height="600"></iframe>
             <div class="spacer2"></div>
         

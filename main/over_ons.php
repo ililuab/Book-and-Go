@@ -92,6 +92,18 @@ error_reporting(0);
                     <img class="over-ons_mirza" src="../media/mirza.jpg" alt="">
                 </div>
             </div>
+            <div class="container_reviews">
+                <div class="reviews">
+                <form class="over-ons_form" action="review_redirect.php" method="POST">
+                        <input class="helpdesk_form_input" type="email" required name="email_review" id=""
+                            placeholder="E-Mail">
+                        <input class="helpdesk_form_input" type="number" min="0" max="5" required name="review" id=""
+                            placeholder="Sterren">
+                        <input class="helpdesk_form_input" type="text" required name="beschrijving" placeholder="Beschrijving">
+                        <input class="helpdesk_form_input_submit2" type="submit" name="submit_review" value="Verzenden">
+                    </form>
+                </div>
+            </div>
     </main>
     <footer>
         <div class="underheader-vluchten">

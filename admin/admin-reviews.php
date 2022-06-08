@@ -1,5 +1,5 @@
 <?php
-
+include_once('../includes/connect.php');
 
 session_start();
 if ($_SESSION['sess_name'] == "adminaccountje") {
@@ -34,7 +34,6 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                     <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
                     <a href="../admin/account-admin.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
                     <a href="../admin/vluchten-admin.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
-
                     <a href="../admin/admin-reviews.php"><i class="fa-solid fa-eye"></i>Reviews inzien</a>
                     <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
             </ul>
@@ -42,40 +41,32 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
         <div class="dashboardouter-admin">
             <div class="dashboardinner-admin">
                 <div class="flex">
-                    <div class="block-header-admin2">
-                        <p class="welkom_text_admin">Welkom terug: </p>
-                        <div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div>
-
-
-
+                    <div class="block-header-admin3">
+                        <p class="welkom_text_admin">Welkom terug: <?php echo $_SESSION['sess_name'] ?></p>
                         <?php
                         include_once("../includes/connect.php");
 
-                        $query = "SELECT * FROM users";
+                        $query = "SELECT * FROM reviews";
                         $stmt = $conn->prepare($query);
                         $stmt->execute();
                         $result = $stmt->fetchAll();
 
-                        foreach ($result as $user) { ?>
-                            <form class="form-admin-crud" action="../admin/usersAUTH.php" method="POST">
+                        foreach ($result as $review) { ?>
+                            <form class="form-admin-crud" action="../admin/reviewsAUTH.php" method="POST">
                                 <div class="id_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['id'] ?>" name="id" readonly />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['id'] ?>" name="id" readonly />
                                     <hr>
                                 </div>
                                 <div class="naam_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['email'] ?>" name="email" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['email'] ?>" name="email" />
                                     <hr>
                                 </div>
                                 <div class="aantal_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['username'] ?>" name="username" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['review'] ?>" name="review" />
                                     <hr>
                                 </div>
-                                <div class="telnummer_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['password'] ?>" name="password" />
-                                    <hr>
-                                </div>
-                                <div class="bericht_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['name'] ?>" name="name" />
+                                <div class="aantal_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['beschrijving'] ?>" name="beschrijving" />
                                     <hr>
                                 </div>
                                 <div class="update">
@@ -87,23 +78,12 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                                     </button>
                                 </div>
                             </form>
-
                         <?php
                         }
                         ?>
-                        <form action="../admin/usersAUTH.php" method="post">
-                            <input placeholder="User id" type="text" name="id">
-                            <input placeholder="User Email" type="text" name="email">
-                            <input placeholder="User Gebruikersnaam" type="text" name="username">
-                            <input placeholder="User Wachtwoord" type="text" name="password">
-                            <input placeholder="User DisplayNaam" type="text" name="name">
-                            <button class="create " type="submit" name="create">Toevoegen</button>
-
                     </div>
-                </div>
-            </div>
-        </div>
     </main>
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
+
 </html>

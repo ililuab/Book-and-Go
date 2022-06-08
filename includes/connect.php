@@ -16,7 +16,7 @@ $opt = [
 try {
  	$conn = new PDO ($dsn, $user, $pass,);
 } 
-catch (PDOExeption $e) {
+catch (PDOExeption  $e) {
 	echo $e ->getMessage();
 	die ('OEI!, Er is een database probleem');
 }

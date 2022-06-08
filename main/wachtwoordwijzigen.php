@@ -1,5 +1,49 @@
+<?php
+require_once('../includes/connect.php');
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../mailer/Exception.php';
+require '../mailer/PHPMailer.php';
+require '../mailer/SMTP.php';
+
+
+if (isset($_POST['forget'])) {
+    $user_email = $_POST['user_email'];
+    $sql = "SELECT email FROM users WHERE email = ?";
+    $prepare = $conn->prepare($sql);
+    $prepare->execute([$user_email]);
+    $rowCount = $prepare->rowCount();
+
+    if ($rowCount > 0) {
+        $mail = new PHPMailer();
+        $mail->SMTPDebug = false;                             // Enable verbose debug output
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host = 'smtp.office365.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'bookandgo.nl@outlook.com';                 // SMTP username
+        $mail->Password = 'Bookandgocrud!';                           // SMTP password
+        $mail->SMTPSecure = 'tls';                           
+        $mail->Port = 587;
+        $mail->isHTML(true);
+        $mail->setFrom('bookandgo.nl@outlook.com');
+        $mail->addAddress($user_email);
+
+        $mail->isHTML(true);
+        $mail->Subject = "Book and Go | Wachtwoord resetten";
+        $randomwachtwoord = substr(str_shuffle("0123456789abcdefghijklmnopqrstvwxyz"), 0, 6);
+        $randomwachtwoord_final = $randomwachtwoord;
+        $mail->Body = 'Uw nieuwe wachtwoord:  ' . $randomwachtwoord_final;
+        $conn = $conn->prepare("UPDATE users SET PASSWORD = '$randomwachtwoord_final' WHERE email='$user_email'");
+        $conn->execute();
+        $mail->send();
+    }
+}
+?>
+
 <!DOCTYPE html>
-<html class="html_boekenredirect" lang="en">
+<html class="html_ww_wijzigen" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,12 +54,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Book And Go | Boeken</title>
+    <title>Book And Go | Wachtwoord vergeten</title>
 </head>
 
 <body>
     <main>
-    <div class="header_vlucht_resultaten">
+        <div class="header_vlucht_resultaten">
             <div class="headertext_vlucht_resultatenOuter">
                 <div class="headertext_vlucht_resultaten">
                     <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo"></a>
@@ -53,42 +97,20 @@
             </div>
         </div>
         <div class="spacer2"></div>
-        <div class="boekenrd-bg">
-        <div class="account-inloggen-form">
-        <form class='account_login' action="boekenredirect.php" method="post">
-            <div>
-                <input class="account-inloggen-form-input" type="number" name="vluchtid" value="" placeholder="Vlucht Nummer" />
+        <div>
+            <div class="account-inloggen-form">
+                <form action="wachtwoordwijzigen.php" method="POST" enctype="multipart/form-data">
+                    <div>
+                        <input class='account-inloggen-form-input' type="email" id="user_email" name="user_email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <input class='account-inloggen-form-submit' type="submit" id="forget" name="forget" value="Verzenden">
+                    </div>
+                </form>
             </div>
-            <div>
-                <input class='account-inloggen-form-submit' type="submit" value="Boeken" name="Boeken"></input>
-            </div>
-        </form>
-        </div>
         </div>
     </main>
 
 </body>
 
 </html>
-
-<?php
-include_once('../includes/connect.php');
-session_start();
-error_reporting(0);
-    $key = $_POST['vluchtid'];
-    $query = $conn->prepare('SELECT id FROM vluchten WHERE id LIKE :keyword');
-    $query->bindValue(":keyword", $key, PDO::PARAM_STR);
-    $query->execute();
-    $results = $query->fetchAll();
-    $rows = $query->rowCount();
-
-
-    if ($rows != 0) {
-        $vluchtid = $_POST['vluchtid'];
-        $sessie_id = $_SESSION['sess_user_id'];
-        $sql = "INSERT INTO boekingen (boekingId, gebruikersId, vluchtId) VALUES ('', '$sessie_id', '$vluchtid')";
-        $conn->exec($sql);
-        echo "<script>alert('Vlucht geboekt, Veel reis plezier!')</script>; <script>window.location = 'index.php'</script>";
-    }
-
-?>
