@@ -21,7 +21,7 @@ error_reporting(0);
 </head>
 <body>
     <main>
-        <div class="header_vlucht_resultaten">
+        <div class="header_vlucht_resultaten2">
             <div class="headertext_vlucht_resultatenOuter">
                 <div class="headertext_vlucht_resultaten">
                     <a class="header_logo" href="index.php"><img class="header_logo" src="../media/BookAndGoLogo.jpg"
