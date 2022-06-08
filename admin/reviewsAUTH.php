@@ -6,7 +6,7 @@ if (isset($_POST['update'])) {
     $sql = "UPDATE reviews 
             SET email = :email, 
                 review = :review, 
-                beschrijving = :beschrijving, 
+                beschrijving = :beschrijving
                 WHERE id = :id";
 
     $stmt = $conn->prepare($sql);

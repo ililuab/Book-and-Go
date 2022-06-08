@@ -62,9 +62,8 @@ error_reporting(0);
         </div>
         </div>
         <div class="spacer2"></div>
-
         <div class="container_locatie">
-            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1XLCqLCDOpc_artqbBZ2UKyTweewkM8KM&ehbc=2E312F"
+            <iframe class="iframe_locatie" src="https://www.google.com/maps/d/u/1/embed?mid=1XLCqLCDOpc_artqbBZ2UKyTweewkM8KM&ehbc=2E312F"
                 width="100%" height="600"></iframe>
             <div class="spacer2"></div>
         

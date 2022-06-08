@@ -52,21 +52,27 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
               <form class="form-admin-crud" action="../admin/vluchtAUTH.php" method="POST">
                 <div class="id_reservering">
                   <input class="input-admin-crud" type="text" value="<?php echo $vlucht['id'] ?>" name="id" readonly />
+                  <hr>
                 </div>
                 <div class="naam_reservering">
                   <input class="input-admin-crud" type="text" value="<?php echo $vlucht['place_departure'] ?>" name="place_departure" />
+                  <hr>
                 </div>
                 <div class="aantal_reservering">
                   <input class="input-admin-crud" type="text" value="<?php echo $vlucht['place_destination'] ?>" name="place_destination" />
+                  <hr>
                 </div>
                 <div class="telnummer_reservering">
                   <input class="input-admin-crud" type="text" value="<?php echo $vlucht['time_arrived'] ?>" name="time_arrived" />
+                  <hr>
                 </div>
                 <div class="bericht_reservering">
                   <input class="input-admin-crud" type="text" value="<?php echo $vlucht['time_leaving'] ?>" name="time_leaving" />
+                  <hr>
                 </div>
                 <div class="datum_reservering">
                   <input class="input-admin-crud" type="text" value="<?php echo $vlucht['seats'] ?>" name="seats" />
+                  <hr>
                 </div>
                 <div class="update">
                   <button class="update" type="submit" name="update">Wijzigen</button>

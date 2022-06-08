@@ -335,6 +335,8 @@ svg {
 /* -- Slideshow */
 
 .header_vlucht_resultaten {
+  z-index: 100;
+  position: relative;
   width: 100%;
   height: 10vh;
   background-color: #fffdfa;
@@ -1548,7 +1550,8 @@ h1 {
 }
 
 iframe {
-  margin-top: -5%;
+  margin-top: -7%;
+  z-index: 0;
   overflow: hidden;
 }
 
