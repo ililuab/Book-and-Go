@@ -1277,8 +1277,7 @@ p {
 
 .main-dashboard {
   display: flex;
-  background: rgb(247,247,247);
-background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(255,50,104,1) 63%, rgba(168,91,112,1) 100%);
+
 }
 
 .main-dashboard-admin {

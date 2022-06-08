@@ -8,38 +8,36 @@ require '../mailer/Exception.php';
 require '../mailer/PHPMailer.php';
 require '../mailer/SMTP.php';
 
+
 if (isset($_POST['forget'])) {
     $user_email = $_POST['user_email'];
-    $sql = "SELECT email FROM users WHERE email = ? ";
+    $sql = "SELECT email FROM users WHERE email = ?";
     $prepare = $conn->prepare($sql);
     $prepare->execute([$user_email]);
     $rowCount = $prepare->rowCount();
 
     if ($rowCount > 0) {
         $mail = new PHPMailer();
-        $mail->isSMTP();
-        $mail->SMTPDebug = 0;
-        $mail->isSMTP();
-        $mail->Host = 'smtp.googlemail.com';
-        $mail->SMTPAuth = true;
-        $mail->Username = 'jyvandijk.1999@gmail.com';
-        $mail->Password = 'jaimyvandijk1999';
-        $mail->SMTPSecure = 'STARTTLS';
+        $mail->SMTPDebug = false;                             // Enable verbose debug output
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host = 'smtp.office365.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'bookandgo.nl@outlook.com';                 // SMTP username
+        $mail->Password = 'Bookandgocrud!';                           // SMTP password
+        $mail->SMTPSecure = 'tls';                           
         $mail->Port = 587;
-
-        $mail->setFrom('jyvandijk.1999@gmail.com');
+        $mail->isHTML(true);
+        $mail->setFrom('bookandgo.nl@outlook.com');
         $mail->addAddress($user_email);
-        $mail->WordWrap = 50;
 
         $mail->isHTML(true);
-
         $mail->Subject = "Book and Go | Wachtwoord resetten";
         $randomwachtwoord = substr(str_shuffle("0123456789abcdefghijklmnopqrstvwxyz"), 0, 6);
-        $mail->Body = 'Uw nieuwe wachtwoord:  ' . $randomwachtwoord;
-        $mail->AltBody = 'Uw nieuwe wachtwoord:  ' . $randomwachtwoord;
-        $conn = $conn->prepare('UPDATE users SET password = ' . `$randomwachtwoord` . '
-        WHERE email = ' . `$user_email` . ' ') ;
+        $randomwachtwoord_final = $randomwachtwoord;
+        $mail->Body = 'Uw nieuwe wachtwoord:  ' . $randomwachtwoord_final;
+        $conn = $conn->prepare("UPDATE users SET PASSWORD = '$randomwachtwoord_final' WHERE email='$user_email'");
         $conn->execute();
+        $mail->send();
     }
 }
 ?>
