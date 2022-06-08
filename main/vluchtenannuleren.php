@@ -91,5 +91,4 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                 ?>
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
-
 </html>
