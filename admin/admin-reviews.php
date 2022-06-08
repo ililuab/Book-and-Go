@@ -55,12 +55,19 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                             <form class="form-admin-crud" action="../admin/reviewsAUTH.php" method="POST">
                                 <div class="id_reservering">
                                     <input class="input-admin-crud" type="text" value="<?php echo $review['id'] ?>" name="id" readonly />
+                                    <hr>
                                 </div>
                                 <div class="naam_reservering">
                                     <input class="input-admin-crud" type="text" value="<?php echo $review['email'] ?>" name="email" />
+                                    <hr>
                                 </div>
                                 <div class="aantal_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $review['review'] ?>" name="beschrijving" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['review'] ?>" name="review" />
+                                    <hr>
+                                </div>
+                                <div class="aantal_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $review['beschrijving'] ?>" name="beschrijving" />
+                                    <hr>
                                 </div>
                                 <div class="update">
                                     <button class="update" type="submit" name="update">Wijzigen</button>

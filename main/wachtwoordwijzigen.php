@@ -43,7 +43,7 @@ if (isset($_POST['forget'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html class="html_ww_wijzigen" lang="en">
 
 <head>
     <meta charset="UTF-8">

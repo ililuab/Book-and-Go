@@ -60,21 +60,23 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                             <form class="form-admin-crud" action="../admin/usersAUTH.php" method="POST">
                                 <div class="id_reservering">
                                     <input class="input-admin-crud" type="text" value="<?php echo $user['id'] ?>" name="id" readonly />
+                                    <hr>
                                 </div>
                                 <div class="naam_reservering">
                                     <input class="input-admin-crud" type="text" value="<?php echo $user['email'] ?>" name="email" />
+                                    <hr>
                                 </div>
                                 <div class="aantal_reservering">
                                     <input class="input-admin-crud" type="text" value="<?php echo $user['username'] ?>" name="username" />
+                                    <hr>
                                 </div>
                                 <div class="telnummer_reservering">
                                     <input class="input-admin-crud" type="text" value="<?php echo $user['password'] ?>" name="password" />
+                                    <hr>
                                 </div>
                                 <div class="bericht_reservering">
                                     <input class="input-admin-crud" type="text" value="<?php echo $user['name'] ?>" name="name" />
-                                </div>
-                                <div class="datum_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['geboekte_vlucht'] ?>" name="geboekte_vlucht" />
+                                    <hr>
                                 </div>
                                 <div class="update">
                                     <button class="update" type="submit" name="update">Wijzigen</button>
@@ -95,7 +97,6 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                             <input placeholder="User Gebruikersnaam" type="text" name="username">
                             <input placeholder="User Wachtwoord" type="text" name="password">
                             <input placeholder="User DisplayNaam" type="text" name="name">
-                            <input placeholder="User Geboekte_vlucht" type="text" name="geboekte_vlucht">
                             <button class="create " type="submit" name="create">Toevoegen</button>
                     </div>
                 </div>
