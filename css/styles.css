@@ -10,6 +10,11 @@
   font-weight: bold;
 }
 
+iframe {
+  margin-top: -6%;
+  z-index: 0;
+}
+
 .html_boeken {
   background-image: url(../media/pexels-asad-photo-maldives-457882.jpg);
   width: 100%;
