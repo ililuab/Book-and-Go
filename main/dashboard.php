@@ -30,7 +30,7 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 <body>
     <main class='main-dashboard'>
         <div class="sidebar">
-            <header><?php echo 'Ingelogd als: ' . $_SESSION['sess_user_name'] ?></header>
+            <header><?php echo  'Ingelogd als: ' . $_SESSION['sess_user_name'] ?></header>
             <ul>
                 <li>
                     <a href="index.php"></i>Book and Go</a>
@@ -44,17 +44,18 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
             <div class="dashboardinner">
                 <div class="dashboardbackground">
                     <div class="dashboard-header-text-outer">
-                        <div class="dashboard-header-text">Book and Go | Dashboard</div>
+                        <div class="dashboard-header-text">Book and Go | <div class="dashboard-header-text2">&nbsp;Dashboard</div></div>
                     </div>
+                    <div class="dashboard-spacer"></div>
                     <div class="dashboard-middlecontent-outer">
-                        <img class="dashboard-middlecontent" src="../media/vacationpicture21.jpg" alt="BookAndGo Logo">
-                        <img class="dashboard-middlecontent" src="../media/vacationpicture1.jpg" alt="BookAndGo Logo">
-                        <img class="dashboard-middlecontent" src="../media/vacationpicture2.jpg" alt="BookAndGo Logo">
+                        <img class="dashboard-middlecontent" src="../media/pexels-troy-squillaci-2521619.jpg" alt="BookAndGo Logo">
+                        <img class="dashboard-middlecontent" src="../media/pexels-pok-rie-1130221.jpg" alt="BookAndGo Logo">
+                        <img class="dashboard-middlecontent" src="../media/pexels-chris-molloy-921392.jpg" alt="BookAndGo Logo">
                     </div>
                     <div class="dashboard-middlecontent-outer2">
                         <div class="dashboard-countdown-outer">
                             <div class="dashboard-timer">Zomer-kortingen geldig tot &nbsp;</div>
-                            <div class="dashboard-timer" id="timer"></div>
+                            <div class="dashboard-timer2" id="timer"></div>
                             <div class="dashboard-timer">&nbsp;!</div>
                         </div>
                     </div>

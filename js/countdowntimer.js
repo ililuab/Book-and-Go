@@ -1,22 +1,20 @@
 // Begin Timer
 
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+var countdownDatum = new Date("Juli 8, 2022 23:59:59").getTime();
 
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
+var interval = setInterval(function() {
+  var DatumNu = new Date().getTime();
+  var distance = countdownDatum - DatumNu;
 
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var dagen = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var uren = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minuten = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconden = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("timer").innerHTML = days + "D " + hours + "U "
-  + minutes + "M " + seconds + "S ";
-
+  document.getElementById("timer").innerHTML = dagen + "D " + uren + "U " + minuten + "M " + seconden + "S ";
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("timer").innerHTML = "TIMER AFGELOPEN!";
+    clearInterval(interval);
+    document.getElementById("timer").innerHTML = "TIMER AFGELOPEN";
   }
 }, 1000);
 
