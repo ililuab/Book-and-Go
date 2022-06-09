@@ -50,7 +50,6 @@ error_reporting(0);
                             <div class="Header-links">Beheren</div>
                             <div class="dropdown-content">
                                 <div><a href="index.php">Vlucht boeken</a></div>
-                                <div><a href="dashboard.php">Vlucht wijzigen</a></div>
                                 <div><a href="dashboard.php">Vlucht annuleren</a></div>
                             </div>
                         </div>
@@ -89,7 +88,7 @@ error_reporting(0);
                         <h1 class="AirplaneText">Vluchten</h1>
                     </div>
                     <div class="VluchtenzoekenOuter">
-                        <form class="vluchtenzoeken" name="form1" method="post" action="vluchten.php">
+                        <form class="vluchtenzoeken"  name="form1" method="post" action="vluchten.php">
                             <div class="ZoekenInvoerVeldenOuter">
                                 <h1 class="VluchtenZoekenHeader">Vanaf</h1>
                                 <input class="Vertrekluchthaven" type="text" placeholder="Vertrekluchthaven" name="search" aria-label="Search" required>
@@ -138,7 +137,6 @@ error_reporting(0);
                     <img class="contextboximg" src="../media/contacthuman.png" alt="">
                 </div>
                 <h1 class="contextboxtext3">Vind online het antwoord op je vraag</h1>
-                <a href='dashboard.php' class="contextboxundertext">Vlucht wijzigen</a>
                 <a href='dashboard.php' class="contextboxundertext">Vlucht annuleren</a>
             </div>
         </div>
@@ -168,7 +166,7 @@ error_reporting(0);
                 <div class="content_helpdesk">
                     <div class="container_helpdesk_text">
                         <div class="helpdesk_text">
-                            <p class="helpdesk_text">Hoe kunnen wij je helpen?</p>
+                            <p class="helpdesk_text">Help ons met het verbeteren van Book and Go!</p>
                         </div>
                     </div>
                     <form id="index-form" class="index_form " action="helpdeskredirect.php" method="post">

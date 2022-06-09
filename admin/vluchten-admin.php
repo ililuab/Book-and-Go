@@ -1,5 +1,6 @@
 <?php
 
+
 session_start();
 if ($_SESSION['sess_name'] == "adminaccountje") {
 } else {
@@ -100,6 +101,7 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
       </div>
     </div>
   </main>
+
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
 

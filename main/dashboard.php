@@ -42,6 +42,26 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
         </div>
         <div class="dashboardouter">
             <div class="dashboardinner">
+                <div class="dashboardbackground">
+                    <div class="dashboard-header-text-outer">
+                        <div class="dashboard-header-text">Book and Go | Dashboard</div>
+                    </div>
+                    <div class="dashboard-middlecontent-outer">
+                        <img class="dashboard-middlecontent" src="../media/vacationpicture21.jpg" alt="BookAndGo Logo">
+                        <img class="dashboard-middlecontent" src="../media/vacationpicture1.jpg" alt="BookAndGo Logo">
+                        <img class="dashboard-middlecontent" src="../media/vacationpicture2.jpg" alt="BookAndGo Logo">
+                    </div>
+                    <div class="dashboard-middlecontent-outer2">
+                        <div class="dashboard-countdown-outer">
+                            <div class="dashboard-timer">Zomer-kortingen geldig tot &nbsp;</div>
+                            <div class="dashboard-timer" id="timer"></div>
+                            <div class="dashboard-timer">&nbsp;!</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-middlecontent-outer3">
+                    </div>
+                    
+                </div>
             </div>
         </div>
 
@@ -49,5 +69,6 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
+<script src="../js/countdowntimer.js"></script>
 
 </html>

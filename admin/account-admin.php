@@ -34,6 +34,7 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                     <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
                     <a href="../admin/account-admin.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
                     <a href="../admin/vluchten-admin.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
+
                     <a href="../admin/admin-reviews.php"><i class="fa-solid fa-eye"></i>Reviews inzien</a>
                     <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
             </ul>
@@ -44,7 +45,6 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                     <div class="block-header-admin2">
                         <p class="welkom_text_admin">Welkom terug: </p>
                         <div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div>
-
 
 
 
@@ -98,6 +98,7 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                             <input placeholder="User Wachtwoord" type="text" name="password">
                             <input placeholder="User DisplayNaam" type="text" name="name">
                             <button class="create " type="submit" name="create">Toevoegen</button>
+
                     </div>
                 </div>
             </div>
@@ -105,5 +106,4 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
     </main>
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
-
 </html>

@@ -42,28 +42,28 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
         </div>
         <div class="dashboardouter">
             <div class="dashboardinner">
-                <?php
-                $sessie_id = $_SESSION['sess_user_id'];
-                $query = $conn->prepare('SELECT vluchtId FROM boekingen WHERE gebruikersId = :sessie_id ');
-                $query->bindParam(':sessie_id', $sessie_id);
-                $query->bindColumn('vluchtId', $vluchtId);
-                $query->execute();
-                $results = $query->fetchAll();
-                $rows = $query->rowCount();
-                $stmt = $conn->prepare("SELECT * FROM vluchten WHERE id = '" . $vluchtId . "'");
-                $stmt->execute();
-                $resultaten = $stmt->fetchAll();
-                $rows = $stmt->rowCount();
+                <div class="dashboard-outer">
+                    <div class="dashboard-vluchten-show">
+                        <div class="dashboard-parent">
+                            <div class="dashboard-header-underparent">
+                                <?php echo "Geboekte vluchten" ?>
+                            </div>
+                            <?php
+                            $sessie_id = $_SESSION['sess_user_id'];
+                            $query = $conn->prepare('SELECT vluchtId FROM boekingen WHERE gebruikersId = :sessie_id ');
+                            $query->bindParam(':sessie_id', $sessie_id);
+                            $query->bindColumn('vluchtId', $vluchtId);
+                            $query->execute();
+                            $results = $query->fetchAll();
+                            $rows = $query->rowCount();
+                            $stmt = $conn->prepare("SELECT * FROM vluchten WHERE id = '" . $vluchtId . "'");
+                            $stmt->execute();
+                            $resultaten = $stmt->fetchAll();
+                            $rows = $stmt->rowCount();
 
 
-                foreach ($resultaten as $r) {
-                ?>
-                    <div class="dashboard-outer">
-                        <div class="dashboard-vluchten-show">
-                            <div class="dashboard-parent">
-                                <div class="dashboard-header-underparent">
-                                    <?php echo "Geboekte vluchten" ?>
-                                </div>
+                            foreach ($resultaten as $r) {
+                            ?>
                                 <div class="dashboard-kaart">
                                     <div>Id</div>
                                     <td><?php echo $r['id'] ?></td>
@@ -80,15 +80,15 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                                             <button class="Zoeken" type="submit" name="annuleren" value="<?= $vluchtId ?>">Annuleren</button>
                                         </div>
                                     </form>
+
+
                                 </div>
-                            </div>
+                            <?php
+                            }?>
                         </div>
-
-
                     </div>
-                <?php
-                }
-                ?>
+                </div>
+            </div>
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
 
