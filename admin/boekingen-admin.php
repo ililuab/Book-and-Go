@@ -1,12 +1,10 @@
 <?php
-
-
+include_once('../includes/connect.php');
 session_start();
 if ($_SESSION['sess_name'] == "adminaccountje") {
 } else {
     header('location:index.php');
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -45,65 +43,61 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
                     <div class="block-header-admin2">
                         <p class="welkom_text_admin">Welkom terug: </p>
                         <div class="username_echo"><?php echo $_SESSION['sess_name'] ?></div>
-
-
+                        <h2 class="boekingen_text_admin" >Klant Boekingen</h1>
 
                         <?php
-                        include_once("../includes/connect.php");
-
-                        $query = "SELECT * FROM users";
-                        $stmt = $conn->prepare($query);
+                        $query = $conn->prepare('SELECT vluchtId FROM boekingen WHERE gebruikersId > 1 ');
+                        $query->bindColumn('vluchtId', $vluchtId);
+                        $query->execute();
+                        $results = $query->fetchAll();
+                        $rows = $query->rowCount();
+                        $stmt = $conn->prepare("SELECT * FROM vluchten WHERE id = '" . $vluchtId . "'");
                         $stmt->execute();
-                        $result = $stmt->fetchAll();
+                        $resultaten = $stmt->fetchAll();
+                        $rows = $stmt->rowCount();
 
-                        foreach ($result as $user) { ?>
-                            <form class="form-admin-crud" action="../admin/usersAUTH.php" method="POST">
+
+                        foreach ($resultaten as $r) {
+                        ?>
+                            <form class="form-admin-crud" action="../admin/boekingenAUTH.php" method="POST">
                                 <div class="id_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['id'] ?>" name="id" readonly />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $r['id'] ?>" name="vluchtId" readonly />
                                     <hr>
                                 </div>
                                 <div class="naam_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['email'] ?>" name="email" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $r['place_departure'] ?>" name="place_departure" />
                                     <hr>
                                 </div>
                                 <div class="aantal_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['username'] ?>" name="username" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $r['place_destination'] ?>" name="place_destination" />
                                     <hr>
                                 </div>
                                 <div class="telnummer_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['password'] ?>" name="password" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $r['time_arrived'] ?>" name="time_arrived" />
                                     <hr>
                                 </div>
                                 <div class="bericht_reservering">
-                                    <input class="input-admin-crud" type="text" value="<?php echo $user['name'] ?>" name="name" />
+                                    <input class="input-admin-crud" type="text" value="<?php echo $r['time_leaving'] ?>" name="time_leaving" />
                                     <hr>
                                 </div>
-                                <div class="update">
-                                    <button class="update" type="submit" name="update">Wijzigen</button>
+                                <div class="datum_reservering">
+                                    <input class="input-admin-crud" type="text" value="<?php echo $r['seats'] ?>" name="seats" />
+                                    <hr>
                                 </div>
                                 <div class="delete">
-                                    <button class="delete" type="submit" name="delete">
-                                        <p>Wissen</p>
-                                    </button>
+                                    <button class="delete" type="submit" name="delete"><p>Annuleren</p></button>
                                 </div>
                             </form>
 
                         <?php
-                        }
-                        ?>
-                        <form action="../admin/usersAUTH.php" method="post">
-                            <input placeholder="User id" type="text" name="id">
-                            <input placeholder="User Email" type="text" name="email">
-                            <input placeholder="User Gebruikersnaam" type="text" name="username">
-                            <input placeholder="User Wachtwoord" type="text" name="password">
-                            <input placeholder="User DisplayNaam" type="text" name="name">
-                            <button class="create " type="submit" name="create">Toevoegen</button>
-
+                        } ?>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 </body>
+
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
+
 </html>
