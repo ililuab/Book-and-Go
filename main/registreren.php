@@ -9,7 +9,7 @@ if (isset($_POST['registreren'])) {
             $prepare = $conn->prepare($sql);
             $rowCount = $prepare->rowCount();
 
-            if ($rowCount > 0 || $_SESSION['sess_name'] == "adminaccountje") {
+            if ($rowCount > 0 || $_SESSION['sess_name'] == "admin") {
                 $sql = "INSERT INTO users (username, email, password, name) VALUES (:username, :email, :password, :name)";
                 $stmt = $conn->prepare($sql);
                 $stmt->bindParam(':username', $_POST['username']);

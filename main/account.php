@@ -5,7 +5,7 @@ session_start();
 if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
     header('location:dashboard.php');
 
-    if($_SESSION['sess_name'] == "adminaccountje") {
+    if($_SESSION['sess_name'] == "admin") {
         header('location:admin.php');
     }
 } else {

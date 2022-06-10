@@ -95,7 +95,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `email`, `username`, `password`, `name`, `geboekte_vlucht`) VALUES
-(1, 'admin@hotmail.com', 'admin', '3broeken', 'adminaccountje', '9'),
+(1, 'admin@hotmail.com', 'admin', '3broeken', 'admin', '9'),
 (2, 'test', 'test', 'test', 'test', ''),
 (23, 'mirzaselimovic2005@gmail.com', 'Mirza', 'qf8o4v', 'Mirza', '');
 
