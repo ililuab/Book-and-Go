@@ -34,6 +34,7 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
           <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
           <a href="../admin/account-admin.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
           <a href="../admin/vluchten-admin.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
+          <a href="../admin/boekingen-admin.php"><i class="fa-solid fa-sliders"></i>Boekingen - C.R.U.D</a>
           <a href="../admin/admin-reviews.php"><i class="fa-solid fa-eye"></i>Reviews inzien</a>
           <a href="../main/uitloggen.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>Uitloggen</a>
       </ul>
@@ -50,7 +51,7 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
             $stmt->execute();
             $result = $stmt->fetchAll();
             foreach ($result as $vlucht) { ?>
-              <form class="form-admin-crud" action="../admin/vluchtAUTH.php" method="POST">
+              <form class="form-admin-crud"  method="POST">
                 <div class="id_reservering">
                   <input class="input-admin-crud" type="text" value="<?php echo $vlucht['id'] ?>" name="id" readonly />
                   <hr>

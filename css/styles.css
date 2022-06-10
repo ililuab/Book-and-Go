@@ -1538,9 +1538,11 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-h1 {
+.h1 {
   color: white;
 }
+
+h
 
 .container-squares-admin {
   display: flex;
@@ -1565,7 +1567,13 @@ h1 {
 .username_echo {
   color: white;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 30px;
+}
+
+.boekingen_text_admin {
+  color: green;
+  font-weight: bolder;
+  
 }
 
 .welkom_text_admin {
