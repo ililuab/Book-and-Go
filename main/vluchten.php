@@ -58,6 +58,7 @@
       <div class="resultaten">
         <?php
         include_once("../includes/connect.php");
+        session_start();
         $submit = $_POST['submit'];
         if (!isset($submit)) {
           header('location: index.php');
