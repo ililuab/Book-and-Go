@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 08 jun 2022 om 17:27
--- Serverversie: 10.4.22-MariaDB
--- PHP-versie: 8.1.2
+-- Gegenereerd op: 10 jun 2022 om 09:37
+-- Serverversie: 10.4.21-MariaDB
+-- PHP-versie: 8.0.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -86,18 +86,17 @@ CREATE TABLE `users` (
   `email` varchar(255) NOT NULL,
   `username` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `geboekte_vlucht` varchar(255) NOT NULL
+  `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `users`
 --
 
-INSERT INTO `users` (`id`, `email`, `username`, `password`, `name`, `geboekte_vlucht`) VALUES
-(1, 'admin@hotmail.com', 'admin', '3broeken', 'adminaccountje', '9'),
-(2, 'test', 'test', 'test', 'test', ''),
-(23, 'mirzaselimovic2005@gmail.com', 'Mirza', 'qf8o4v', 'Mirza', '');
+INSERT INTO `users` (`id`, `email`, `username`, `password`, `name`) VALUES
+(1, 'admin@hotmail.com', 'admin', '3broeken', 'adminaccountje'),
+(2, 'test', 'test', 'test', 'test'),
+(23, 'mirzaselimovic2005@gmail.com', 'Mirza', 'qf8o4v', 'Mirza');
 
 -- --------------------------------------------------------
 

@@ -91,13 +91,13 @@ error_reporting(0);
             <div class='klantenservice-form-inner'>
                 <form class='klantenservice-form' action="../mailer/mailer.php" method="POST">
                     <div>
-                        <input class='account-inloggen-form-input' type="text" name="mail" placeholder="E-Mail">
+                        <input class='account-inloggen-form-input' type="email" name="mail" placeholder="E-Mail" required>
                     </div>
                     <div>
-                        <input class='account-inloggen-form-input' type="text" name="subject" placeholder="Onderwerp">
+                        <input class='account-inloggen-form-input' type="text" name="subject" placeholder="Onderwerp" required>
                     </div>
                     <div>
-                        <textarea class='account-inloggen-form-input' name="text" rows="3" placeholder="Bericht" style="resize: none;"></textarea>
+                        <textarea class='account-inloggen-form-input' name="text" rows="3" placeholder="Bericht" style="resize: none;" required></textarea>
                     </div>
                     <div>
                         <button class="account-inloggen-form-submit" type="submit">Verzenden</button>

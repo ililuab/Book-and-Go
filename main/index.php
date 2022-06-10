@@ -170,9 +170,10 @@ error_reporting(0);
                         </div>
                     </div>
                     <form id="index-form" class="index_form " action="helpdeskredirect.php" method="post">
-                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id="" placeholder="E-Mail">
-                        <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id="" placeholder="Suggestie">
-                        <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" value="Verzenden">
+                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id="txtName" placeholder="E-Mail">
+                        <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id="txtName" placeholder="Suggestie">
+                        <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" id="btnCheck" onclick="return ValidateTextBox()" value="Verzenden">
+                        <p id="demo"></p>
                     </form>
                 </div>
             </div>
@@ -189,6 +190,7 @@ error_reporting(0);
         </div>
     </footer>
 </body>
+<script src="../js/validation.js"></script>
 <script src="../js/main.js"></script>
 
 </html>

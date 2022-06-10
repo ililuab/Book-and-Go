@@ -1146,7 +1146,7 @@ p {
 .klantenservice-form-text {
   color: #2800a0;
   padding: 2%;
-  font-size: 2vw;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -1342,7 +1342,7 @@ p {
 
 .dashboard-header-underparent {
   width: 100%;
-  font-size: 1.5vw;
+  font-size: 25px;
   text-shadow: 1px 2px 2px #000000;
   height: 6vh;
   background-color: #eeeeee;
