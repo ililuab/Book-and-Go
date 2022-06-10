@@ -68,7 +68,6 @@ if (isset($_POST['forget'])) {
                         <div class="Header-links">Beheren</div>
                         <div class="dropdown-content">
                             <div><a href="index.php">Vlucht boeken</a></div>
-                            <div><a href="dashboard.php">Vlucht wijzigen</a></div>
                             <div><a href="dashboard.php">Vlucht annuleren</a></div>
                         </div>
                     </div>

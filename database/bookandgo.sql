@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 01 jun 2022 om 12:36
+-- Gegenereerd op: 08 jun 2022 om 17:27
 -- Serverversie: 10.4.22-MariaDB
 -- PHP-versie: 8.1.2
 
@@ -57,7 +57,23 @@ CREATE TABLE `helpdesk` (
 --
 
 INSERT INTO `helpdesk` (`id`, `email`, `message`) VALUES
-(10, 'anus@gmail.com', 'testbericht');
+(10, 'anus@gmail.com', 'testbericht'),
+(11, 'ed@d', 'ed'),
+(12, 'ed@e', 'edd'),
+(13, 'wdW@e', 'wd');
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `reviews`
+--
+
+CREATE TABLE `reviews` (
+  `id` int(6) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `review` int(5) NOT NULL,
+  `beschrijving` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -80,7 +96,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `username`, `password`, `name`, `geboekte_vlucht`) VALUES
 (1, 'admin@hotmail.com', 'admin', '3broeken', 'adminaccountje', '9'),
-(4, 'test@hotmail.com', 'test', 'test', 'test', '14');
+(2, 'test', 'test', 'test', 'test', ''),
+(23, 'mirzaselimovic2005@gmail.com', 'Mirza', 'qf8o4v', 'Mirza', '');
 
 -- --------------------------------------------------------
 
@@ -102,30 +119,28 @@ CREATE TABLE `vluchten` (
 --
 
 INSERT INTO `vluchten` (`id`, `place_departure`, `place_destination`, `time_arrived`, `time_leaving`, `seats`) VALUES
-(2, 'Amsterdam, Schiphol', 'Spanje, Valencia', '2022-05-18', '2022-05-10', 500),
-(6, 'Amsterdam, Schiphol\r\n', 'Spanje, Valencia\r\n', '2022-05-13', '2022-05-12', 212),
-(7, 'Amsterdam, Schiphol\r\n', 'Spanje, Valencia\r\n', '2022-05-15', '2022-05-14', 212),
-(8, 'Amsterdam, Schiphol\r\n', 'Spanje, Valencia\r\n', '2022-05-17', '2022-05-16', 212),
-(9, 'Amsterdam, Schiphol\r\n', 'Spanje, Valencia\r\n', '2022-05-22', '2022-05-21', 212),
-(10, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-10', '2022-05-11', 411),
-(13, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-14', '2022-05-13', 421),
-(14, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-15', '2022-05-14', 451),
-(15, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-16', '2022-05-15', 111),
-(16, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-17', '2022-05-16', 431),
-(17, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-18', '2022-05-17', 511),
-(18, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-26', '2022-05-25', 432),
-(20, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-24', '2022-05-23', 462),
-(21, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-21', '2022-05-20', 132),
-(22, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-15', '2022-05-14', 712),
-(23, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-03', '2022-05-02', 512),
-(24, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-04', '2022-05-03', 333),
-(25, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-05', '2022-05-04', 411),
-(26, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-20', '2022-05-19', 400),
-(27, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-20', '2022-05-19', 411),
-(28, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-23', '2022-05-22', 320),
-(29, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-26', '2022-05-25', 510),
-(30, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-28', '2022-05-27', 210),
-(31, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-29', '2022-05-28', 312);
+(111, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-14', '2022-05-13', 421),
+(123, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-16', '2022-05-15', 111),
+(124, 'Amsterdam, Schiphol', 'Spanje, Valencia', '2022-05-15', '2022-05-14', 214),
+(154, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-15', '2022-05-14', 451),
+(172, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-18', '2022-05-17', 511),
+(182, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-26', '2022-05-25', 432),
+(201, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-24', '2022-05-23', 462),
+(212, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-21', '2022-05-20', 132),
+(225, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-15', '2022-05-14', 712),
+(232, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-10', '2022-05-11', 411),
+(235, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-03', '2022-05-02', 512),
+(242, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-04', '2022-05-03', 333),
+(255, 'Amsterdam, Schiphol', 'Aruba, Oranjestad', '2022-05-05', '2022-05-04', 411),
+(276, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-20', '2022-05-19', 411),
+(288, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-23', '2022-05-22', 320),
+(294, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-26', '2022-05-25', 510),
+(305, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-28', '2022-05-27', 210),
+(311, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-29', '2022-05-28', 312),
+(531, 'Amsterdam, Schiphol\r\n', 'Spanje, Valencia\r\n', '2022-05-17', '2022-05-16', 212),
+(563, 'Frankfurt, Frankfurt Airport', 'Spanje, Madrid', '2022-05-17', '2022-05-16', 431),
+(632, 'Amsterdam, Schiphol\r\n', 'Spanje, Valencia\r\n', '2022-05-22', '2022-05-21', 212),
+(2687, 'Amsterdam, Schiphol', 'Japan, Tokio', '2022-05-20', '2022-05-19', 400);
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -141,6 +156,12 @@ ALTER TABLE `boekingen`
 -- Indexen voor tabel `helpdesk`
 --
 ALTER TABLE `helpdesk`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexen voor tabel `reviews`
+--
+ALTER TABLE `reviews`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -170,19 +191,25 @@ ALTER TABLE `boekingen`
 -- AUTO_INCREMENT voor een tabel `helpdesk`
 --
 ALTER TABLE `helpdesk`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT voor een tabel `reviews`
+--
+ALTER TABLE `reviews`
+  MODIFY `id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT voor een tabel `vluchten`
 --
 ALTER TABLE `vluchten`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2688;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

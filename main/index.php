@@ -50,7 +50,6 @@ error_reporting(0);
                             <div class="Header-links">Beheren</div>
                             <div class="dropdown-content">
                                 <div><a href="index.php">Vlucht boeken</a></div>
-                                <div><a href="dashboard.php">Vlucht wijzigen</a></div>
                                 <div><a href="dashboard.php">Vlucht annuleren</a></div>
                             </div>
                         </div>
@@ -138,7 +137,6 @@ error_reporting(0);
                     <img class="contextboximg" src="../media/contacthuman.png" alt="">
                 </div>
                 <h1 class="contextboxtext3">Vind online het antwoord op je vraag</h1>
-                <a href='dashboard.php' class="contextboxundertext">Vlucht wijzigen</a>
                 <a href='dashboard.php' class="contextboxundertext">Vlucht annuleren</a>
             </div>
         </div>
@@ -168,13 +166,14 @@ error_reporting(0);
                 <div class="content_helpdesk">
                     <div class="container_helpdesk_text">
                         <div class="helpdesk_text">
-                            <p class="helpdesk_text">Hoe kunnen wij je helpen?</p>
+                            <p class="helpdesk_text">Help ons met het verbeteren van Book and Go!</p>
                         </div>
                     </div>
                     <form id="index-form" class="index_form " action="helpdeskredirect.php" method="post">
-                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id="" placeholder="E-Mail">
-                        <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id="" placeholder="Suggestie">
-                        <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" value="Verzenden">
+                        <input class="helpdesk_form_input" type="email" required name="email_helpdesk" id="txtName" placeholder="E-Mail">
+                        <input class="helpdesk_form_input" type="text" required name="message_helpdesk" id="txtName" placeholder="Suggestie">
+                        <input class="helpdesk_form_input_submit" type="submit" name="submit_helpdesk" id="btnCheck" onclick="return ValidateTextBox()" value="Verzenden">
+                        <p id="demo"></p>
                     </form>
                 </div>
             </div>
@@ -191,6 +190,7 @@ error_reporting(0);
         </div>
     </footer>
 </body>
+<script src="../js/validation.js"></script>
 <script src="../js/main.js"></script>
 
 </html>

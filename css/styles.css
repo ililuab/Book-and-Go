@@ -10,6 +10,11 @@
   font-weight: bold;
 }
 
+iframe {
+  margin-top: -7%;
+  z-index: 0;
+}
+
 .html_boeken {
   background-image: url(../media/pexels-asad-photo-maldives-457882.jpg);
   width: 100%;
@@ -264,7 +269,6 @@ svg {
   text-align: center;
   justify-content: center;
   color: #2800a0;
-  text-shadow: #0e0e0e 0px 0 30px;
 }
 
 .contextboxtext2 {
@@ -274,7 +278,6 @@ svg {
   text-align: center;
   justify-content: center;
   color: #00d66c;
-  text-shadow: #0e0e0e 0px 0 30px;
 }
 .contextboxtext3 {
   font-size: 1.3vw;
@@ -283,7 +286,6 @@ svg {
   padding: 5%;
   text-align: center;
   color: #ff3268;
-  text-shadow: #0e0e0e 0px 0 30px;
 }
 
 .contextboxundertext {
@@ -1144,7 +1146,7 @@ p {
 .klantenservice-form-text {
   color: #2800a0;
   padding: 2%;
-  font-size: 2vw;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -1327,8 +1329,8 @@ p {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: left;
-  padding: 5%;
+  justify-content: center;
+  align-items: center;
 }
 
 .dashboard-parent {
@@ -1340,12 +1342,12 @@ p {
 
 .dashboard-header-underparent {
   width: 100%;
-  font-size: 1.5vw;
+  font-size: 25px;
   text-shadow: 1px 2px 2px #000000;
   height: 6vh;
   background-color: #eeeeee;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  color: #ff3268;
+  color: rgb(27, 226, 27);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1536,9 +1538,11 @@ h1 {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-h1 {
+.h1 {
   color: white;
 }
+
+h
 
 .container-squares-admin {
   display: flex;
@@ -1563,7 +1567,13 @@ h1 {
 .username_echo {
   color: white;
   font-weight: 900;
-  font-size: 50px;
+  font-size: 30px;
+}
+
+.boekingen_text_admin {
+  color: green;
+  font-weight: bolder;
+  
 }
 
 .welkom_text_admin {
@@ -1582,6 +1592,171 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
+}
+
+.missingtext {
+  font-size: 35px;
+  color: #696868;
+  text-shadow: 2px 2px #0e0e0e;
+}
+
+.annuleren-outer {
+  width: 100%;
+  height: 20vh;
+  background-color: white;
+}
+.form-admin-crud {
+  display: flex;
+}
+
+.input-admin-crud {
+  border-bottom: white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  color: #f7f7f7;
+}
+
+.update  {
+  background-color: #FFFFE0;
+  border: none;
+  width: 4vw;
+  border-radius: 8px;
+}
+
+.update:hover {
+  background-color: #FFC300;
+}
+
+.delete {
+  background-color: #ff3268;
+  border: none;
+  margin-left: .5vh;
+  width: 4.5vw;
+  border-radius: 8px;
+}
+
+.delete:hover {
+  background-color: #ca2b55;
+}
+
+.create {
+  background-color: lightgreen;
+  border: none;
+  margin-left: 1vh;
+  width: 5vw;
+  border-radius: 8px;
+}
+
+.create:hover {
+  background-color: green;
+}
+.container_reviews {
+  background-image: url(../media/pexels-alex-andrews-821754.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.dashboardbackground {
+  width: 80vw;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.dashboard-header-text-outer {
+  width: 100%;
+  height: 7.3vh;
+  background-color: #063146;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+}
+
+.dashboard-header-text {
+  font-size: 35px;
+  color: white;
+  display: flex;
+}
+
+.dashboard-header-text2 {
+  font-size: 35px;
+  color: rgb(27, 226, 27);
+  display: flex;
+}
+
+
+.dashboard-middlecontent-outer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+}
+
+.dashboard-spacer {
+  width: 80vw;
+  height: 10vh;
+  background-color: #063146;
+}
+
+.dashboard-middlecontent-outer2 {
+  width: 100%;
+  height: 52.7vh;
+  display: flex;
+  background-color: #063146;
+}
+
+.dashboard-middlecontent-outer3 {
+  width: 100%;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  background: rgb(6, 49, 70);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(6, 49, 70, 0.9051995798319328) 0%,
+    rgba(6, 49, 70, 1) 100%,
+    rgba(4, 35, 49, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(6, 49, 70, 0.9051995798319328) 0%,
+    rgba(6, 49, 70, 1) 100%,
+    rgba(4, 35, 49, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(6, 49, 70, 0.9051995798319328) 0%,
+    rgba(6, 49, 70, 1) 100%,
+    rgba(4, 35, 49, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#063146",endColorstr="#042331",GradientType=1);
+}
+
+.dashboard-middlecontent {
+  width: 26.67vw;
+  height: 100%;
+}
+
+.dashboard-countdown-outer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.dashboard-timer {
+  font-size: 35px;
+  color: white;
+}
+
+.dashboard-timer2 {
+  font-size: 35px;
+  color: rgb(27, 226, 27);
 }
 
 .missingtext {
