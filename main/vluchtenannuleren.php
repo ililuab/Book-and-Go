@@ -85,7 +85,11 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                                 </div>
                             <?php
                             }?>
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
