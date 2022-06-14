@@ -58,31 +58,24 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                     $rows = $query->rowCount();
 
                     foreach ($resultaten as $r) { ?>
-                        <form action="../admin/usersAUTH.php" method="post">
-                            <div>
-                                <div>Email</div>
-                                <input type="text" value="<?php echo $r['email'] ?>" name="email" />
-                                <hr>
-                            </div>
-                            <div>
-                                <div>Gebruikersnaam</div>
-                                <input type="text" value="<?php echo $r['username'] ?>" name="username" />
-                                <hr>
-                            </div>
-                            <div>
-                                <div>Wachtwoord</div>
-                                <input type="text" value="<?php echo $r['password'] ?>" name="password" />
-                                <hr>
-                            </div>
-                            <div>
-                                <div>Naam</div>
-                                <input type="text" value="<?php echo $r['name'] ?>" name="name" />
-                                <hr>
-                            </div>
-                            <div class="update">
-                                <button class="update" type="submit" name="update2">Wijzigen</button>
-                            </div>
+                        <table class='table_dashboard'>
+                            <form action="../admin/usersAUTH.php" method="post">
+                                <tr>
+                                    <th>Email</th>
+                                    <th>Gebruikersnaam</th>
+                                    <th>Wachtwoord</th>
+                                    <th>Naam</th>
+                                </tr>
+                                <td><input type="text" value="<?php echo $r['email'] ?>" name="email" /></td>
+                                <td><input type="text" value="<?php echo $r['username'] ?>" name="username" /></td>
+                                <td><input type="text" value="<?php echo $r['password'] ?>" name="password" /></td>
+                                <td><input type="text" value="<?php echo $r['name'] ?>" name="name" /></td>
+                        </table>
+                        <div class="update">
+                            <button class="update" type="submit" name="update2">Wijzigen</button>
+                        </div>
                         </form>
+
                     <?php
                     }
                     ?>

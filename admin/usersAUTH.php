@@ -38,7 +38,7 @@ if (isset($_POST['update2'])) {
     $stmt->bindParam(":name", $_POST['name']);
     $stmt->execute();   
 
-    header("Location: ../main/dashboard.php");
+    header("Location: ../main/profiel.php");
 };
 
 
