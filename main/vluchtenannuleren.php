@@ -36,6 +36,7 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                     <a href="index.php"></i>Book and Go</a>
                     <a href="dashboard.php">Dashboard</a>
                     <a href="vluchtenannuleren.php">Vluchten</a>
+                    <a href="profiel.php">Profiel</a>
                     <a href="uitloggen.php">Uitloggen</a>
                 </li>
             </ul>
@@ -84,15 +85,15 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 
                                 </div>
                             <?php
-                            }?>
-                                </div>
-                            </div>
+                            } ?>
                         </div>
-
-
                     </div>
                 </div>
+
+
             </div>
+        </div>
+        </div>
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
 
