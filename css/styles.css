@@ -194,8 +194,8 @@ iframe {
 .Zoeken {
   background-color: #ff3268;
   color: white;
-  border-radius: 25px;
-  padding: 4%;
+  border-radius: 80px;
+  padding: 1%;
   text-shadow: #0e0e0e 0px 0 30px;
   border: none;
   cursor: pointer;
@@ -1334,6 +1334,9 @@ p {
 }
 
 .dashboard-parent {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 60vw;
   height: 80vh;
   background-color: #d3d3d3;
@@ -1354,10 +1357,28 @@ p {
 }
 
 .dashboard-kaart {
-  width: 23vw;
+  text-align: center;
+  width: 50vw;
   height: 225px;
   background: #f7f7f7;
   border-radius: 5px;
+}
+
+.table_dashboard {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table_dashboard th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+.table_dashboard tr:nth-child(even){background-color: #f2f2f2}
+
+.table_dashboard th {
+  background-color: #04AA6D;
+  color: white;
 }
 
 .dashboardinner-admin {
