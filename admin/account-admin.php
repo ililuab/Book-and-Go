@@ -31,7 +31,6 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
             <ul class="admin">
                 <li>
                     <a href="../main/index.php"><i class="fa-solid fa-house-user"></i>Book and Go</a>
-                    <a href="../main/admin.php"><i class="fa-solid fa-house-user"></i>Admin panel - Home</a>
                     <a href="../admin/account-admin.php"><i class="fa-solid fa-eye"></i>Accounts - C.R.U.D</a>
                     <a href="../admin/vluchten-admin.php"><i class="fa-solid fa-sliders"></i>Vluchten - C.R.U.D</a>
                     <a href="../admin/boekingen-admin.php"><i class="fa-solid fa-sliders"></i>Boekingen - C.R.U.D</a>

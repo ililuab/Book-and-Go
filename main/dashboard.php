@@ -4,7 +4,7 @@ session_start();
 if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 
     if ($_SESSION['sess_name'] == "adminaccountje") {
-        header('location:admin.php');
+        header('location:../admin/account-admin.php');
     }
 } else {
     header('location:account.php');
