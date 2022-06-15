@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 15 jun 2022 om 09:46
+-- Gegenereerd op: 15 jun 2022 om 12:49
 -- Serverversie: 10.4.21-MariaDB
 -- PHP-versie: 8.0.11
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `bookandgo`
 --
+CREATE DATABASE IF NOT EXISTS `bookandgo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `bookandgo`;
 
 -- --------------------------------------------------------
 

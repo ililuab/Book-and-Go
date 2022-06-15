@@ -79,15 +79,15 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                 </div>
                 <div class="account-inloggen-form">
                     <form class='account_login' action="account_inloggen.php" method="post">
-                        <div>
+                        <div class="account-inloggen-form-div">
                             <input class="account-inloggen-form-input" type="text" name="username" id="username"
                                 value="" required placeholder="Gebruikersnaam" />
                         </div>
-                        <div>
+                        <div class="account-inloggen-form-div">
                             <input class='account-inloggen-form-input' type="password" name="password" id="password"
                                 value="" required placeholder="Wachtwoord" />
                         </div>
-                        <div>
+                        <div class="account-inloggen-form-div">
                             <input class='account-inloggen-form-submit' type="submit" name="submitlogin"
                                 id="submitlogin" value="Inloggen" />
                         </div>
