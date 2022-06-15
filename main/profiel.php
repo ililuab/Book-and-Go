@@ -3,8 +3,8 @@ include_once('../includes/connect.php');
 session_start();
 if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 
-    if ($_SESSION['sess_name'] == "adminaccountje") {
-        header('location:../admin/account-admin.php');
+    if ($_SESSION['sess_name'] == "admin") {
+        header('location:admin.php');
     }
 } else {
     header('location:account.php');
@@ -24,7 +24,7 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="../media/BookAndGoLogo.jpg" type="image/gif" sizes="16x16">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Book And Go | Dashboard</title>
+    <title>Book And Go | Profiel</title>
 </head>
 
 <body>
@@ -45,24 +45,43 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
             <div class="dashboardinner">
                 <div class="dashboardbackground">
                     <div class="dashboard-header-text-outer">
-                        <div class="dashboard-header-text">Book and Go | <div class="dashboard-header-text2">&nbsp;Dashboard</div></div>
-                    </div>
-                    <div class="dashboard-spacer"></div>
-                    <div class="dashboard-middlecontent-outer">
-                        <img class="dashboard-middlecontent" src="../media/pexels-troy-squillaci-2521619.jpg" alt="BookAndGo Logo">
-                        <img class="dashboard-middlecontent" src="../media/pexels-pok-rie-1130221.jpg" alt="BookAndGo Logo">
-                        <img class="dashboard-middlecontent" src="../media/pexels-chris-molloy-921392.jpg" alt="BookAndGo Logo">
-                    </div>
-                    <div class="dashboard-middlecontent-outer2">
-                        <div class="dashboard-countdown-outer">
-                            <div class="dashboard-timer">Zomer-kortingen geldig tot &nbsp;</div>
-                            <div class="dashboard-timer2" id="timer"></div>
-                            <div class="dashboard-timer">&nbsp;!</div>
+                        <div class="dashboard-header-text">Book and Go | <div class="dashboard-header-text2">&nbsp;Profiel</div>
                         </div>
                     </div>
-                    <div class="dashboard-middlecontent-outer3">
-                    </div>
-                    
+                    <div class="dashboard-spacer"></div>
+                    <?php
+                    $sessie_id = $_SESSION['sess_user_id'];
+                    $query = $conn->prepare('SELECT * FROM users WHERE id = :sessie_id ');
+                    $query->bindParam(':sessie_id', $sessie_id);
+                    $query->execute();
+                    $resultaten = $query->fetchAll();
+                    $rows = $query->rowCount();
+
+                    foreach ($resultaten as $r) { ?>
+                        <table class='table_dashboard'>
+                            <form action="../admin/usersAUTH.php" method="post">
+                                <tr>
+                                    <th>Email</th>
+                                    <th>Gebruikersnaam</th>
+                                    <th>Wachtwoord</th>
+                                    <th>Naam</th>
+                                </tr>
+                                <td><input type="text" value="<?php echo $r['email'] ?>" name="email" /></td>
+                                <td><input type="text" value="<?php echo $r['username'] ?>" name="username" /></td>
+                                <td><input type="text" value="<?php echo $r['password'] ?>" name="password" /></td>
+                                <td><input type="text" value="<?php echo $r['name'] ?>" name="name" /></td>
+                        </table>
+                        <div class="update">
+                            <button class="update" type="submit" name="update2">Wijzigen</button>
+                        </div>
+                        </form>
+
+                    <?php
+                    }
+                    ?>
+
+
+
                 </div>
             </div>
         </div>

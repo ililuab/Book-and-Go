@@ -3,7 +3,7 @@ include_once('../includes/connect.php');
 session_start();
 if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 
-    if ($_SESSION['sess_name'] == "adminaccountje") {
+    if ($_SESSION['sess_name'] == "admin") {
         header('location:admin.php');
     }
 } else {
@@ -36,6 +36,7 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                     <a href="index.php"></i>Book and Go</a>
                     <a href="dashboard.php">Dashboard</a>
                     <a href="vluchtenannuleren.php">Vluchten</a>
+                    <a href="profiel.php">Profiel</a>
                     <a href="uitloggen.php">Uitloggen</a>
                 </li>
             </ul>
@@ -65,16 +66,22 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
                             foreach ($resultaten as $r) {
                             ?>
                                 <div class="dashboard-kaart">
-                                    <div>Id</div>
-                                    <td><?php echo $r['id'] ?></td>
-                                    <div>Vertrekluchthaven</div>
-                                    <td><?php echo $r['place_departure'] ?></td>
-                                    <div>Bestemming</div>
-                                    <td><?php echo $r['place_destination'] ?></td>
-                                    <div>Datum vertrek</div>
-                                    <td><?php echo $r['time_leaving'] ?></td>
-                                    <div>Datum aankomst</div>
-                                    <td><?php echo $r['time_arrived'] ?></td>
+                                    <table class="table_dashboard">
+                                        <tr>
+                                            <th>Vlucht ID</th>
+                                            <th>Plaats van vertrek</th>
+                                            <th>Bestemming</th>
+                                            <th>Tijd van vertrek</th>
+                                            <th>Tijd van aankomst</th>
+                                        </tr>
+                                        <tr>
+                                            <td><?php echo $r['id'] ?></td>
+                                            <td><?php echo $r['place_departure'] ?></td>
+                                            <td><?php echo $r['place_destination'] ?></td>
+                                            <td><?php echo $r['time_leaving'] ?></td>
+                                            <td><?php echo $r['time_arrived'] ?></td>
+                                        </tr>
+                                    </table>
                                     <form action='annulerenredirect.php' method='post'>
                                         <div class="Annuleren">
                                             <button class="Zoeken" type="submit" name="annuleren" value="<?= $vluchtId ?>">Annuleren</button>
@@ -84,15 +91,15 @@ if (isset($_SESSION['sess_user_id']) && $_SESSION['sess_user_id'] != "") {
 
                                 </div>
                             <?php
-                            }?>
-                                </div>
-                            </div>
+                            } ?>
                         </div>
-
-
                     </div>
                 </div>
+
+
             </div>
+        </div>
+        </div>
 </body>
 <script src="https://kit.fontawesome.com/426386addb.js" crossorigin="anonymous"></script>
 

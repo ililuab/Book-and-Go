@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include("../includes/connect.php");
 
 if (isset($_POST['update'])) {
@@ -20,6 +20,28 @@ if (isset($_POST['update'])) {
 
     header("Location: account-admin.php");
 };
+
+
+if (isset($_POST['update2'])) {
+    $sessie_id = $_SESSION['sess_user_id'];
+    $sql = "UPDATE users 
+            SET email = :email, 
+                username = :username, 
+                password = :password, 
+                name = :name
+                WHERE id = $sessie_id";
+ 
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(":email", $_POST['email']);
+    $stmt->bindParam(":username", $_POST['username']); 
+    $stmt->bindParam(":password", $_POST['password']);
+    $stmt->bindParam(":name", $_POST['name']);
+    $stmt->execute();   
+
+    header("Location: ../main/profiel.php");
+};
+
+
 
 if (isset($_POST['delete'])) {
 

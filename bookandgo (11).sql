@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Gegenereerd op: 10 jun 2022 om 09:37
+-- Gegenereerd op: 15 jun 2022 om 12:49
 -- Serverversie: 10.4.21-MariaDB
 -- PHP-versie: 8.0.11
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `bookandgo`
 --
+CREATE DATABASE IF NOT EXISTS `bookandgo` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `bookandgo`;
 
 -- --------------------------------------------------------
 
@@ -32,13 +34,6 @@ CREATE TABLE `boekingen` (
   `gebruikersId` int(11) NOT NULL,
   `vluchtId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Gegevens worden geëxporteerd voor tabel `boekingen`
---
-
-INSERT INTO `boekingen` (`boekingId`, `gebruikersId`, `vluchtId`) VALUES
-(6, 4, 15);
 
 -- --------------------------------------------------------
 
@@ -95,8 +90,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `email`, `username`, `password`, `name`) VALUES
 (1, 'admin@hotmail.com', 'admin', '3broeken', 'adminaccountje'),
-(2, 'test', 'test', 'test', 'test'),
-(23, 'mirzaselimovic2005@gmail.com', 'Mirza', 'qf8o4v', 'Mirza');
+(2, 'test@gmail.com', 'test', 'test', 'test'),
+(23, 'mirzaselimovic2005@gmail.com', 'PikMirza', 'Pikkkk2881', 'Mirza s');
 
 -- --------------------------------------------------------
 
@@ -184,7 +179,7 @@ ALTER TABLE `vluchten` ADD FULLTEXT KEY `vluchten` (`place_departure`,`place_des
 -- AUTO_INCREMENT voor een tabel `boekingen`
 --
 ALTER TABLE `boekingen`
-  MODIFY `boekingId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `boekingId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT voor een tabel `helpdesk`
@@ -202,7 +197,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT voor een tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT voor een tabel `vluchten`

@@ -23,7 +23,7 @@
                         $_SESSION['sess_name'] = $row['name'];
                         header('location:dashboard.php');
                         if($username == "admin") {
-                            header('location:admin.php');
+                            header('location:../admin/account-admin.php');
                         }
                     } else {
                         header('location:account.php');

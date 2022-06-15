@@ -1,6 +1,6 @@
 // Begin Timer
 
-var countdownDatum = new Date("Juli 8, 2022 23:59:59").getTime();
+var countdownDatum = new Date("Juli 11, 2022 23:59:59").getTime();
 
 var interval = setInterval(function() {
   var DatumNu = new Date().getTime();

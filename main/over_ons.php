@@ -59,7 +59,7 @@ error_reporting(0);
             <div class="spacer"></div>
             <div class="below_header_over-ons">
                 <div class="content_below_header">
-                    <img src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo">
+                    <img class="img_overons" src="../media/BookAndGoLogo.jpg" alt="BookAndGoLogo">
                     <h1 class="text-content_below_header">Over BookAndGo</h1><br>
                 </div>
             </div>
@@ -93,6 +93,7 @@ error_reporting(0);
             </div>
             <div class="container_reviews">
                 <div class="reviews">
+                    <p class="review_text">Schrijf hier je review!</p>
                 <form class="over-ons_form" action="review_redirect.php" method="POST">
                         <input class="helpdesk_form_input" type="email" required name="email_review" id=""
                             placeholder="E-Mail">
