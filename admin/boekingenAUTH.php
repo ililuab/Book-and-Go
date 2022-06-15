@@ -9,6 +9,6 @@ if (isset($_POST['delete'])) {
     $stmt->bindParam(":vluchtId", $_POST['vluchtId']);
     $stmt->execute();
 
-    header("Location: boekin-admin.php");
+    header("Location: boekingen-admin.php");
 }
 
