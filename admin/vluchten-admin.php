@@ -50,7 +50,7 @@ if ($_SESSION['sess_name'] == "adminaccountje") {
             $stmt->execute();
             $result = $stmt->fetchAll();
             foreach ($result as $vlucht) { ?>
-              <form class="form-admin-crud"  method="POST">
+              <form class="form-admin-crud"  action="../admin/vluchtAUTH.php" method="POST">
                 <div class="id_reservering">
                   <input class="input-admin-crud" type="text" value="<?php echo $vlucht['id'] ?>" name="id" readonly />
                   <hr>
