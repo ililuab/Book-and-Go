@@ -15,3 +15,6 @@ Uitwerking:
 
 ![image](https://user-images.githubusercontent.com/94444127/174592877-3b1bd185-1c70-4cf6-8a09-428137105bce.png)
 
+![image](https://user-images.githubusercontent.com/94444127/174593176-a212dd1a-da52-4489-9a8e-0a62d9967cf6.png)
+
+
